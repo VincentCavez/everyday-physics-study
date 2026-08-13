@@ -34,10 +34,11 @@ body {
   overflow-y: auto;
 }
 
+/* Le .page est LE conteneur de défilement : il doit couvrir toute la largeur,
+   sinon la molette est morte au-dessus des marges. Le contenu est centré par le
+   padding latéral, pas par max-width + margin auto. */
 .page {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 40px 24px 96px;
+  padding: 40px max(24px, calc((100% - 860px) / 2)) 96px;
   width: 100%;
 }
 
@@ -277,8 +278,7 @@ a.primary {
    élastique (`minmax(0, 1fr)`) : il absorbe la place restante et se contente de
    ce qu'on lui laisse, sans jamais repousser la question hors de l'écran. */
 .scenario {
-  max-width: 1100px;
-  padding: 16px 24px 20px;
+  padding: 16px max(24px, calc((100% - 1100px) / 2)) 20px;
   display: grid;
   grid-template-rows: auto auto minmax(0, 1fr) auto;
   gap: 12px;
