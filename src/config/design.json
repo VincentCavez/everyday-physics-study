@@ -1,0 +1,1382 @@
+{
+  "$meta": {
+    "generator": "tools/gen-design.mjs",
+    "seed": 20260813,
+    "variant": "protocol",
+    "multipliers": [
+      1,
+      2,
+      4,
+      7,
+      11
+    ],
+    "offsets": [
+      0,
+      3,
+      6,
+      9,
+      12
+    ],
+    "n_rows": 75,
+    "per_axis": 15,
+    "axes": [
+      "projection",
+      "oscillation_elasticity",
+      "equilibrium_levers",
+      "friction",
+      "collision"
+    ]
+  },
+  "rows": [
+    {
+      "row_id": 1,
+      "scenes": {
+        "projection": "1-01-baseball-pitch",
+        "oscillation_elasticity": "2-04-tire-swing",
+        "equilibrium_levers": "3-07-overhang-plank",
+        "friction": "4-10-car-skid",
+        "collision": "5-13-car-into-wall"
+      },
+      "scored_order": [
+        "collision",
+        "friction",
+        "projection",
+        "oscillation_elasticity",
+        "equilibrium_levers"
+      ],
+      "trial": "3-06-tilting-chair"
+    },
+    {
+      "row_id": 2,
+      "scenes": {
+        "projection": "1-02-basketball-freethrow",
+        "oscillation_elasticity": "2-06-grandfather-clock",
+        "equilibrium_levers": "3-11-shovel",
+        "friction": "4-02-racing-car",
+        "collision": "5-09-gong"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "friction",
+        "oscillation_elasticity",
+        "collision"
+      ],
+      "trial": "3-13-hammock"
+    },
+    {
+      "row_id": 3,
+      "scenes": {
+        "projection": "1-03-bow-and-arrow",
+        "oscillation_elasticity": "2-08-diving-board-flex",
+        "equilibrium_levers": "3-15-tightrope-walker",
+        "friction": "4-09-sled-slope",
+        "collision": "5-05-newtons-cradle"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "equilibrium_levers",
+        "projection",
+        "friction"
+      ],
+      "trial": "3-10-nutcracker"
+    },
+    {
+      "row_id": 4,
+      "scenes": {
+        "projection": "1-04-catapult",
+        "oscillation_elasticity": "2-10-bouncing-ball",
+        "equilibrium_levers": "3-04-ladder-on-wall",
+        "friction": "4-01-skateboarder",
+        "collision": "5-01-bowling-strike"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "friction",
+        "collision",
+        "oscillation_elasticity"
+      ],
+      "trial": "2-05-rocking-chair"
+    },
+    {
+      "row_id": 5,
+      "scenes": {
+        "projection": "1-05-diving-board-jump",
+        "oscillation_elasticity": "2-12-wrecking-ball",
+        "equilibrium_levers": "3-08-tower-crane",
+        "friction": "4-08-cyclist-uphill",
+        "collision": "5-12-bat-baseball"
+      },
+      "scored_order": [
+        "projection",
+        "collision",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "friction"
+      ],
+      "trial": "1-01-baseball-pitch"
+    },
+    {
+      "row_id": 6,
+      "scenes": {
+        "projection": "1-06-three-pointer",
+        "oscillation_elasticity": "2-14-pirate-ship-ride",
+        "equilibrium_levers": "3-12-wheelbarrow",
+        "friction": "4-15-parachute",
+        "collision": "5-08-pinball"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "collision",
+        "oscillation_elasticity",
+        "friction"
+      ],
+      "trial": "3-05-waiter-tray"
+    },
+    {
+      "row_id": 7,
+      "scenes": {
+        "projection": "1-07-slingshot",
+        "oscillation_elasticity": "2-01-trampoline",
+        "equilibrium_levers": "3-01-seesaw",
+        "friction": "4-07-zipline",
+        "collision": "5-04-kick-ball"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "friction",
+        "projection",
+        "collision"
+      ],
+      "trial": "1-12-dartboard"
+    },
+    {
+      "row_id": 8,
+      "scenes": {
+        "projection": "1-08-playground-slide",
+        "oscillation_elasticity": "2-03-horizontal-spring",
+        "equilibrium_levers": "3-05-waiter-tray",
+        "friction": "4-14-fireman-pole",
+        "collision": "5-15-boat-jump"
+      },
+      "scored_order": [
+        "friction",
+        "collision",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection"
+      ],
+      "trial": "4-11-slip-on-ice"
+    },
+    {
+      "row_id": 9,
+      "scenes": {
+        "projection": "1-09-petanque-throw",
+        "oscillation_elasticity": "2-05-rocking-chair",
+        "equilibrium_levers": "3-09-crowbar",
+        "friction": "4-06-wheeled-suitcase",
+        "collision": "5-11-hammer-nail"
+      },
+      "scored_order": [
+        "collision",
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection"
+      ],
+      "trial": "5-06-dominoes"
+    },
+    {
+      "row_id": 10,
+      "scenes": {
+        "projection": "1-10-long-jump",
+        "oscillation_elasticity": "2-07-yoyo",
+        "equilibrium_levers": "3-13-hammock",
+        "friction": "4-13-curling-stone",
+        "collision": "5-07-train-collision"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "oscillation_elasticity",
+        "collision",
+        "friction"
+      ],
+      "trial": "5-05-newtons-cradle"
+    },
+    {
+      "row_id": 11,
+      "scenes": {
+        "projection": "1-11-cannon",
+        "oscillation_elasticity": "2-09-bungee-jump",
+        "equilibrium_levers": "3-02-balance-scale",
+        "friction": "4-05-bowling-lane",
+        "collision": "5-03-bumper-cars"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "equilibrium_levers",
+        "projection",
+        "friction"
+      ],
+      "trial": "3-14-rope-bridge"
+    },
+    {
+      "row_id": 12,
+      "scenes": {
+        "projection": "1-12-dartboard",
+        "oscillation_elasticity": "2-11-metronome",
+        "equilibrium_levers": "3-06-tilting-chair",
+        "friction": "4-12-push-box",
+        "collision": "5-14-cannon-recoil"
+      },
+      "scored_order": [
+        "friction",
+        "equilibrium_levers",
+        "projection",
+        "collision",
+        "oscillation_elasticity"
+      ],
+      "trial": "5-04-kick-ball"
+    },
+    {
+      "row_id": 13,
+      "scenes": {
+        "projection": "1-13-ski-jump",
+        "oscillation_elasticity": "2-13-pogo-stick",
+        "equilibrium_levers": "3-10-nutcracker",
+        "friction": "4-04-sprint-start",
+        "collision": "5-10-tennis-serve"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "friction",
+        "projection",
+        "oscillation_elasticity",
+        "collision"
+      ],
+      "trial": "5-14-cannon-recoil"
+    },
+    {
+      "row_id": 14,
+      "scenes": {
+        "projection": "1-14-ball-off-table",
+        "oscillation_elasticity": "2-15-mass-on-spring",
+        "equilibrium_levers": "3-14-rope-bridge",
+        "friction": "4-11-slip-on-ice",
+        "collision": "5-06-dominoes"
+      },
+      "scored_order": [
+        "collision",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection",
+        "friction"
+      ],
+      "trial": "2-08-diving-board-flex"
+    },
+    {
+      "row_id": 15,
+      "scenes": {
+        "projection": "1-15-volleyball-serve",
+        "oscillation_elasticity": "2-02-swing-set",
+        "equilibrium_levers": "3-03-stone-stack",
+        "friction": "4-03-pull-wagon",
+        "collision": "5-02-billiards"
+      },
+      "scored_order": [
+        "collision",
+        "projection",
+        "equilibrium_levers",
+        "oscillation_elasticity",
+        "friction"
+      ],
+      "trial": "3-15-tightrope-walker"
+    },
+    {
+      "row_id": 16,
+      "scenes": {
+        "projection": "1-01-baseball-pitch",
+        "oscillation_elasticity": "2-04-tire-swing",
+        "equilibrium_levers": "3-07-overhang-plank",
+        "friction": "4-10-car-skid",
+        "collision": "5-13-car-into-wall"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "equilibrium_levers",
+        "collision",
+        "oscillation_elasticity"
+      ],
+      "trial": "1-02-basketball-freethrow"
+    },
+    {
+      "row_id": 17,
+      "scenes": {
+        "projection": "1-02-basketball-freethrow",
+        "oscillation_elasticity": "2-06-grandfather-clock",
+        "equilibrium_levers": "3-11-shovel",
+        "friction": "4-02-racing-car",
+        "collision": "5-09-gong"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "equilibrium_levers",
+        "collision",
+        "oscillation_elasticity"
+      ],
+      "trial": "5-10-tennis-serve"
+    },
+    {
+      "row_id": 18,
+      "scenes": {
+        "projection": "1-03-bow-and-arrow",
+        "oscillation_elasticity": "2-08-diving-board-flex",
+        "equilibrium_levers": "3-15-tightrope-walker",
+        "friction": "4-09-sled-slope",
+        "collision": "5-05-newtons-cradle"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "oscillation_elasticity",
+        "projection",
+        "collision",
+        "friction"
+      ],
+      "trial": "5-02-billiards"
+    },
+    {
+      "row_id": 19,
+      "scenes": {
+        "projection": "1-04-catapult",
+        "oscillation_elasticity": "2-10-bouncing-ball",
+        "equilibrium_levers": "3-04-ladder-on-wall",
+        "friction": "4-01-skateboarder",
+        "collision": "5-01-bowling-strike"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "friction",
+        "projection",
+        "equilibrium_levers"
+      ],
+      "trial": "4-12-push-box"
+    },
+    {
+      "row_id": 20,
+      "scenes": {
+        "projection": "1-05-diving-board-jump",
+        "oscillation_elasticity": "2-12-wrecking-ball",
+        "equilibrium_levers": "3-08-tower-crane",
+        "friction": "4-08-cyclist-uphill",
+        "collision": "5-12-bat-baseball"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "friction",
+        "oscillation_elasticity",
+        "projection",
+        "collision"
+      ],
+      "trial": "1-11-cannon"
+    },
+    {
+      "row_id": 21,
+      "scenes": {
+        "projection": "1-06-three-pointer",
+        "oscillation_elasticity": "2-14-pirate-ship-ride",
+        "equilibrium_levers": "3-12-wheelbarrow",
+        "friction": "4-15-parachute",
+        "collision": "5-08-pinball"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "oscillation_elasticity",
+        "collision",
+        "equilibrium_levers"
+      ],
+      "trial": "4-09-sled-slope"
+    },
+    {
+      "row_id": 22,
+      "scenes": {
+        "projection": "1-07-slingshot",
+        "oscillation_elasticity": "2-01-trampoline",
+        "equilibrium_levers": "3-01-seesaw",
+        "friction": "4-07-zipline",
+        "collision": "5-04-kick-ball"
+      },
+      "scored_order": [
+        "collision",
+        "equilibrium_levers",
+        "friction",
+        "oscillation_elasticity",
+        "projection"
+      ],
+      "trial": "5-13-car-into-wall"
+    },
+    {
+      "row_id": 23,
+      "scenes": {
+        "projection": "1-08-playground-slide",
+        "oscillation_elasticity": "2-03-horizontal-spring",
+        "equilibrium_levers": "3-05-waiter-tray",
+        "friction": "4-14-fireman-pole",
+        "collision": "5-15-boat-jump"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "projection",
+        "equilibrium_levers",
+        "friction"
+      ],
+      "trial": "2-01-trampoline"
+    },
+    {
+      "row_id": 24,
+      "scenes": {
+        "projection": "1-09-petanque-throw",
+        "oscillation_elasticity": "2-05-rocking-chair",
+        "equilibrium_levers": "3-09-crowbar",
+        "friction": "4-06-wheeled-suitcase",
+        "collision": "5-11-hammer-nail"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "projection",
+        "friction",
+        "equilibrium_levers"
+      ],
+      "trial": "4-08-cyclist-uphill"
+    },
+    {
+      "row_id": 25,
+      "scenes": {
+        "projection": "1-10-long-jump",
+        "oscillation_elasticity": "2-07-yoyo",
+        "equilibrium_levers": "3-13-hammock",
+        "friction": "4-13-curling-stone",
+        "collision": "5-07-train-collision"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "friction",
+        "projection",
+        "equilibrium_levers"
+      ],
+      "trial": "1-05-diving-board-jump"
+    },
+    {
+      "row_id": 26,
+      "scenes": {
+        "projection": "1-11-cannon",
+        "oscillation_elasticity": "2-09-bungee-jump",
+        "equilibrium_levers": "3-02-balance-scale",
+        "friction": "4-05-bowling-lane",
+        "collision": "5-03-bumper-cars"
+      },
+      "scored_order": [
+        "collision",
+        "friction",
+        "projection",
+        "equilibrium_levers",
+        "oscillation_elasticity"
+      ],
+      "trial": "2-13-pogo-stick"
+    },
+    {
+      "row_id": 27,
+      "scenes": {
+        "projection": "1-12-dartboard",
+        "oscillation_elasticity": "2-11-metronome",
+        "equilibrium_levers": "3-06-tilting-chair",
+        "friction": "4-12-push-box",
+        "collision": "5-14-cannon-recoil"
+      },
+      "scored_order": [
+        "collision",
+        "projection",
+        "equilibrium_levers",
+        "friction",
+        "oscillation_elasticity"
+      ],
+      "trial": "3-03-stone-stack"
+    },
+    {
+      "row_id": 28,
+      "scenes": {
+        "projection": "1-13-ski-jump",
+        "oscillation_elasticity": "2-13-pogo-stick",
+        "equilibrium_levers": "3-10-nutcracker",
+        "friction": "4-04-sprint-start",
+        "collision": "5-10-tennis-serve"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "4-06-wheeled-suitcase"
+    },
+    {
+      "row_id": 29,
+      "scenes": {
+        "projection": "1-14-ball-off-table",
+        "oscillation_elasticity": "2-15-mass-on-spring",
+        "equilibrium_levers": "3-14-rope-bridge",
+        "friction": "4-11-slip-on-ice",
+        "collision": "5-06-dominoes"
+      },
+      "scored_order": [
+        "projection",
+        "oscillation_elasticity",
+        "friction",
+        "collision",
+        "equilibrium_levers"
+      ],
+      "trial": "1-03-bow-and-arrow"
+    },
+    {
+      "row_id": 30,
+      "scenes": {
+        "projection": "1-15-volleyball-serve",
+        "oscillation_elasticity": "2-02-swing-set",
+        "equilibrium_levers": "3-03-stone-stack",
+        "friction": "4-03-pull-wagon",
+        "collision": "5-02-billiards"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "friction",
+        "oscillation_elasticity",
+        "collision",
+        "projection"
+      ],
+      "trial": "5-01-bowling-strike"
+    },
+    {
+      "row_id": 31,
+      "scenes": {
+        "projection": "1-01-baseball-pitch",
+        "oscillation_elasticity": "2-04-tire-swing",
+        "equilibrium_levers": "3-07-overhang-plank",
+        "friction": "4-10-car-skid",
+        "collision": "5-13-car-into-wall"
+      },
+      "scored_order": [
+        "projection",
+        "oscillation_elasticity",
+        "friction",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "1-10-long-jump"
+    },
+    {
+      "row_id": 32,
+      "scenes": {
+        "projection": "1-02-basketball-freethrow",
+        "oscillation_elasticity": "2-06-grandfather-clock",
+        "equilibrium_levers": "3-11-shovel",
+        "friction": "4-02-racing-car",
+        "collision": "5-09-gong"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "oscillation_elasticity",
+        "collision",
+        "friction"
+      ],
+      "trial": "3-07-overhang-plank"
+    },
+    {
+      "row_id": 33,
+      "scenes": {
+        "projection": "1-03-bow-and-arrow",
+        "oscillation_elasticity": "2-08-diving-board-flex",
+        "equilibrium_levers": "3-15-tightrope-walker",
+        "friction": "4-09-sled-slope",
+        "collision": "5-05-newtons-cradle"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "collision",
+        "equilibrium_levers",
+        "oscillation_elasticity"
+      ],
+      "trial": "3-09-crowbar"
+    },
+    {
+      "row_id": 34,
+      "scenes": {
+        "projection": "1-04-catapult",
+        "oscillation_elasticity": "2-10-bouncing-ball",
+        "equilibrium_levers": "3-04-ladder-on-wall",
+        "friction": "4-01-skateboarder",
+        "collision": "5-01-bowling-strike"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision",
+        "projection"
+      ],
+      "trial": "4-05-bowling-lane"
+    },
+    {
+      "row_id": 35,
+      "scenes": {
+        "projection": "1-05-diving-board-jump",
+        "oscillation_elasticity": "2-12-wrecking-ball",
+        "equilibrium_levers": "3-08-tower-crane",
+        "friction": "4-08-cyclist-uphill",
+        "collision": "5-12-bat-baseball"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "projection",
+        "friction",
+        "equilibrium_levers"
+      ],
+      "trial": "2-07-yoyo"
+    },
+    {
+      "row_id": 36,
+      "scenes": {
+        "projection": "1-06-three-pointer",
+        "oscillation_elasticity": "2-14-pirate-ship-ride",
+        "equilibrium_levers": "3-12-wheelbarrow",
+        "friction": "4-15-parachute",
+        "collision": "5-08-pinball"
+      },
+      "scored_order": [
+        "collision",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection",
+        "friction"
+      ],
+      "trial": "2-02-swing-set"
+    },
+    {
+      "row_id": 37,
+      "scenes": {
+        "projection": "1-07-slingshot",
+        "oscillation_elasticity": "2-01-trampoline",
+        "equilibrium_levers": "3-01-seesaw",
+        "friction": "4-07-zipline",
+        "collision": "5-04-kick-ball"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision",
+        "friction",
+        "projection"
+      ],
+      "trial": "1-14-ball-off-table"
+    },
+    {
+      "row_id": 38,
+      "scenes": {
+        "projection": "1-08-playground-slide",
+        "oscillation_elasticity": "2-03-horizontal-spring",
+        "equilibrium_levers": "3-05-waiter-tray",
+        "friction": "4-14-fireman-pole",
+        "collision": "5-15-boat-jump"
+      },
+      "scored_order": [
+        "friction",
+        "projection",
+        "collision",
+        "equilibrium_levers",
+        "oscillation_elasticity"
+      ],
+      "trial": "3-02-balance-scale"
+    },
+    {
+      "row_id": 39,
+      "scenes": {
+        "projection": "1-09-petanque-throw",
+        "oscillation_elasticity": "2-05-rocking-chair",
+        "equilibrium_levers": "3-09-crowbar",
+        "friction": "4-06-wheeled-suitcase",
+        "collision": "5-11-hammer-nail"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "collision",
+        "equilibrium_levers",
+        "projection"
+      ],
+      "trial": "4-15-parachute"
+    },
+    {
+      "row_id": 40,
+      "scenes": {
+        "projection": "1-10-long-jump",
+        "oscillation_elasticity": "2-07-yoyo",
+        "equilibrium_levers": "3-13-hammock",
+        "friction": "4-13-curling-stone",
+        "collision": "5-07-train-collision"
+      },
+      "scored_order": [
+        "friction",
+        "collision",
+        "projection",
+        "equilibrium_levers",
+        "oscillation_elasticity"
+      ],
+      "trial": "1-08-playground-slide"
+    },
+    {
+      "row_id": 41,
+      "scenes": {
+        "projection": "1-11-cannon",
+        "oscillation_elasticity": "2-09-bungee-jump",
+        "equilibrium_levers": "3-02-balance-scale",
+        "friction": "4-05-bowling-lane",
+        "collision": "5-03-bumper-cars"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "friction",
+        "collision",
+        "projection",
+        "oscillation_elasticity"
+      ],
+      "trial": "4-03-pull-wagon"
+    },
+    {
+      "row_id": 42,
+      "scenes": {
+        "projection": "1-12-dartboard",
+        "oscillation_elasticity": "2-11-metronome",
+        "equilibrium_levers": "3-06-tilting-chair",
+        "friction": "4-12-push-box",
+        "collision": "5-14-cannon-recoil"
+      },
+      "scored_order": [
+        "friction",
+        "projection",
+        "equilibrium_levers",
+        "collision",
+        "oscillation_elasticity"
+      ],
+      "trial": "2-12-wrecking-ball"
+    },
+    {
+      "row_id": 43,
+      "scenes": {
+        "projection": "1-13-ski-jump",
+        "oscillation_elasticity": "2-13-pogo-stick",
+        "equilibrium_levers": "3-10-nutcracker",
+        "friction": "4-04-sprint-start",
+        "collision": "5-10-tennis-serve"
+      },
+      "scored_order": [
+        "projection",
+        "oscillation_elasticity",
+        "friction",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "5-11-hammer-nail"
+    },
+    {
+      "row_id": 44,
+      "scenes": {
+        "projection": "1-14-ball-off-table",
+        "oscillation_elasticity": "2-15-mass-on-spring",
+        "equilibrium_levers": "3-14-rope-bridge",
+        "friction": "4-11-slip-on-ice",
+        "collision": "5-06-dominoes"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "collision",
+        "oscillation_elasticity",
+        "friction",
+        "projection"
+      ],
+      "trial": "4-02-racing-car"
+    },
+    {
+      "row_id": 45,
+      "scenes": {
+        "projection": "1-15-volleyball-serve",
+        "oscillation_elasticity": "2-02-swing-set",
+        "equilibrium_levers": "3-03-stone-stack",
+        "friction": "4-03-pull-wagon",
+        "collision": "5-02-billiards"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection",
+        "friction",
+        "collision"
+      ],
+      "trial": "2-06-grandfather-clock"
+    },
+    {
+      "row_id": 46,
+      "scenes": {
+        "projection": "1-01-baseball-pitch",
+        "oscillation_elasticity": "2-04-tire-swing",
+        "equilibrium_levers": "3-07-overhang-plank",
+        "friction": "4-10-car-skid",
+        "collision": "5-13-car-into-wall"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "projection",
+        "collision",
+        "equilibrium_levers"
+      ],
+      "trial": "2-14-pirate-ship-ride"
+    },
+    {
+      "row_id": 47,
+      "scenes": {
+        "projection": "1-02-basketball-freethrow",
+        "oscillation_elasticity": "2-06-grandfather-clock",
+        "equilibrium_levers": "3-11-shovel",
+        "friction": "4-02-racing-car",
+        "collision": "5-09-gong"
+      },
+      "scored_order": [
+        "collision",
+        "projection",
+        "equilibrium_levers",
+        "oscillation_elasticity",
+        "friction"
+      ],
+      "trial": "1-09-petanque-throw"
+    },
+    {
+      "row_id": 48,
+      "scenes": {
+        "projection": "1-03-bow-and-arrow",
+        "oscillation_elasticity": "2-08-diving-board-flex",
+        "equilibrium_levers": "3-15-tightrope-walker",
+        "friction": "4-09-sled-slope",
+        "collision": "5-05-newtons-cradle"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "4-07-zipline"
+    },
+    {
+      "row_id": 49,
+      "scenes": {
+        "projection": "1-04-catapult",
+        "oscillation_elasticity": "2-10-bouncing-ball",
+        "equilibrium_levers": "3-04-ladder-on-wall",
+        "friction": "4-01-skateboarder",
+        "collision": "5-01-bowling-strike"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "projection",
+        "collision",
+        "equilibrium_levers",
+        "friction"
+      ],
+      "trial": "1-15-volleyball-serve"
+    },
+    {
+      "row_id": 50,
+      "scenes": {
+        "projection": "1-05-diving-board-jump",
+        "oscillation_elasticity": "2-12-wrecking-ball",
+        "equilibrium_levers": "3-08-tower-crane",
+        "friction": "4-08-cyclist-uphill",
+        "collision": "5-12-bat-baseball"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "collision",
+        "projection",
+        "equilibrium_levers"
+      ],
+      "trial": "5-09-gong"
+    },
+    {
+      "row_id": 51,
+      "scenes": {
+        "projection": "1-06-three-pointer",
+        "oscillation_elasticity": "2-14-pirate-ship-ride",
+        "equilibrium_levers": "3-12-wheelbarrow",
+        "friction": "4-15-parachute",
+        "collision": "5-08-pinball"
+      },
+      "scored_order": [
+        "collision",
+        "oscillation_elasticity",
+        "projection",
+        "equilibrium_levers",
+        "friction"
+      ],
+      "trial": "4-10-car-skid"
+    },
+    {
+      "row_id": 52,
+      "scenes": {
+        "projection": "1-07-slingshot",
+        "oscillation_elasticity": "2-01-trampoline",
+        "equilibrium_levers": "3-01-seesaw",
+        "friction": "4-07-zipline",
+        "collision": "5-04-kick-ball"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "friction",
+        "equilibrium_levers",
+        "projection"
+      ],
+      "trial": "5-08-pinball"
+    },
+    {
+      "row_id": 53,
+      "scenes": {
+        "projection": "1-08-playground-slide",
+        "oscillation_elasticity": "2-03-horizontal-spring",
+        "equilibrium_levers": "3-05-waiter-tray",
+        "friction": "4-14-fireman-pole",
+        "collision": "5-15-boat-jump"
+      },
+      "scored_order": [
+        "projection",
+        "collision",
+        "equilibrium_levers",
+        "oscillation_elasticity",
+        "friction"
+      ],
+      "trial": "4-04-sprint-start"
+    },
+    {
+      "row_id": 54,
+      "scenes": {
+        "projection": "1-09-petanque-throw",
+        "oscillation_elasticity": "2-05-rocking-chair",
+        "equilibrium_levers": "3-09-crowbar",
+        "friction": "4-06-wheeled-suitcase",
+        "collision": "5-11-hammer-nail"
+      },
+      "scored_order": [
+        "collision",
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection"
+      ],
+      "trial": "2-03-horizontal-spring"
+    },
+    {
+      "row_id": 55,
+      "scenes": {
+        "projection": "1-10-long-jump",
+        "oscillation_elasticity": "2-07-yoyo",
+        "equilibrium_levers": "3-13-hammock",
+        "friction": "4-13-curling-stone",
+        "collision": "5-07-train-collision"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "projection",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "3-12-wheelbarrow"
+    },
+    {
+      "row_id": 56,
+      "scenes": {
+        "projection": "1-11-cannon",
+        "oscillation_elasticity": "2-09-bungee-jump",
+        "equilibrium_levers": "3-02-balance-scale",
+        "friction": "4-05-bowling-lane",
+        "collision": "5-03-bumper-cars"
+      },
+      "scored_order": [
+        "friction",
+        "projection",
+        "equilibrium_levers",
+        "oscillation_elasticity",
+        "collision"
+      ],
+      "trial": "4-13-curling-stone"
+    },
+    {
+      "row_id": 57,
+      "scenes": {
+        "projection": "1-12-dartboard",
+        "oscillation_elasticity": "2-11-metronome",
+        "equilibrium_levers": "3-06-tilting-chair",
+        "friction": "4-12-push-box",
+        "collision": "5-14-cannon-recoil"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "collision",
+        "friction",
+        "oscillation_elasticity"
+      ],
+      "trial": "3-08-tower-crane"
+    },
+    {
+      "row_id": 58,
+      "scenes": {
+        "projection": "1-13-ski-jump",
+        "oscillation_elasticity": "2-13-pogo-stick",
+        "equilibrium_levers": "3-10-nutcracker",
+        "friction": "4-04-sprint-start",
+        "collision": "5-10-tennis-serve"
+      },
+      "scored_order": [
+        "collision",
+        "oscillation_elasticity",
+        "projection",
+        "friction",
+        "equilibrium_levers"
+      ],
+      "trial": "3-04-ladder-on-wall"
+    },
+    {
+      "row_id": 59,
+      "scenes": {
+        "projection": "1-14-ball-off-table",
+        "oscillation_elasticity": "2-15-mass-on-spring",
+        "equilibrium_levers": "3-14-rope-bridge",
+        "friction": "4-11-slip-on-ice",
+        "collision": "5-06-dominoes"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "equilibrium_levers",
+        "friction",
+        "projection"
+      ],
+      "trial": "4-01-skateboarder"
+    },
+    {
+      "row_id": 60,
+      "scenes": {
+        "projection": "1-15-volleyball-serve",
+        "oscillation_elasticity": "2-02-swing-set",
+        "equilibrium_levers": "3-03-stone-stack",
+        "friction": "4-03-pull-wagon",
+        "collision": "5-02-billiards"
+      },
+      "scored_order": [
+        "projection",
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "1-13-ski-jump"
+    },
+    {
+      "row_id": 61,
+      "scenes": {
+        "projection": "1-01-baseball-pitch",
+        "oscillation_elasticity": "2-04-tire-swing",
+        "equilibrium_levers": "3-07-overhang-plank",
+        "friction": "4-10-car-skid",
+        "collision": "5-13-car-into-wall"
+      },
+      "scored_order": [
+        "friction",
+        "equilibrium_levers",
+        "collision",
+        "oscillation_elasticity",
+        "projection"
+      ],
+      "trial": "5-15-boat-jump"
+    },
+    {
+      "row_id": 62,
+      "scenes": {
+        "projection": "1-02-basketball-freethrow",
+        "oscillation_elasticity": "2-06-grandfather-clock",
+        "equilibrium_levers": "3-11-shovel",
+        "friction": "4-02-racing-car",
+        "collision": "5-09-gong"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "projection",
+        "friction",
+        "equilibrium_levers",
+        "collision"
+      ],
+      "trial": "5-07-train-collision"
+    },
+    {
+      "row_id": 63,
+      "scenes": {
+        "projection": "1-03-bow-and-arrow",
+        "oscillation_elasticity": "2-08-diving-board-flex",
+        "equilibrium_levers": "3-15-tightrope-walker",
+        "friction": "4-09-sled-slope",
+        "collision": "5-05-newtons-cradle"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "collision",
+        "oscillation_elasticity",
+        "friction"
+      ],
+      "trial": "2-10-bouncing-ball"
+    },
+    {
+      "row_id": 64,
+      "scenes": {
+        "projection": "1-04-catapult",
+        "oscillation_elasticity": "2-10-bouncing-ball",
+        "equilibrium_levers": "3-04-ladder-on-wall",
+        "friction": "4-01-skateboarder",
+        "collision": "5-01-bowling-strike"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "equilibrium_levers",
+        "friction",
+        "projection"
+      ],
+      "trial": "2-15-mass-on-spring"
+    },
+    {
+      "row_id": 65,
+      "scenes": {
+        "projection": "1-05-diving-board-jump",
+        "oscillation_elasticity": "2-12-wrecking-ball",
+        "equilibrium_levers": "3-08-tower-crane",
+        "friction": "4-08-cyclist-uphill",
+        "collision": "5-12-bat-baseball"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision",
+        "friction",
+        "projection"
+      ],
+      "trial": "5-03-bumper-cars"
+    },
+    {
+      "row_id": 66,
+      "scenes": {
+        "projection": "1-06-three-pointer",
+        "oscillation_elasticity": "2-14-pirate-ship-ride",
+        "equilibrium_levers": "3-12-wheelbarrow",
+        "friction": "4-15-parachute",
+        "collision": "5-08-pinball"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "collision",
+        "oscillation_elasticity",
+        "friction"
+      ],
+      "trial": "1-07-slingshot"
+    },
+    {
+      "row_id": 67,
+      "scenes": {
+        "projection": "1-07-slingshot",
+        "oscillation_elasticity": "2-01-trampoline",
+        "equilibrium_levers": "3-01-seesaw",
+        "friction": "4-07-zipline",
+        "collision": "5-04-kick-ball"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "collision",
+        "projection"
+      ],
+      "trial": "5-12-bat-baseball"
+    },
+    {
+      "row_id": 68,
+      "scenes": {
+        "projection": "1-08-playground-slide",
+        "oscillation_elasticity": "2-03-horizontal-spring",
+        "equilibrium_levers": "3-05-waiter-tray",
+        "friction": "4-14-fireman-pole",
+        "collision": "5-15-boat-jump"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "friction",
+        "oscillation_elasticity",
+        "collision"
+      ],
+      "trial": "1-04-catapult"
+    },
+    {
+      "row_id": 69,
+      "scenes": {
+        "projection": "1-09-petanque-throw",
+        "oscillation_elasticity": "2-05-rocking-chair",
+        "equilibrium_levers": "3-09-crowbar",
+        "friction": "4-06-wheeled-suitcase",
+        "collision": "5-11-hammer-nail"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "collision",
+        "friction",
+        "oscillation_elasticity",
+        "projection"
+      ],
+      "trial": "2-09-bungee-jump"
+    },
+    {
+      "row_id": 70,
+      "scenes": {
+        "projection": "1-10-long-jump",
+        "oscillation_elasticity": "2-07-yoyo",
+        "equilibrium_levers": "3-13-hammock",
+        "friction": "4-13-curling-stone",
+        "collision": "5-07-train-collision"
+      },
+      "scored_order": [
+        "equilibrium_levers",
+        "projection",
+        "friction",
+        "collision",
+        "oscillation_elasticity"
+      ],
+      "trial": "2-04-tire-swing"
+    },
+    {
+      "row_id": 71,
+      "scenes": {
+        "projection": "1-11-cannon",
+        "oscillation_elasticity": "2-09-bungee-jump",
+        "equilibrium_levers": "3-02-balance-scale",
+        "friction": "4-05-bowling-lane",
+        "collision": "5-03-bumper-cars"
+      },
+      "scored_order": [
+        "friction",
+        "projection",
+        "collision",
+        "equilibrium_levers",
+        "oscillation_elasticity"
+      ],
+      "trial": "4-14-fireman-pole"
+    },
+    {
+      "row_id": 72,
+      "scenes": {
+        "projection": "1-12-dartboard",
+        "oscillation_elasticity": "2-11-metronome",
+        "equilibrium_levers": "3-06-tilting-chair",
+        "friction": "4-12-push-box",
+        "collision": "5-14-cannon-recoil"
+      },
+      "scored_order": [
+        "collision",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "friction",
+        "projection"
+      ],
+      "trial": "3-11-shovel"
+    },
+    {
+      "row_id": 73,
+      "scenes": {
+        "projection": "1-13-ski-jump",
+        "oscillation_elasticity": "2-13-pogo-stick",
+        "equilibrium_levers": "3-10-nutcracker",
+        "friction": "4-04-sprint-start",
+        "collision": "5-10-tennis-serve"
+      },
+      "scored_order": [
+        "projection",
+        "collision",
+        "oscillation_elasticity",
+        "friction",
+        "equilibrium_levers"
+      ],
+      "trial": "1-06-three-pointer"
+    },
+    {
+      "row_id": 74,
+      "scenes": {
+        "projection": "1-14-ball-off-table",
+        "oscillation_elasticity": "2-15-mass-on-spring",
+        "equilibrium_levers": "3-14-rope-bridge",
+        "friction": "4-11-slip-on-ice",
+        "collision": "5-06-dominoes"
+      },
+      "scored_order": [
+        "friction",
+        "oscillation_elasticity",
+        "equilibrium_levers",
+        "projection",
+        "collision"
+      ],
+      "trial": "2-11-metronome"
+    },
+    {
+      "row_id": 75,
+      "scenes": {
+        "projection": "1-15-volleyball-serve",
+        "oscillation_elasticity": "2-02-swing-set",
+        "equilibrium_levers": "3-03-stone-stack",
+        "friction": "4-03-pull-wagon",
+        "collision": "5-02-billiards"
+      },
+      "scored_order": [
+        "oscillation_elasticity",
+        "collision",
+        "projection",
+        "equilibrium_levers",
+        "friction"
+      ],
+      "trial": "3-01-seesaw"
+    }
+  ]
+}

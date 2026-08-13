@@ -1,0 +1,430 @@
+:root {
+  --ink: #1f2328;
+  --muted: #5b6570;
+  --line: #d8d4cc;
+  --paper: #fffdf8;
+  --bg: #f4f2ed;
+  --accent: #2f6fb4;
+  --warn: #8a5300;
+  --warn-bg: #fdf3e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Coquille pleine hauteur : le bandeau réseau prend sa hauteur, l'écran courant
+   occupe le reste. `min-height: 0` autorise la page de scène à se comprimer. */
+.shell {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.shell > .page {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px 96px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 32px 0 12px;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+.sub,
+.caption {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.lead {
+  font-weight: 600;
+}
+
+/* --- items de formulaire --- */
+.item {
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 0 0 16px;
+}
+
+.item legend {
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+textarea {
+  width: 100%;
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  resize: vertical;
+}
+
+textarea[readonly] {
+  background: #f6f5f2;
+  color: var(--muted);
+}
+
+select {
+  font: inherit;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* --- échelles 1-5 --- */
+.scale {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.scale-item {
+  flex: 1 1 0;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.scale-item.is-on {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.scale-item input:disabled {
+  cursor: not-allowed;
+}
+
+/* --- cases à cocher --- */
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Liste de concepts : en colonnes, pour que 25 options tiennent sous le croquis
+   sans défilement. */
+.options {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0 18px;
+  align-content: start;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.options li {
+  padding: 2px 0;
+}
+
+.options .check {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.concepts {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Écrans courts : sur la page de concepts, c'est la vignette qui cède, pas la
+   liste — le participant doit voir les 25 options d'un seul coup d'œil, sans
+   quoi les dernières seraient systématiquement moins choisies. */
+@media (max-height: 780px) {
+  .scenario.on-concepts .description {
+    font-size: 15px;
+  }
+
+  .scenario.on-concepts .options li {
+    padding: 1px 0;
+  }
+
+  .scenario.on-concepts .options .check {
+    font-size: 14.5px;
+    line-height: 1.25;
+  }
+}
+
+/* Fenêtres vraiment basses : la vignette et les interlignes cèdent encore un
+   cran, pour que les ~30 options restent toutes visibles d'un coup d'œil. */
+@media (max-height: 700px) {
+  .scenario.on-concepts {
+    gap: 8px;
+  }
+
+  .scenario.on-concepts .stimulus {
+    height: clamp(60px, 12vh, 100px);
+  }
+
+  .scenario.on-concepts .concepts .lead {
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+
+  .scenario.on-concepts .options {
+    padding: 6px 12px;
+  }
+
+  .scenario.on-concepts .options li {
+    padding: 0;
+  }
+
+  .scenario.on-concepts .options .check {
+    font-size: 13.5px;
+    line-height: 1.18;
+  }
+}
+
+.concepts .lead {
+  margin-bottom: 8px;
+}
+
+.other {
+  font: inherit;
+  width: 100%;
+  margin: 0 0 10px 30px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+/* --- boutons --- */
+button,
+a.primary {
+  font: inherit;
+}
+
+.primary {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 22px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary:disabled {
+  background: #b9c4d0;
+  cursor: not-allowed;
+}
+
+.ghost {
+  display: inline-block;
+  margin-left: 12px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 18px;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+/* --- scène --- */
+/* --- page de scène : tout tient dans la fenêtre ---------------------------
+   Quatre rangées : entête, description, croquis, question. Seul le croquis est
+   élastique (`minmax(0, 1fr)`) : il absorbe la place restante et se contente de
+   ce qu'on lui laisse, sans jamais repousser la question hors de l'écran. */
+.scenario {
+  max-width: 1100px;
+  padding: 16px 24px 20px;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 12px;
+  overflow: hidden;
+}
+
+.scenario .description {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.scenario .stimulus {
+  min-height: 160px;
+  margin: 0;
+}
+
+.scenario .stimulus img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Sur la page de concepts, le croquis partage la place avec les 25 options. Il
+   reste un rappel, mais doit rester lisible : c'est en le regardant que le
+   participant choisit. La description est resserrée pour lui laisser de l'air. */
+/* Ici c'est la liste qui est élastique, pas le croquis : le croquis prend une
+   hauteur fixe proportionnelle à la fenêtre, et les options reçoivent tout le
+   reste. L'inverse laissait la rangée souple manger la place et poussait les
+   dernières options hors de vue. */
+.scenario.on-concepts {
+  grid-template-rows: auto auto auto minmax(0, 1fr);
+}
+
+.scenario.on-concepts .stimulus {
+  height: clamp(90px, 20vh, 280px);
+  min-height: 0;
+}
+
+.scenario.on-concepts .description {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.itempage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.recall {
+  margin: 0;
+  border-left: 3px solid var(--line);
+  padding: 2px 0 2px 12px;
+  color: var(--muted);
+  font-size: 15px;
+  max-height: 5.5em;
+  overflow-y: auto;
+}
+
+.recall figcaption {
+  font-weight: 600;
+}
+
+.recall blockquote {
+  margin: 2px 0 0;
+  font-style: italic;
+}
+
+.confidence {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.confidence .sub {
+  flex: 0 0 auto;
+}
+
+.confidence .scale {
+  flex: 1 1 320px;
+  margin-top: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.scenario .progress {
+  margin-bottom: 0;
+}
+
+.stimulus {
+  margin: 0 0 24px;
+}
+
+.stimulus img,
+.convention img {
+  display: block;
+  width: 100%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.convention {
+  margin: 24px 0;
+}
+
+.notice {
+  background: var(--warn-bg);
+  border: 1px solid #ecd9b0;
+  color: var(--warn);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+}
+
+.banner {
+  background: var(--warn-bg);
+  border-bottom: 1px solid #ecd9b0;
+  color: var(--warn);
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.code strong {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
