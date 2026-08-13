@@ -30,9 +30,21 @@ export const selfAssessment = {
   intro:
     "That is the sketches done. To finish, a few quick questions about you. There are no right answers here either — please just answer honestly.",
   familiarityPrompt: "How familiar do you consider yourself with each of the following?",
-  familiarityScale: ["1 — not familiar at all", "2", "3", "4", "5 — very familiar"],
+  familiarityScale: [
+    "1 — not familiar at all",
+    "2 — slightly familiar",
+    "3 — somewhat familiar",
+    "4 — quite familiar",
+    "5 — very familiar",
+  ],
   confidenceItem: "Overall, how confident do you feel about physics?",
-  confidenceScale: ["1 — not at all confident", "2", "3", "4", "5 — very confident"],
+  confidenceScale: [
+    "1 — not at all confident",
+    "2 — slightly confident",
+    "3 — somewhat confident",
+    "4 — fairly confident",
+    "5 — very confident",
+  ],
   educationItem: "What is the highest level of physics teaching you have completed?",
   educationOptions: [
     "None",
@@ -108,7 +120,13 @@ export const scenario = {
     "Which of these, if any, played a part in what you just described? Tick as many or as few as you like.",
   otherPlaceholder: "Please specify",
   confidencePrompt: "How confident are you about that?",
-  confidenceScale: ["1 — not at all", "2", "3", "4", "5 — very confident"],
+  confidenceScale: [
+    "1 — not at all confident",
+    "2 — slightly confident",
+    "3 — somewhat confident",
+    "4 — fairly confident",
+    "5 — very confident",
+  ],
   submitProse: "Continue",
   submitConcepts: "Continue",
   finalNotice: "You will not be able to change this answer.",
