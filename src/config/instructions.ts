@@ -16,11 +16,10 @@ export const AXIS_LABELS = {
 export const consent = {
   title: "About this study",
   body: [
-    "You are invited to take part in a short online study about how people think about everyday physical situations — things falling, bouncing, sliding, balancing and bumping into each other.",
-    "You will see a series of simple hand-drawn sketches, each with a short description. For each one you will be asked what you think happens next, and why. There are no right or wrong answers: we are interested in what ordinary people expect to happen, not in textbook physics.",
-    "The study takes about 35 minutes. Your answers are recorded anonymously and linked only to your Prolific ID, which is used to pay you and is not published. Anonymised responses may be shared as part of scientific publication.",
+    "You are invited to take part in a short online study about how people think about everyday physical situations.",
+    "You will see a series of simple hand-drawn sketches, each with a short description. For each one you will be asked what you think happens next, and why. There are no right or wrong answers: we are interested in what people expect to happen, not in textbook physics.",
+    "The study takes about 35 minutes. Your answers are recorded anonymously and linked only to your Prolific ID, which is used to pay you and is not published. Anonymized responses may be shared as part of scientific publication.",
     "Taking part is voluntary. You can stop at any time by closing the window, though you will only be paid for a completed session.",
-    "PLACEHOLDER — add ethics approval reference, data controller and contact e-mail before launch.",
   ],
   checkbox: "I have read the information above and I agree to take part.",
   button: "Start",
