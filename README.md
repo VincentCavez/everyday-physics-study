@@ -21,8 +21,13 @@ two text fields on screen at once:
 | Block | Pages |
 |---|---|
 | 1 | prediction → explanation → concept list |
-| 2 | free counterfactual → explanation → concept list |
-| 3 | imposed counterfactual → explanation → concept list |
+| 2 | free counterfactual → explanation → concept list (pre-filled with block 1's ticks) |
+| 3 | imposed counterfactual → explanation → concept list (pre-filled with block 2's ticks) |
+
+The concept list of blocks 2 and 3 starts from the participant's ticks of the previous block
+for the same sketch, with a one-line note saying so; they adjust rather than re-find every
+option. Nothing carries over between sketches. Pilot feedback: finding the list empty three
+times per sketch was the single most tedious part of the session.
 
 ### Why the questions are scene-specific
 
@@ -183,5 +188,9 @@ resumed, event_id, seq`.
   `imposed_counterfactual` · `imposed_explanation` · `concepts` — one row each, so nine rows
   per sketch. `rt_ms` is per question, since each has its own page.
 - `concept_order_json`: the presentation order of that concept list, so position bias is auditable
+- `concepts_json` for `block` 2 and 3 is the **final** selection of a list that was pre-filled
+  with the previous block's `concepts_json` (same `session_id`, same `scene_id`). The pre-fill
+  is therefore fully reconstructible and the per-block diff is derivable; a short `rt_ms` on
+  those two pages is expected, not a sign of inattention. Block 1 always starts empty.
 - `resumed = 1`: the participant refreshed or returned; treat `rt_ms` as unreliable
 - Retries can duplicate rows — deduplicate on `event_id` before analysis.

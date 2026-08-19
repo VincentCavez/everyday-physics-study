@@ -3,7 +3,7 @@ import conceptsData from "../config/concepts.json";
 import { scenario } from "../config/instructions";
 import { studyConfig } from "../config/studyConfig";
 import { hashSeed, seededShuffle } from "../utils/rng";
-import type { ConceptOption } from "../types";
+import type { CommittedConcepts, ConceptOption } from "../types";
 
 const OPTIONS = conceptsData.options as unknown as ConceptOption[];
 const acConcept = studyConfig.attentionChecks.concept;
@@ -13,6 +13,8 @@ interface Props {
   presentationKey: string;
   /** injecte l'option de contrôle d'attention dans cette présentation */
   withAttentionCheck: boolean;
+  /** coches de départ (sélection du bloc précédent du même croquis), ou null */
+  initial: CommittedConcepts | null;
   onSubmit: (sel: { keys: string[]; order: string[]; other: string }) => void;
 }
 
@@ -21,11 +23,14 @@ interface Props {
  * mélangé à chaque présentation (contre le biais de position), avec
  * distracteurs, « aucun de ceux-ci » et un champ libre. Aucun minimum de
  * sélection : en forcer un fabriquerait des faux positifs.
+ *
+ * Blocs 2 et 3 : la liste est PRÉ-REMPLIE avec la sélection du bloc précédent
+ * (retour de relecture : la retrouver vide trois fois par croquis était
+ * pénible ; la remontrer pré-cochée rend l'ajustement possible sans tout
+ * rechercher). Le parent remonte le composant à chaque page (`key`), donc
+ * l'état local repart bien de `initial` à chaque présentation.
  */
-export function ConceptSelect({ presentationKey, withAttentionCheck, onSubmit }: Props) {
-  const [selected, setSelected] = useState<string[]>([]);
-  const [other, setOther] = useState("");
-
+export function ConceptSelect({ presentationKey, withAttentionCheck, initial, onSubmit }: Props) {
   const options = useMemo(() => {
     const pool: ConceptOption[] = withAttentionCheck
       ? [
@@ -46,6 +51,17 @@ export function ConceptSelect({ presentationKey, withAttentionCheck, onSubmit }:
   const noneKey = OPTIONS.find((o) => o.kind === "none")!.key;
   const otherKey = OPTIONS.find((o) => o.kind === "other")!.key;
 
+  // Ne reporter que des clés PRÉSENTES dans cette présentation : l'option de
+  // contrôle d'attention n'existe que dans une seule liste et ne doit pas
+  // voyager, cochée mais invisible, jusqu'au bloc suivant.
+  const [selected, setSelected] = useState<string[]>(() =>
+    (initial?.keys ?? []).filter((k) => order.includes(k)),
+  );
+  const [other, setOther] = useState(() =>
+    initial && initial.keys.includes(otherKey) ? initial.other : "",
+  );
+  const prefilled = selected.length > 0 && initial != null;
+
   function toggle(key: string) {
     setSelected((cur) => {
       if (key === noneKey) return cur.includes(noneKey) ? [] : [noneKey];
@@ -57,6 +73,7 @@ export function ConceptSelect({ presentationKey, withAttentionCheck, onSubmit }:
   return (
     <section className="block concepts">
       <p className="lead">{scenario.conceptPrompt}</p>
+      {prefilled && <p className="sub prefilled">{scenario.conceptPrefilledNote}</p>}
       <ul className="options">
         {options.map((o) => (
           <li key={o.key}>

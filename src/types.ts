@@ -74,6 +74,12 @@ export interface CommittedItem {
   confidence: number | null;
 }
 
+/** Une sélection de concepts validée (COMMIT_CONCEPTS) : clés cochées + texte libre. */
+export interface CommittedConcepts {
+  keys: string[];
+  other: string;
+}
+
 export interface SessionState {
   version: number;
   session_id: string;
@@ -95,6 +101,12 @@ export interface SessionState {
   item_index: number;
   /** prose figée, clé `${blockKey}.${itemKey}`. */
   committed: Record<string, CommittedItem>;
+  /**
+   * Sélection de concepts validée par bloc, clé `${blockKey}`. Sert à
+   * PRÉ-REMPLIR la liste du bloc suivant du même croquis ; persistée pour que
+   * le pré-remplissage survive à un rafraîchissement sur la page de liste.
+   */
+  concepts: Record<string, CommittedConcepts>;
   /** brouillons de saisie (survivent au rafraîchissement). */
   drafts: Record<string, string | number>;
   /** horodatage d'affichage par item, pour les temps de réponse. */

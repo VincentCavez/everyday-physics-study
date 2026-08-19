@@ -1,7 +1,9 @@
 import type { SessionState } from "../types";
 
 const KEY = "pp-study/v1";
-const VERSION = 1;
+// 2 (2026-08-19) : ajout de `concepts` (pré-remplissage des listes). Un état
+// v1 repart de zéro plutôt que d'être migré.
+const VERSION = 2;
 
 export function loadState(): SessionState | null {
   try {

@@ -245,6 +245,13 @@ select {
   margin-bottom: 8px;
 }
 
+/* Note de pré-remplissage (blocs 2-3) : une ligne discrète sous le prompt, serrée
+   pour ne pas voler de hauteur aux options. */
+.concepts .prefilled {
+  margin: -4px 0 8px;
+  font-size: 14px;
+}
+
 .other {
   font: inherit;
   width: 100%;

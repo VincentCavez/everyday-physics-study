@@ -2,7 +2,15 @@ import designData from "../config/design.json";
 import scenesData from "../config/scenes.json";
 import { studyConfig } from "../config/studyConfig";
 import { BLOCKS, BLOCK_ORDER, type ProseItem } from "../config/protocol";
-import type { AxisId, BlockNo, DesignRow, SceneMeta, SessionState, StudyEvent } from "../types";
+import type {
+  AxisId,
+  BlockNo,
+  CommittedConcepts,
+  DesignRow,
+  SceneMeta,
+  SessionState,
+  StudyEvent,
+} from "../types";
 
 export const DESIGN_ROWS = designData.rows as unknown as DesignRow[];
 export const SCENES = scenesData.scenes as unknown as SceneMeta[];
@@ -38,7 +46,7 @@ export function blocksFor(scenarioIndex: number): BlockNo[] {
 
 export function initialState(seed: Partial<SessionState> & Pick<SessionState, "session_id" | "pid">): SessionState {
   return {
-    version: 1,
+    version: 2,
     prolific_study_id: "",
     prolific_session_id: "",
     is_preview: false,
@@ -49,6 +57,7 @@ export function initialState(seed: Partial<SessionState> & Pick<SessionState, "s
     block: 1,
     item_index: 0,
     committed: {},
+    concepts: {},
     drafts: {},
     shown_at: {},
     queue: [],
@@ -67,7 +76,7 @@ export type Action =
   | { type: "ENQUEUE"; events: StudyEvent[] }
   | { type: "DEQUEUE"; upToSeq: number }
   | { type: "COMMIT_ITEM"; itemKey: string; text: string; confidence: number | null }
-  | { type: "COMMIT_CONCEPTS" }
+  | { type: "COMMIT_CONCEPTS"; selection: CommittedConcepts }
   | { type: "COMPLETED"; code: string | null }
   | { type: "CLEAR_RESUMED" };
 
@@ -119,20 +128,27 @@ export function reduce(state: SessionState, action: Action): SessionState {
       };
 
     case "COMMIT_CONCEPTS": {
+      // La sélection est figée sous la clé du bloc : c'est elle qui pré-remplit
+      // la liste du bloc suivant du même croquis (voir `conceptPrefill`).
+      const concepts = {
+        ...state.concepts,
+        [blockKey(state.scenario_index, state.block)]: action.selection,
+      };
       const blocks = blocksFor(state.scenario_index);
       const nextBlock = blocks[blocks.indexOf(state.block) + 1];
       if (nextBlock) {
-        return { ...state, block: nextBlock, item_index: 0, drafts: {} };
+        return { ...state, concepts, block: nextBlock, item_index: 0, drafts: {} };
       }
       // Dernier bloc de la scène : scène suivante, ou fin du parcours. Le
       // questionnaire clôt la session (§ Pre-task self-assessment, variante de
       // fin retenue pour ne pas amorcer les participants).
       if (state.scenario_index >= studyConfig.scoredCount) {
-        return { ...state, drafts: {}, block: 1, item_index: 0, step: "self_assess" };
+        return { ...state, concepts, drafts: {}, block: 1, item_index: 0, step: "self_assess" };
       }
       const next = state.scenario_index + 1;
       return {
         ...state,
+        concepts,
         scenario_index: next,
         block: blocksFor(next)[0],
         item_index: 0,
@@ -159,4 +175,16 @@ export function blockKey(scenarioIndex: number, block: BlockNo): string {
 /** Item en prose de la page courante, ou null sur la page de concepts. */
 export function currentItem(state: SessionState): ProseItem | null {
   return BLOCKS[state.block].items[state.item_index] ?? null;
+}
+
+/**
+ * Pré-remplissage de la liste de concepts du bloc courant : la sélection
+ * validée au bloc PRÉCÉDENT du même croquis, ou null au premier bloc. Jamais
+ * de report d'un croquis à l'autre — chaque scène repart d'une liste vide.
+ */
+export function conceptPrefill(state: SessionState): CommittedConcepts | null {
+  const blocks = blocksFor(state.scenario_index);
+  const prev = blocks[blocks.indexOf(state.block) - 1];
+  if (prev == null) return null;
+  return state.concepts[blockKey(state.scenario_index, prev)] ?? null;
 }

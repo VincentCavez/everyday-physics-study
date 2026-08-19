@@ -5,7 +5,7 @@ import { studyConfig } from "../config/studyConfig";
 import { record } from "../data/queue";
 import { stimulusUrl, usePreload } from "../hooks/usePreload";
 import { rtFor, useShown } from "../hooks/useRt";
-import { blockKey, blocksFor, currentItem, currentScene, rowById } from "../state/machine";
+import { blockKey, blocksFor, conceptPrefill, currentItem, currentScene, rowById } from "../state/machine";
 import { dispatch, useSession } from "../state/store";
 import type { BlockNo } from "../types";
 import { ConceptSelect } from "./ConceptSelect";
@@ -71,7 +71,7 @@ export function ScenarioScreen() {
         rt_ms: rtFor(pageKey),
       },
     ]);
-    dispatch({ type: "COMMIT_CONCEPTS" });
+    dispatch({ type: "COMMIT_CONCEPTS", selection: { keys: sel.keys, other: sel.other } });
   }
 
   const withCheck =
@@ -125,6 +125,7 @@ export function ScenarioScreen() {
           key={pageKey}
           presentationKey={`${s.session_id}|${scene.id}|${s.block}`}
           withAttentionCheck={withCheck}
+          initial={conceptPrefill(s)}
           onSubmit={submitConcepts}
         />
       )}

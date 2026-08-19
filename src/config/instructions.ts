@@ -64,13 +64,12 @@ export const instructions = {
     "You will see 6 sketches, one at a time, each with a short description of what it shows. The first sketch is a practice round so you can get used to the questions.",
     "For each sketch you will be asked three sets of questions: what you think happens next, what would happen if you changed something in the scene, and what would happen if we changed something specific.",
     "You are asked one question per page. Please answer in your own words — a sentence or two is plenty. We want your first reaction, not a carefully worked-out calculation.",
-    "Each answer is final once you move on, and you cannot go back. After a couple of questions a list of options will appear for you to tick; we ask you to write in your own words first, which is why the list comes afterwards.",
+    "You cannot go back to a question once you have moved on. For each sketch you answer in your own words first; a tick-list of things that might have played a part comes after. For the second and third set of questions, the list keeps your earlier ticks for that sketch — just update them.",
   ],
   /** Donné mot pour mot au modèle. */
   drawingConvention:
     "The sketches use one drawing convention: a thick yellow arrow — the motion arrow — shows movement, or the direction something is being sent off in. Everything else in the drawing is just the scene itself.",
-  conventionCaption:
-    "Here the motion arrow means the ball has been thrown up and to the right — it is not a rope, a line or part of the scene.",
+  conventionCaption: "Here the motion arrow means the ball has been thrown up and to the right.",
   conventionSceneId: "1-01-baseball-pitch",
   button: "I understand — begin",
 };
@@ -118,6 +117,15 @@ export const scenario = {
   },
   conceptPrompt:
     "Which of these, if any, played a part in what you just described? Tick as many or as few as you like.",
+  /**
+   * Blocs 2 et 3 : la liste repart des coches du bloc précédent (retour de
+   * relecture : la retrouver vide trois fois par croquis était pénible). Le
+   * participant ajuste ; l'enregistrement reste la sélection finale, et le
+   * pré-remplissage se reconstruit à l'analyse (= `concepts_json` du bloc
+   * précédent, même session, même scène).
+   */
+  conceptPrefilledNote:
+    "Your ticks from the previous set of questions are kept — update them if anything has changed.",
   otherPlaceholder: "Please specify",
   confidencePrompt: "How confident are you about that?",
   confidenceScale: [
