@@ -12,7 +12,7 @@
   "options": [
     { "key": "launch_speed", "kind": "catalog", "label": "How fast the object is thrown or launched", "concepts": ["launch_speed"] },
     { "key": "impact_speed", "kind": "catalog", "label": "How fast the moving object is going when it hits", "concepts": ["impact_speed"] },
-    { "key": "moving_mass", "kind": "catalog", "label": "How heavy the moving object is", "concepts": ["projectile_mass", "sliding_mass", "body_mass", "pendulum_mass"] },
+    { "key": "moving_mass", "kind": "catalog", "label": "How heavy the object is", "concepts": ["projectile_mass", "sliding_mass", "body_mass", "pendulum_mass", "lever_load_mass"] },
     { "key": "gravity", "kind": "catalog", "label": "How strong gravity is", "concepts": ["gravity_strength"] },
     { "key": "air_drag", "kind": "catalog", "label": "The air the object moves through", "concepts": ["air_drag"] },
     { "key": "wind", "kind": "catalog", "label": "Wind blowing in the scene", "concepts": ["wind"] },
@@ -34,7 +34,6 @@
     { "key": "spacing", "kind": "catalog", "label": "How far apart the objects are spaced", "concepts": ["domino_spacing"] },
     { "key": "rolling", "kind": "catalog", "label": "How easily something rolls", "concepts": ["rolling_friction"] },
     { "key": "spin", "kind": "catalog", "label": "How easily the object spins", "concepts": ["rotational_inertia"] },
-    { "key": "lever_load_mass", "kind": "catalog", "label": "How heavy the load on the beam is", "concepts": ["lever_load_mass"] },
     { "key": "launch_angle", "kind": "catalog", "label": "How steeply it is aimed", "concepts": ["launch_angle"] },
     { "key": "draw_length", "kind": "catalog", "label": "How far the bow or band is pulled back", "concepts": ["draw_length"] },
     { "key": "bob_position", "kind": "catalog", "label": "Where the sliding weight sits on the arm", "concepts": ["bob_position"] },
