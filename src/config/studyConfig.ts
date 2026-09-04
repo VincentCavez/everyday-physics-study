@@ -5,7 +5,7 @@
  */
 export const studyConfig = {
   /** URL /exec du déploiement Apps Script (voir study/README.md). */
-  appsScriptUrl: "PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycby4Gyov8s2XAzizbWvi4svTDyNWs0f-zTOxCAWqTUtEGAQt6WcoxEEz9xy1VvFR-3YoBg/exec",
 
   /** Retour Prolific après complétion (https://app.prolific.com/submissions/complete?cc=...). */
   prolificCompleteUrl: "https://app.prolific.com/submissions/complete",
