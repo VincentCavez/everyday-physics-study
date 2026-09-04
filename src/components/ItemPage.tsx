@@ -8,6 +8,8 @@ interface Props {
   text: string;
   confidence: number | null;
   withConfidence: boolean;
+  /** choix forcé : options à la place du champ de texte */
+  choice?: readonly { key: string; label: string }[];
   onText: (v: string) => void;
   onConfidence: (v: number) => void;
   onSubmit: () => void;
@@ -24,11 +26,14 @@ export function ItemPage({
   text,
   confidence,
   withConfidence,
+  choice,
   onText,
   onConfidence,
   onSubmit,
 }: Props) {
-  const complete = text.trim().length > 0 && (!withConfidence || confidence != null);
+  const complete =
+    (choice ? choice.some((c) => c.key === text) : text.trim().length > 0) &&
+    (!withConfidence || confidence != null);
 
   return (
     <section className="itempage">
@@ -39,16 +44,38 @@ export function ItemPage({
         </figure>
       )}
 
-      <label className="question" htmlFor="answer">
-        {question}
-      </label>
-      <textarea
-        id="answer"
-        rows={3}
-        autoFocus
-        value={text}
-        onChange={(e) => onText(e.target.value)}
-      />
+      {choice ? (
+        <>
+          <p className="question">{question}</p>
+          <div className="choices" role="radiogroup" aria-label={question}>
+            {choice.map((c) => (
+              <label key={c.key} className={`choice${text === c.key ? " is-on" : ""}`}>
+                <input
+                  type="radio"
+                  name="choice"
+                  value={c.key}
+                  checked={text === c.key}
+                  onChange={() => onText(c.key)}
+                />
+                <span>{c.label}</span>
+              </label>
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
+          <label className="question" htmlFor="answer">
+            {question}
+          </label>
+          <textarea
+            id="answer"
+            rows={3}
+            autoFocus
+            value={text}
+            onChange={(e) => onText(e.target.value)}
+          />
+        </>
+      )}
 
       {withConfidence && (
         <div className="confidence">

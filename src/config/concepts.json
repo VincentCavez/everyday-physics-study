@@ -7,47 +7,300 @@
       "Options merge catalog concepts ONLY where the lay idea is genuinely identical (the four per-axis mass variants; launch_position+release_height). Everything else is 1:1, so the concept-overlap metric resolves at catalog granularity.",
       "Distractors are styled like the real options so they cannot be spotted by form."
     ],
-    "catalog_version": "2.3.0"
+    "catalog_version": "2.3.4"
   },
   "options": [
-    { "key": "launch_speed", "kind": "catalog", "label": "How fast the object is thrown or launched", "concepts": ["launch_speed"] },
-    { "key": "impact_speed", "kind": "catalog", "label": "How fast the moving object is going when it hits", "concepts": ["impact_speed"] },
-    { "key": "moving_mass", "kind": "catalog", "label": "How heavy the object is", "concepts": ["projectile_mass", "sliding_mass", "body_mass", "pendulum_mass", "lever_load_mass"] },
-    { "key": "gravity", "kind": "catalog", "label": "How strong gravity is", "concepts": ["gravity_strength"] },
-    { "key": "air_drag", "kind": "catalog", "label": "The air the object moves through", "concepts": ["air_drag"] },
-    { "key": "wind", "kind": "catalog", "label": "Wind blowing in the scene", "concepts": ["wind"] },
-    { "key": "start_height", "kind": "catalog", "label": "The height or position it starts from", "concepts": ["launch_position", "release_height"] },
-    { "key": "surface_bounce", "kind": "catalog", "label": "How bouncy the ground or surface is", "concepts": ["restitution_on_surface"] },
-    { "key": "collision_bounce", "kind": "catalog", "label": "How bouncy the objects are when they hit each other", "concepts": ["restitution_in_collision"] },
-    { "key": "spring_stiffness", "kind": "catalog", "label": "How stiff a spring or elastic is", "concepts": ["spring_stiffness"] },
-    { "key": "spring_preload", "kind": "catalog", "label": "How far the spring is squashed or stretched to begin with", "concepts": ["spring_preload"] },
-    { "key": "pendulum_length", "kind": "catalog", "label": "The length of a swinging rope, rod or chain", "concepts": ["pendulum_length"] },
-    { "key": "damping", "kind": "catalog", "label": "How quickly the bouncing or swinging dies away", "concepts": ["bounce_damping"] },
-    { "key": "pivot_position", "kind": "catalog", "label": "Where the pivot or balance point is", "concepts": ["pivot_position"] },
-    { "key": "load_position", "kind": "catalog", "label": "Where the weight sits along a plank, beam or arm", "concepts": ["load_position"] },
-    { "key": "effort_arm", "kind": "catalog", "label": "Where along the handle someone pushes or pulls", "concepts": ["effort_arm"] },
-    { "key": "stack_offset", "kind": "catalog", "label": "How far something sticks out over an edge", "concepts": ["stack_offset"] },
-    { "key": "friction", "kind": "catalog", "label": "How rough or slippery the surface is", "concepts": ["kinetic_friction"] },
-    { "key": "slope", "kind": "catalog", "label": "How steep the slope is", "concepts": ["ramp_slope"] },
-    { "key": "applied_push", "kind": "catalog", "label": "How hard someone pushes or pulls", "concepts": ["applied_push"] },
-    { "key": "mass_ratio", "kind": "catalog", "label": "Which of the two objects is heavier when they collide", "concepts": ["collision_mass_ratio"] },
-    { "key": "spacing", "kind": "catalog", "label": "How far apart the objects are spaced", "concepts": ["domino_spacing"] },
-    { "key": "rolling", "kind": "catalog", "label": "How easily something rolls", "concepts": ["rolling_friction"] },
-    { "key": "spin", "kind": "catalog", "label": "How easily the object spins", "concepts": ["rotational_inertia"] },
-    { "key": "launch_angle", "kind": "catalog", "label": "How steeply it is aimed", "concepts": ["launch_angle"] },
-    { "key": "draw_length", "kind": "catalog", "label": "How far the bow or band is pulled back", "concepts": ["draw_length"] },
-    { "key": "bob_position", "kind": "catalog", "label": "Where the sliding weight sits on the arm", "concepts": ["bob_position"] },
-    { "key": "ladder_angle", "kind": "catalog", "label": "How far the foot of the ladder is from the wall", "concepts": ["ladder_angle"] },
-    { "key": "lean_offset", "kind": "catalog", "label": "How far back the person leans", "concepts": ["lean_offset"] },
-    { "key": "rocker_curvature", "kind": "catalog", "label": "How curved the runners are", "concepts": ["rocker_curvature"] },
-    { "key": "suspension_sag", "kind": "catalog", "label": "How tightly the rope or cloth is stretched", "concepts": ["suspension_sag"] },
-    { "key": "released_count", "kind": "catalog", "label": "How many balls are pulled back", "concepts": ["released_count"] },
-
-    { "key": "magnetism", "kind": "distractor", "label": "Magnets attracting or repelling things", "concepts": [] },
-    { "key": "static", "kind": "distractor", "label": "Static electricity building up", "concepts": [] },
-    { "key": "temperature", "kind": "distractor", "label": "How hot or cold things are", "concepts": [] },
-
-    { "key": "__none__", "kind": "none", "label": "None of these", "concepts": [] },
-    { "key": "__other__", "kind": "other", "label": "Something else (please specify)", "concepts": [] }
+    {
+      "key": "launch_speed",
+      "kind": "catalog",
+      "label": "How fast the object is thrown or launched",
+      "concepts": [
+        "launch_speed"
+      ]
+    },
+    {
+      "key": "impact_speed",
+      "kind": "catalog",
+      "label": "How fast the moving object is going when it hits",
+      "concepts": [
+        "impact_speed"
+      ]
+    },
+    {
+      "key": "moving_mass",
+      "kind": "catalog",
+      "label": "How heavy the object is",
+      "concepts": [
+        "projectile_mass",
+        "sliding_mass",
+        "body_mass",
+        "pendulum_mass",
+        "lever_load_mass",
+        "spring_load_mass"
+      ]
+    },
+    {
+      "key": "gravity",
+      "kind": "catalog",
+      "label": "How strong gravity is",
+      "concepts": [
+        "gravity_strength"
+      ]
+    },
+    {
+      "key": "air_drag",
+      "kind": "catalog",
+      "label": "The air the object moves through",
+      "concepts": [
+        "air_drag"
+      ]
+    },
+    {
+      "key": "wind",
+      "kind": "catalog",
+      "label": "Wind blowing in the scene",
+      "concepts": [
+        "wind"
+      ]
+    },
+    {
+      "key": "start_height",
+      "kind": "catalog",
+      "label": "The height or position it starts from",
+      "concepts": [
+        "launch_position",
+        "release_height"
+      ]
+    },
+    {
+      "key": "surface_bounce",
+      "kind": "catalog",
+      "label": "How bouncy the ground or surface is",
+      "concepts": [
+        "restitution_on_surface"
+      ]
+    },
+    {
+      "key": "collision_bounce",
+      "kind": "catalog",
+      "label": "How bouncy the objects are when they hit each other",
+      "concepts": [
+        "restitution_in_collision"
+      ]
+    },
+    {
+      "key": "spring_stiffness",
+      "kind": "catalog",
+      "label": "How stiff a spring or elastic is",
+      "concepts": [
+        "spring_stiffness"
+      ]
+    },
+    {
+      "key": "spring_preload",
+      "kind": "catalog",
+      "label": "How far the spring is squashed or stretched to begin with",
+      "concepts": [
+        "spring_preload"
+      ]
+    },
+    {
+      "key": "pendulum_length",
+      "kind": "catalog",
+      "label": "The length of a swinging rope, rod or chain",
+      "concepts": [
+        "pendulum_length"
+      ]
+    },
+    {
+      "key": "damping",
+      "kind": "catalog",
+      "label": "How quickly the bouncing or swinging dies away",
+      "concepts": [
+        "bounce_damping"
+      ]
+    },
+    {
+      "key": "pivot_position",
+      "kind": "catalog",
+      "label": "Where the pivot or balance point is",
+      "concepts": [
+        "pivot_position"
+      ]
+    },
+    {
+      "key": "load_position",
+      "kind": "catalog",
+      "label": "Where the weight sits along a plank, beam or arm",
+      "concepts": [
+        "load_position"
+      ]
+    },
+    {
+      "key": "effort_arm",
+      "kind": "catalog",
+      "label": "Where along the handle someone pushes or pulls",
+      "concepts": [
+        "effort_arm"
+      ]
+    },
+    {
+      "key": "stack_offset",
+      "kind": "catalog",
+      "label": "How far something sticks out over an edge",
+      "concepts": [
+        "stack_offset"
+      ]
+    },
+    {
+      "key": "friction",
+      "kind": "catalog",
+      "label": "How rough or slippery the surface is",
+      "concepts": [
+        "kinetic_friction"
+      ]
+    },
+    {
+      "key": "slope",
+      "kind": "catalog",
+      "label": "How steep the slope is",
+      "concepts": [
+        "ramp_slope"
+      ]
+    },
+    {
+      "key": "applied_push",
+      "kind": "catalog",
+      "label": "How hard someone pushes or pulls",
+      "concepts": [
+        "applied_push"
+      ]
+    },
+    {
+      "key": "mass_ratio",
+      "kind": "catalog",
+      "label": "Which of the two objects is heavier when they collide",
+      "concepts": [
+        "collision_mass_ratio"
+      ]
+    },
+    {
+      "key": "spacing",
+      "kind": "catalog",
+      "label": "How far apart the objects are spaced",
+      "concepts": [
+        "domino_spacing"
+      ]
+    },
+    {
+      "key": "rolling",
+      "kind": "catalog",
+      "label": "How easily something rolls",
+      "concepts": [
+        "rolling_friction"
+      ]
+    },
+    {
+      "key": "spin",
+      "kind": "catalog",
+      "label": "How easily the object spins",
+      "concepts": [
+        "rotational_inertia"
+      ]
+    },
+    {
+      "key": "launch_angle",
+      "kind": "catalog",
+      "label": "How steeply it is aimed",
+      "concepts": [
+        "launch_angle"
+      ]
+    },
+    {
+      "key": "draw_length",
+      "kind": "catalog",
+      "label": "How far the bow or band is pulled back",
+      "concepts": [
+        "draw_length"
+      ]
+    },
+    {
+      "key": "bob_position",
+      "kind": "catalog",
+      "label": "Where the sliding weight sits on the arm",
+      "concepts": [
+        "bob_position"
+      ]
+    },
+    {
+      "key": "ladder_angle",
+      "kind": "catalog",
+      "label": "How far the foot of the ladder is from the wall",
+      "concepts": [
+        "ladder_angle"
+      ]
+    },
+    {
+      "key": "lean_offset",
+      "kind": "catalog",
+      "label": "How far back the person leans",
+      "concepts": [
+        "lean_offset"
+      ]
+    },
+    {
+      "key": "rocker_curvature",
+      "kind": "catalog",
+      "label": "How curved the runners are",
+      "concepts": [
+        "rocker_curvature"
+      ]
+    },
+    {
+      "key": "suspension_sag",
+      "kind": "catalog",
+      "label": "How tightly the rope or cloth is stretched",
+      "concepts": [
+        "suspension_sag"
+      ]
+    },
+    {
+      "key": "released_count",
+      "kind": "catalog",
+      "label": "How many balls are pulled back",
+      "concepts": [
+        "released_count"
+      ]
+    },
+    {
+      "key": "magnetism",
+      "kind": "distractor",
+      "label": "Magnets attracting or repelling things",
+      "concepts": []
+    },
+    {
+      "key": "static",
+      "kind": "distractor",
+      "label": "Static electricity building up",
+      "concepts": []
+    },
+    {
+      "key": "temperature",
+      "kind": "distractor",
+      "label": "How hot or cold things are",
+      "concepts": []
+    },
+    {
+      "key": "__none__",
+      "kind": "none",
+      "label": "None of these",
+      "concepts": []
+    },
+    {
+      "key": "__other__",
+      "kind": "other",
+      "label": "Something else (please specify)",
+      "concepts": []
+    }
   ]
 }

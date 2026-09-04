@@ -77,15 +77,24 @@ export function ScenarioScreen() {
   const withCheck =
     !isTrial && s.scenario_index === acConcept.scenarioIndex && s.block === (acConcept.block as BlockNo);
 
-  // Rappel de la réponse que cette page demande de justifier.
+  // Rappel de la réponse que cette page demande de justifier — ou, pour la
+  // direction du bloc 3, de la PREMIÈRE prédiction (bloc 1) de la même scène.
   const explained = item?.explains ? items.find((x) => x.key === item.explains) : undefined;
+  const fromOther = item?.recallFrom
+    ? {
+        item: BLOCKS[item.recallFrom.block].items.find((x) => x.key === item.recallFrom!.key),
+        committed: s.committed[`${blockKey(s.scenario_index, item.recallFrom.block)}.${item.recallFrom.key}`],
+      }
+    : null;
   const recall =
-    explained && s.committed[`${key}.${explained.key}`]
-      ? {
-          question: questionFor(explained),
-          text: s.committed[`${key}.${explained.key}`].text,
-        }
-      : null;
+    fromOther?.item && fromOther.committed
+      ? { question: `${texts.recallFirstAnswer} ${questionFor(fromOther.item)}`, text: fromOther.committed.text }
+      : explained && s.committed[`${key}.${explained.key}`]
+        ? {
+            question: questionFor(explained),
+            text: s.committed[`${key}.${explained.key}`].text,
+          }
+        : null;
 
   const draftText = (s.drafts[`${pageKey}.text`] as string) ?? "";
   const draftConf = (s.drafts[`${pageKey}.conf`] as number | undefined) ?? null;
@@ -116,6 +125,7 @@ export function ScenarioScreen() {
           text={draftText}
           confidence={draftConf}
           withConfidence={item.confidence}
+          choice={item.choice}
           onText={(v) => dispatch({ type: "SET_DRAFT", key: `${pageKey}.text`, value: v })}
           onConfidence={(v) => dispatch({ type: "SET_DRAFT", key: `${pageKey}.conf`, value: v })}
           onSubmit={() => submitItem(item, draftText, draftConf)}

@@ -114,7 +114,24 @@ export const scenario = {
     freeExplanation: "Why would that change make a difference?",
     imposed: (clause: string, prediction: string) => `Now imagine that ${clause}. ${prediction}`,
     imposedExplanation: "Why do you think that would happen?",
+    /**
+     * Direction à choix forcé (2026-09-04) : après le texte libre, une seule
+     * question nommée (« which direction? », comme Battaglia et al.), qui
+     * compare l'issue imposée à la PREMIÈRE prédiction rappelée à l'écran.
+     * C'est la mesure du bloc 3 face au signe du balayage du pipeline ; le
+     * texte libre reste enregistré et codable.
+     */
+    imposedDirection: (outcome: string) =>
+      `Compared with your first answer about this sketch, is ${outcome} now more, less, about the same, or something different?`,
   },
+  /** préfixe du rappel de la première prédiction, sur la page de direction */
+  recallFirstAnswer: "Your first answer —",
+  directionChoices: [
+    { key: "more", label: "More — further, higher, faster, more of it" },
+    { key: "less", label: "Less — not as far, as high, as fast, or as much" },
+    { key: "same", label: "About the same" },
+    { key: "different", label: "Something different happens" },
+  ] as const,
   conceptPrompt:
     "Which of these, if any, played a part in what you just described? Tick as many or as few as you like.",
   /**
