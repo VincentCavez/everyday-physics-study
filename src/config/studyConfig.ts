@@ -43,6 +43,8 @@ export const studyConfig = {
   /** File d'events : envoi groupé, réessais. */
   network: {
     flushDebounceMs: 400,
+    /** délai maximal de rétention d'une réponse enfilée hors fin de bloc */
+    maxHoldMs: 4 * 60 * 1000,
     maxRetries: 6,
     backoffBaseMs: 1000,
     backoffMaxMs: 30000,

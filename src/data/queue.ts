@@ -23,16 +23,27 @@ export function onQueueTrouble(fn: (failures: number) => void): () => void {
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
-/** Enfile des réponses et déclenche un envoi groupé. */
-export function record(inputs: EventInput[]): void {
+/**
+ * Enfile des réponses. L'envoi ne part qu'à la fin d'un bloc (`send: true`,
+ * page de concepts ou questionnaire) : une requête par bloc au lieu d'une par
+ * réponse, soit ~20 par participant au lieu de ~68. Le 04/09/2026, dix
+ * participants à une requête toutes les 3 s avaient saturé Apps Script. Entre
+ * deux envois les réponses sont dans localStorage ; un filet temporel borne ce
+ * qu'une fermeture d'onglet définitive pourrait retenir.
+ */
+export function record(inputs: EventInput[], opts: { send?: boolean } = {}): void {
   if (!inputs.length) return;
   dispatch({ type: "ENQUEUE", events: makeEvents(inputs) });
-  scheduleFlush();
+  if (opts.send) scheduleFlush();
+  else if (!timer) scheduleFlush(studyConfig.network.maxHoldMs);
 }
 
 export function scheduleFlush(delay = studyConfig.network.flushDebounceMs): void {
   if (timer) clearTimeout(timer);
-  timer = setTimeout(() => void flush(), delay);
+  timer = setTimeout(() => {
+    timer = null;
+    void flush();
+  }, delay);
 }
 
 /** Vide la file. Renvoie true si tout est parti. */

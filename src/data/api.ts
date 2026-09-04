@@ -56,6 +56,8 @@ function endpoint(params: Record<string, string>): string {
 function post<T>(body: unknown): Promise<T> {
   return call<T>(studyConfig.appsScriptUrl, {
     method: "POST",
+    // keepalive : l'envoi déclenché par pagehide survit à la fermeture de l'onglet.
+    keepalive: true,
     // text/plain : type « simple », donc pas de requête préliminaire.
     headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify(body),

@@ -94,7 +94,8 @@ export function reduce(state: SessionState, action: Action): SessionState {
       return { ...state, step: action.step, fatal_reason: action.reason ?? state.fatal_reason };
 
     case "ASSIGNED":
-      return { ...state, row_id: action.row_id };
+      // Une attribution réussie efface la trace d'un échec précédent.
+      return { ...state, row_id: action.row_id, fatal_reason: null };
 
     case "SET_DRAFT":
       return { ...state, drafts: { ...state.drafts, [action.key]: action.value } };

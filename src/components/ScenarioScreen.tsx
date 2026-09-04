@@ -70,7 +70,7 @@ export function ScenarioScreen() {
         other_text: sel.other,
         rt_ms: rtFor(pageKey),
       },
-    ]);
+    ], { send: true });
     dispatch({ type: "COMMIT_CONCEPTS", selection: { keys: sel.keys, other: sel.other } });
   }
 

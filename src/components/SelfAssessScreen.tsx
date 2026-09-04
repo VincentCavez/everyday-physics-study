@@ -58,7 +58,7 @@ export function SelfAssessScreen() {
         response_text: education,
         rt_ms: rtFor("physics_education"),
       },
-    ]);
+    ], { send: true });
     dispatch({ type: "SET_STEP", step: "completing" });
   }
 
