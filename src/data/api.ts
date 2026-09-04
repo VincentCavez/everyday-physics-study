@@ -23,8 +23,19 @@ export interface CompleteResult {
   error?: string;
 }
 
+const TIMEOUT_MS = 45000;
+
 async function call<T>(url: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(url, { redirect: "follow", ...init });
+  // Sans délai, un appel qui n'aboutit jamais (Apps Script saturé) bloquerait
+  // la file pour toute la session au lieu de déclencher un réessai.
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  let res: Response;
+  try {
+    res = await fetch(url, { redirect: "follow", signal: ctrl.signal, ...init });
+  } finally {
+    clearTimeout(timer);
+  }
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const text = await res.text();
   try {

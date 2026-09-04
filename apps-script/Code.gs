@@ -138,10 +138,13 @@ function assign_(pid, sessionId, isTest, userAgent) {
 // --------------------------------------------------------------- réponses ---
 
 /**
- * Ajout en bloc, sans verrou : l'onglet est en ajout seul et prendre le verrou
- * ici sérialiserait tous les participants derrière l'attribution. Les doublons
- * possibles (réessai client après une réponse perdue) portent le même event_id
- * et sont dédupliqués à l'analyse.
+ * Ajout en bloc SOUS VERROU. Le 04/09/2026, dix participants simultanés ont
+ * fait perdre une réponse à six d'entre eux : deux appels concurrents lisaient
+ * le même getLastRow() et le second setValues écrasait le premier. Le verrou
+ * sérialise les écritures (quelques centaines de ms chacune) ; s'il n'est pas
+ * obtenu à temps, on retombe sur appendRow, atomique ligne par ligne. Les
+ * doublons possibles (réessai client après une réponse perdue) portent le même
+ * event_id et sont dédupliqués à l'analyse.
  */
 function appendEvents_(body) {
   var events = body.events || [];
@@ -158,8 +161,24 @@ function appendEvents_(body) {
   });
 
   var sheet = sh_(SHEETS.RESPONSES);
-  sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, RESPONSES_HEADER.length).setValues(rows);
-  return { ok: true, written: rows.length };
+  var lock = LockService.getScriptLock();
+  var locked = false;
+  try {
+    locked = lock.tryLock(25000);
+  } catch (err) {
+    locked = false;
+  }
+  try {
+    if (locked) {
+      sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, RESPONSES_HEADER.length).setValues(rows);
+    } else {
+      for (var i = 0; i < rows.length; i++) sheet.appendRow(rows[i]);
+    }
+    SpreadsheetApp.flush();
+  } finally {
+    if (locked) lock.releaseLock();
+  }
+  return { ok: true, written: rows.length, locked: locked };
 }
 
 function complete_(body) {

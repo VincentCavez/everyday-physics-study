@@ -33,8 +33,14 @@ export async function boot(): Promise<void> {
     scheduleFlush(0);
     // Une session interrompue avant l'attribution (fenêtre trop petite, réseau
     // absent) doit repasser par le portail plutôt que d'y rester bloquée.
-    if (resumed.row_id == null && (resumed.step === "gate" || resumed.step === "boot")) {
+    if (
+      resumed.row_id == null &&
+      (resumed.step === "gate" || resumed.step === "boot" || resumed.step === "fatal")
+    ) {
       await enterStudy();
+    } else if (resumed.step === "fatal" || resumed.step === "nocode") {
+      // Échec de fin de session : recharger la page revient à réessayer.
+      dispatch({ type: "SET_STEP", step: "completing" });
     }
     return;
   }

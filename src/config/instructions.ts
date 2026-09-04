@@ -179,7 +179,11 @@ export const errors = {
     "We are having trouble saving your answers. Please check your internet connection — your answers are kept on this device in the meantime, and will be sent automatically when the connection comes back.",
   fatalTitle: "Something went wrong",
   fatalBody:
-    "We could not save your answers to our server. Please download your data with the button below and message us through Prolific, attaching the file — you will still be paid.",
+    "We could not reach our server. Your answers are kept on this device. Please try again in a moment with the button below. If it keeps failing, download your answers with the second button and message us through Prolific (paste the content of the file into the message) — you will still be paid.",
+  nocodeTitle: "Your answers have been saved",
+  nocodeBody:
+    "All your answers reached our server, but we could not retrieve your completion code because the server is busy. Please try again in a moment with the button below. If that still fails, return to Prolific, submit with the code NOCODE and send us a short message there: your submission will be approved manually and you will be paid in full.",
+  retryButton: "Try again",
   downloadButton: "Download my answers",
   previewNotice: "Preview mode — no data is being recorded and no completion code will be issued.",
 };

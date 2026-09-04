@@ -5,7 +5,7 @@ import { onQueueTrouble, scheduleFlush } from "./data/queue";
 import { CompletingScreen, DoneScreen } from "./components/CompletionScreen";
 import { ConsentScreen } from "./components/ConsentScreen";
 import { InstructionsScreen } from "./components/InstructionsScreen";
-import { ClosedScreen, DesktopGate, FatalScreen, FullScreen } from "./components/Notices";
+import { ClosedScreen, DesktopGate, FatalScreen, FullScreen, NoCodeScreen } from "./components/Notices";
 import { ScenarioScreen } from "./components/ScenarioScreen";
 import { SelfAssessScreen } from "./components/SelfAssessScreen";
 import { useSession } from "./state/store";
@@ -54,6 +54,8 @@ export function App() {
             return <FullScreen />;
           case "closed":
             return <ClosedScreen />;
+          case "nocode":
+            return <NoCodeScreen />;
           case "fatal":
             return <FatalScreen />;
         }

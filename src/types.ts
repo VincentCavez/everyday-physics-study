@@ -66,6 +66,7 @@ export type Step =
   | "done"
   | "full"
   | "closed"
+  | "nocode"
   | "fatal";
 
 /** Une réponse en prose, figée au moment de COMMIT_ITEM. */
