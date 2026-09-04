@@ -255,8 +255,13 @@ function setup() {
 /** Admin : libère une row après exclusion, pour la réattribuer à un remplaçant
  *  (l'équilibrage du plan est ainsi préservé). */
 function freeRow(rowId) {
+  // Le bouton Run de l'éditeur appelle la fonction SANS argument : passer par un
+  // wrapper (ex. `function free14() { freeRow(14); }`), jamais par un appel au
+  // niveau global du fichier (il se rejouerait à chaque doGet/doPost).
+  var id = Number(rowId);
+  if (!(id >= 1 && id <= N_ROWS)) throw new Error('freeRow(rowId) : rowId manquant ou hors plan (1..' + N_ROWS + '). Utiliser un wrapper : function free14() { freeRow(14); }');
   var sheet = sh_(SHEETS.ROWS);
-  sheet.getRange(rowId + 1, 2, 1, 5).setValues([['FREE', '', '', '', '']]);
+  sheet.getRange(id + 1, 2, 1, 5).setValues([['FREE', '', '', '', '']]);
   SpreadsheetApp.flush();
 }
 
