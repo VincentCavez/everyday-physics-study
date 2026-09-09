@@ -18,12 +18,24 @@ interface RateProps {
   /** L'intro n'est montrée qu'une fois par scène : en en-tête de la première
       carte, plutôt que sur une page à elle, qui coûterait un clic sans réponse. */
   withIntro: boolean;
+  /** 0 = la ressemblance · 1 = « quelque chose en trop » (décision de Vincent,
+      09/09). La première note reste à l'écran, verrouillée, au second temps. */
+  reveal: number;
+  fit: number | null;
   value: number | null;
   onChange: (v: number) => void;
   onSubmit: () => void;
 }
 
-export function TheoryRatePage({ card, withIntro, value, onChange, onSubmit }: RateProps) {
+/**
+ * Deux temps par théorie. La ressemblance récompense la théorie la plus
+ * RICHE, même fausse en partie ; « y a-t-il là-dedans quelque chose qui ne
+ * joue aucun rôle ? » est le seul item où une théorie sélective peut être
+ * créditée d'avoir retiré ce qui ne change rien. Posé APRÈS, sinon il
+ * amorcerait la lecture de la première note.
+ */
+export function TheoryRatePage({ card, withIntro, reveal, fit, value, onChange, onSubmit }: RateProps) {
+  const excess = reveal >= 1;
   return (
     <section className="itempage rating">
       {withIntro && <p className="lead">{scenario.theoriesIntro}</p>}
@@ -32,9 +44,21 @@ export function TheoryRatePage({ card, withIntro, value, onChange, onSubmit }: R
       <Scale
         name={`theory_${card.id}`}
         spec={{ kind: "anchored", from: 0, to: 10, low: scenario.theoryRateLow, high: scenario.theoryRateHigh }}
-        value={value}
+        value={excess ? fit : value}
         onChange={onChange}
+        disabled={excess}
       />
+      {excess && (
+        <div className="values">
+          <p className="question">{scenario.theoryExcessPrompt}</p>
+          <Scale
+            name={`excess_${card.id}`}
+            spec={{ kind: "anchored", from: 0, to: 10, low: scenario.theoryExcessLow, high: scenario.theoryExcessHigh }}
+            value={value}
+            onChange={onChange}
+          />
+        </div>
+      )}
       <div className="actions">
         <button className="primary" disabled={value == null} onClick={onSubmit}>
           {scenario.submitProse}

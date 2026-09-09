@@ -184,6 +184,13 @@ export const scenario = {
   theoryRatePrompt: "How well does this match what you thought?",
   theoryRateLow: "0 = not at all what I had in mind",
   theoryRateHigh: "10 = exactly what I had in mind",
+  /** Second temps de chaque théorie (décision de Vincent, 09/09) : le seul
+      endroit où « le pipeline retire ce qui ne joue pas » peut être crédité.
+      Une théorie sélective perd sinon contre une théorie exhaustive à l'item
+      de ressemblance, même quand elle a raison de se taire. */
+  theoryExcessPrompt: "Is there anything in this description that does not actually matter here?",
+  theoryExcessLow: "0 = nothing, it all matters",
+  theoryExcessHigh: "10 = yes, a lot of it doesn't matter",
   theoryChoicePrompt: "Which one is closest to what you thought?",
 
   // ── Stage 3 · notation des outils ────────────────────────────────────────

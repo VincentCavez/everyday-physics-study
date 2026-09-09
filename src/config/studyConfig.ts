@@ -7,7 +7,8 @@ export const studyConfig = {
   /**
    * URL /exec du déploiement Apps Script (voir study/README.md).
    *
-   * VIDE SUR LA BRANCHE v2, ET C'EST VOLONTAIRE. La v2 écrit 32 colonnes, des
+   * DÉPLOIEMENT v2 (2026-09-09, classeur neuf, `setup()` lancé par Vincent).
+   * Historique : la branche est restée VIDE jusque-là, exprès. La v2 écrit 32 colonnes, des
    * `item_key` nouveaux et une colonne `stage` là où la v1 avait `block` : la
    * laisser pointer vers le déploiement de la vague du 04/09/2026
    * (AKfycby4Gyov8s2X…) ferait entrer des lignes v2 dans le Sheet v1, et un
@@ -19,7 +20,7 @@ export const studyConfig = {
    * Tant qu'elle est vide, l'app tourne en aperçu PUREMENT LOCAL : elle
    * n'atteint aucun réseau, n'enregistre rien et ne délivre aucun code.
    */
-  appsScriptUrl: "",
+  appsScriptUrl: "https://script.google.com/macros/s/AKfycbze8P3Vi5Sw1rvoxNrAsMMQMroyrB4MUsKC_UcxuxPbAZOUExWPxyzYRK7FhMKs3NRgiA/exec",
 
   /** Retour Prolific après complétion (https://app.prolific.com/submissions/complete?cc=...). */
   prolificCompleteUrl: "https://app.prolific.com/submissions/complete",

@@ -210,29 +210,27 @@ export function ScenarioScreen() {
 
   // ── Stage 2 : les théories, une par une, puis le choix forcé ──────────────
   if (page.kind === "theory_rate") {
+    // DEUX temps (09/09) : la ressemblance (`theory_rate`), puis « quelque
+    // chose en trop » (`theory_excess`), même colonne `rating`, même item_id.
+    // Le premier temps ne pousse jamais au serveur : c'est le second qui clôt
+    // la page, et la dernière page du stage qui clôt le lot.
+    const isExcess = s.reveal >= 1;
+    const fit = s.committed[`${key}.${page.key}.fit`]?.rating ?? null;
+    const meta = { item_id: page.card.id, ...logMetaFor(scene.id, page.card.id), display_position: page.position };
     return (
       <Frame scene={scene} s={s} onConcepts={false}>
         <TheoryRatePage
-          key={pageKey}
+          key={`${pageKey}.r${s.reveal}`}
           card={page.card}
-          withIntro={page.position === 1}
+          withIntro={page.position === 1 && !isExcess}
+          reveal={s.reveal}
+          fit={fit}
           value={draftRating}
           onChange={setRating}
           onSubmit={() =>
-            commit(
-              "theory_rate",
-              {
-                item_id: page.card.id,
-                ...logMetaFor(scene.id, page.card.id),
-                display_position: page.position,
-                rating: draftRating,
-              },
-              page.key,
-              "",
-              draftRating,
-              "page",
-              endsStage,
-            )
+            isExcess
+              ? commit("theory_excess", { ...meta, rating: draftRating }, `${page.key}.excess`, "", draftRating, "page", endsStage)
+              : commit("theory_rate", { ...meta, rating: draftRating }, `${page.key}.fit`, "", draftRating, "reveal")
           }
         />
       </Frame>
