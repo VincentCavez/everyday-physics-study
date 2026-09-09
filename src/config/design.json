@@ -68,7 +68,7 @@
       "row_id": 3,
       "scenes": {
         "projection": "1-03-bow-and-arrow",
-        "oscillation_elasticity": "2-08-diving-board-flex",
+        "oscillation_elasticity": "2-08-basketball-dribble",
         "equilibrium_levers": "3-15-tightrope-walker",
         "friction": "4-09-sled-slope",
         "collision": "5-05-newtons-cradle"
@@ -278,7 +278,7 @@
         "projection",
         "friction"
       ],
-      "trial": "2-08-diving-board-flex"
+      "trial": "2-08-basketball-dribble"
     },
     {
       "row_id": 15,
@@ -338,7 +338,7 @@
       "row_id": 18,
       "scenes": {
         "projection": "1-03-bow-and-arrow",
-        "oscillation_elasticity": "2-08-diving-board-flex",
+        "oscillation_elasticity": "2-08-basketball-dribble",
         "equilibrium_levers": "3-15-tightrope-walker",
         "friction": "4-09-sled-slope",
         "collision": "5-05-newtons-cradle"
@@ -608,7 +608,7 @@
       "row_id": 33,
       "scenes": {
         "projection": "1-03-bow-and-arrow",
-        "oscillation_elasticity": "2-08-diving-board-flex",
+        "oscillation_elasticity": "2-08-basketball-dribble",
         "equilibrium_levers": "3-15-tightrope-walker",
         "friction": "4-09-sled-slope",
         "collision": "5-05-newtons-cradle"
@@ -878,7 +878,7 @@
       "row_id": 48,
       "scenes": {
         "projection": "1-03-bow-and-arrow",
-        "oscillation_elasticity": "2-08-diving-board-flex",
+        "oscillation_elasticity": "2-08-basketball-dribble",
         "equilibrium_levers": "3-15-tightrope-walker",
         "friction": "4-09-sled-slope",
         "collision": "5-05-newtons-cradle"
@@ -1148,7 +1148,7 @@
       "row_id": 63,
       "scenes": {
         "projection": "1-03-bow-and-arrow",
-        "oscillation_elasticity": "2-08-diving-board-flex",
+        "oscillation_elasticity": "2-08-basketball-dribble",
         "equilibrium_levers": "3-15-tightrope-walker",
         "friction": "4-09-sled-slope",
         "collision": "5-05-newtons-cradle"
