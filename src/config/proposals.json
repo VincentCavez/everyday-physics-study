@@ -54,7 +54,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
@@ -95,7 +95,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
@@ -128,7 +128,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         }
@@ -136,7 +136,7 @@
       "tools": [
         {
           "id": "1-01-baseball-pitch:tl:1",
-          "name": "Launch blast",
+          "name": "Push",
           "gesture": "Blast the ball forward.",
           "values": {
             "kind": "palette",
@@ -173,13 +173,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.055Z"
+              "ts": "2026-09-09T22:03:27.827Z"
             }
           }
         },
         {
           "id": "1-01-baseball-pitch:tl:2",
-          "name": "A weight bucket",
+          "name": "Mass",
           "gesture": "Pour weight onto the ball.",
           "values": {
             "kind": "palette",
@@ -218,13 +218,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
         {
           "id": "1-01-baseball-pitch:tl:3",
-          "name": "Aiming hand",
+          "name": "Aim",
           "gesture": "Aim the ball.",
           "values": {
             "kind": "range",
@@ -257,13 +257,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
         {
           "id": "1-01-baseball-pitch:tl:4",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planetary gravity.",
           "values": {
             "kind": "palette",
@@ -301,13 +301,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
         {
           "id": "1-01-baseball-pitch:tl:5",
-          "name": "Ball positioner",
+          "name": "Start spot",
           "gesture": "Drag the ball to a new starting point.",
           "values": {
             "kind": "range",
@@ -340,13 +340,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
         {
           "id": "1-01-baseball-pitch:tl:6",
-          "name": "Wind thickness bucket",
+          "name": "Air drag",
           "gesture": "Pour air resistance into the scene.",
           "values": {
             "kind": "palette",
@@ -383,7 +383,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         },
@@ -423,7 +423,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.056Z"
+              "ts": "2026-09-09T22:03:27.828Z"
             }
           }
         }
@@ -475,7 +475,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.859Z"
             }
           }
         },
@@ -516,7 +516,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.859Z"
             }
           }
         },
@@ -549,7 +549,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.859Z"
             }
           }
         }
@@ -596,13 +596,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         },
         {
           "id": "1-02-basketball-freethrow:tl:2",
-          "name": "Throw launcher",
+          "name": "Push",
           "gesture": "Push the basketball.",
           "values": {
             "kind": "palette",
@@ -640,13 +640,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         },
         {
           "id": "1-02-basketball-freethrow:tl:3",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour gravity onto the world.",
           "values": {
             "kind": "palette",
@@ -684,13 +684,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         },
         {
           "id": "1-02-basketball-freethrow:tl:4",
-          "name": "Hand",
+          "name": "Aim",
           "gesture": "Aim the shot.",
           "values": {
             "kind": "range",
@@ -723,13 +723,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         },
         {
           "id": "1-02-basketball-freethrow:tl:5",
-          "name": "Hand",
+          "name": "Start spot",
           "gesture": "Drag the basketball to a new starting height.",
           "values": {
             "kind": "range",
@@ -759,7 +759,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         },
@@ -801,7 +801,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         },
@@ -841,7 +841,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.088Z"
+              "ts": "2026-09-09T22:03:27.858Z"
             }
           }
         }
@@ -887,7 +887,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.111Z"
+              "ts": "2026-09-09T22:03:27.880Z"
             }
           }
         },
@@ -928,7 +928,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.111Z"
+              "ts": "2026-09-09T22:03:27.880Z"
             }
           }
         },
@@ -961,7 +961,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.111Z"
+              "ts": "2026-09-09T22:03:27.880Z"
             }
           }
         }
@@ -969,7 +969,7 @@
       "tools": [
         {
           "id": "1-03-bow-and-arrow:tl:1",
-          "name": "Bowstring draw",
+          "name": "Draw",
           "gesture": "Pull back the arrow.",
           "values": {
             "kind": "range",
@@ -1002,13 +1002,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.111Z"
+              "ts": "2026-09-09T22:03:27.880Z"
             }
           }
         },
         {
           "id": "1-03-bow-and-arrow:tl:2",
-          "name": "Aim guide",
+          "name": "Aim",
           "gesture": "Aim the bow higher or lower.",
           "values": {
             "kind": "range",
@@ -1041,7 +1041,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.111Z"
+              "ts": "2026-09-09T22:03:27.880Z"
             }
           }
         },
@@ -1077,7 +1077,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.111Z"
+              "ts": "2026-09-09T22:03:27.880Z"
             }
           }
         }
@@ -1123,7 +1123,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.161Z"
+              "ts": "2026-09-09T22:03:27.930Z"
             }
           }
         },
@@ -1164,7 +1164,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.161Z"
+              "ts": "2026-09-09T22:03:27.930Z"
             }
           }
         },
@@ -1197,7 +1197,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.161Z"
+              "ts": "2026-09-09T22:03:27.930Z"
             }
           }
         }
@@ -1205,7 +1205,7 @@
       "tools": [
         {
           "id": "1-04-catapult:tl:1",
-          "name": "Weight material",
+          "name": "Mass",
           "gesture": "Pour onto the catapult arm.",
           "values": {
             "kind": "palette",
@@ -1242,13 +1242,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.161Z"
+              "ts": "2026-09-09T22:03:27.930Z"
             }
           }
         },
         {
           "id": "1-04-catapult:tl:2",
-          "name": "Atmosphere bucket",
+          "name": "Air drag",
           "gesture": "Pour air.",
           "values": {
             "kind": "palette",
@@ -1285,7 +1285,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.161Z"
+              "ts": "2026-09-09T22:03:27.930Z"
             }
           }
         },
@@ -1325,7 +1325,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.161Z"
+              "ts": "2026-09-09T22:03:27.930Z"
             }
           }
         }
@@ -1377,7 +1377,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         },
@@ -1418,7 +1418,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         },
@@ -1451,7 +1451,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         }
@@ -1459,7 +1459,7 @@
       "tools": [
         {
           "id": "1-05-diving-board-jump:tl:1",
-          "name": "Launch booster",
+          "name": "Push",
           "gesture": "Blast off the platform.",
           "values": {
             "kind": "palette",
@@ -1497,13 +1497,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         },
         {
           "id": "1-05-diving-board-jump:tl:2",
-          "name": "Load of cargo",
+          "name": "Mass",
           "gesture": "Pour weight onto the platform.",
           "values": {
             "kind": "palette",
@@ -1540,13 +1540,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         },
         {
           "id": "1-05-diving-board-jump:tl:3",
-          "name": "Start mark",
+          "name": "Start spot",
           "gesture": "Slide the starting point along the surface.",
           "values": {
             "kind": "range",
@@ -1579,13 +1579,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         },
         {
           "id": "1-05-diving-board-jump:tl:4",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planetary gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -1623,7 +1623,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         },
@@ -1663,7 +1663,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.173Z"
+              "ts": "2026-09-09T22:03:27.942Z"
             }
           }
         }
@@ -1715,7 +1715,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
@@ -1756,7 +1756,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
@@ -1789,7 +1789,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         }
@@ -1797,7 +1797,7 @@
       "tools": [
         {
           "id": "1-06-three-pointer:tl:1",
-          "name": "Launch booster",
+          "name": "Push",
           "gesture": "Push the basketball harder.",
           "values": {
             "kind": "palette",
@@ -1835,13 +1835,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
         {
           "id": "1-06-three-pointer:tl:2",
-          "name": "A bucket of ballast",
+          "name": "Mass",
           "gesture": "Pour weight into the basketball.",
           "values": {
             "kind": "palette",
@@ -1879,13 +1879,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
         {
           "id": "1-06-three-pointer:tl:3",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -1923,7 +1923,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
@@ -1962,13 +1962,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
         {
           "id": "1-06-three-pointer:tl:5",
-          "name": "Start position",
+          "name": "Start spot",
           "gesture": "Drag the basketball to a new spot.",
           "values": {
             "kind": "range",
@@ -1998,7 +1998,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         },
@@ -2038,7 +2038,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.194Z"
+              "ts": "2026-09-09T22:03:27.963Z"
             }
           }
         }
@@ -2090,7 +2090,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
@@ -2131,7 +2131,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
@@ -2164,7 +2164,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         }
@@ -2205,13 +2205,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
         {
           "id": "1-07-slingshot:tl:2",
-          "name": "World gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour new gravity onto the world.",
           "values": {
             "kind": "palette",
@@ -2248,13 +2248,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
         {
           "id": "1-07-slingshot:tl:3",
-          "name": "Slingshot grip",
+          "name": "Aim",
           "gesture": "Aim the slingshot up or down.",
           "values": {
             "kind": "range",
@@ -2287,13 +2287,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
         {
           "id": "1-07-slingshot:tl:4",
-          "name": "Slingshot pouch",
+          "name": "Start spot",
           "gesture": "Drag the pouch back.",
           "values": {
             "kind": "range",
@@ -2323,13 +2323,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
         {
           "id": "1-07-slingshot:tl:5",
-          "name": "A load of weight",
+          "name": "Mass (projectile)",
           "gesture": "Pour the weight onto the projectile.",
           "values": {
             "kind": "palette",
@@ -2366,13 +2366,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
         {
           "id": "1-07-slingshot:tl:6",
-          "name": "A heavy stone coating",
+          "name": "Mass (load)",
           "gesture": "Pour heavy material onto the load.",
           "values": {
             "kind": "palette",
@@ -2408,7 +2408,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         },
@@ -2448,7 +2448,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.242Z"
+              "ts": "2026-09-09T22:03:28.010Z"
             }
           }
         }
@@ -2500,7 +2500,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.272Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
@@ -2541,7 +2541,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.272Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
@@ -2574,7 +2574,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.272Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         }
@@ -2582,7 +2582,7 @@
       "tools": [
         {
           "id": "1-08-playground-slide:tl:1",
-          "name": "Slide base coating",
+          "name": "Slipperiness (object)",
           "gesture": "Coat the bottom of the slide.",
           "values": {
             "kind": "palette",
@@ -2619,13 +2619,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.271Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
         {
           "id": "1-08-playground-slide:tl:2",
-          "name": "Slipperiness",
+          "name": "Slipperiness (ground)",
           "gesture": "How slippery the slide surface is.",
           "values": {
             "kind": "palette",
@@ -2663,13 +2663,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.271Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
         {
           "id": "1-08-playground-slide:tl:3",
-          "name": "A bucket of world gravity",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the slide.",
           "values": {
             "kind": "palette",
@@ -2707,7 +2707,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.271Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
@@ -2750,13 +2750,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.271Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
         {
           "id": "1-08-playground-slide:tl:5",
-          "name": "Slide height grip",
+          "name": "Slope",
           "gesture": "Drag the top of the slide higher or lower.",
           "values": {
             "kind": "range",
@@ -2789,13 +2789,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.271Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
         {
           "id": "1-08-playground-slide:tl:6",
-          "name": "Rider weight",
+          "name": "Mass",
           "gesture": "Pour load onto the slide rider.",
           "values": {
             "kind": "palette",
@@ -2829,7 +2829,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.271Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         },
@@ -2869,7 +2869,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.272Z"
+              "ts": "2026-09-09T22:03:28.038Z"
             }
           }
         }
@@ -2921,7 +2921,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         },
@@ -2962,7 +2962,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         },
@@ -2995,7 +2995,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         }
@@ -3003,7 +3003,7 @@
       "tools": [
         {
           "id": "1-09-petanque-throw:tl:1",
-          "name": "Air cannon blast",
+          "name": "Push",
           "gesture": "Blow a launch blast onto the grey ball.",
           "values": {
             "kind": "palette",
@@ -3040,13 +3040,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         },
         {
           "id": "1-09-petanque-throw:tl:2",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -3084,13 +3084,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         },
         {
           "id": "1-09-petanque-throw:tl:3",
-          "name": "Load bucket",
+          "name": "Mass",
           "gesture": "Pour material into the grey ball.",
           "values": {
             "kind": "palette",
@@ -3127,7 +3127,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         },
@@ -3167,7 +3167,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.285Z"
+              "ts": "2026-09-09T22:03:28.051Z"
             }
           }
         }
@@ -3219,7 +3219,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         },
@@ -3260,7 +3260,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         },
@@ -3293,7 +3293,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         }
@@ -3301,7 +3301,7 @@
       "tools": [
         {
           "id": "1-10-long-jump:tl:1",
-          "name": "Launch booster",
+          "name": "Push",
           "gesture": "Boost the jumper's launch.",
           "values": {
             "kind": "palette",
@@ -3340,13 +3340,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         },
         {
           "id": "1-10-long-jump:tl:2",
-          "name": "World gravity coat",
+          "name": "Gravity",
           "gesture": "Pour planetary gravity over the scene.",
           "values": {
             "kind": "palette",
@@ -3384,13 +3384,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         },
         {
           "id": "1-10-long-jump:tl:3",
-          "name": "Weight bucket",
+          "name": "Mass",
           "gesture": "Pour weight onto the jumper.",
           "values": {
             "kind": "palette",
@@ -3427,13 +3427,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         },
         {
           "id": "1-10-long-jump:tl:4",
-          "name": "Jumper starting spot",
+          "name": "Start spot",
           "gesture": "Drag the jumper to a new spot.",
           "values": {
             "kind": "range",
@@ -3463,7 +3463,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         },
@@ -3503,7 +3503,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.300Z"
+              "ts": "2026-09-09T22:03:28.066Z"
             }
           }
         }
@@ -3555,7 +3555,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.085Z"
             }
           }
         },
@@ -3596,7 +3596,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.085Z"
             }
           }
         },
@@ -3629,7 +3629,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.085Z"
             }
           }
         }
@@ -3637,7 +3637,7 @@
       "tools": [
         {
           "id": "1-11-cannon:tl:1",
-          "name": "A bucket of materials",
+          "name": "Mass",
           "gesture": "Pour material into the projectile.",
           "values": {
             "kind": "palette",
@@ -3675,13 +3675,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.084Z"
             }
           }
         },
         {
           "id": "1-11-cannon:tl:2",
-          "name": "Gunpowder blast",
+          "name": "Push",
           "gesture": "Blast the cannon barrel.",
           "values": {
             "kind": "palette",
@@ -3719,13 +3719,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.084Z"
             }
           }
         },
         {
           "id": "1-11-cannon:tl:3",
-          "name": "Aiming hand",
+          "name": "Aim",
           "gesture": "Tilt the cannon barrel.",
           "values": {
             "kind": "range",
@@ -3758,13 +3758,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.084Z"
             }
           }
         },
         {
           "id": "1-11-cannon:tl:4",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour gravity onto the world.",
           "values": {
             "kind": "palette",
@@ -3802,7 +3802,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.084Z"
             }
           }
         },
@@ -3845,7 +3845,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.084Z"
             }
           }
         },
@@ -3885,7 +3885,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.317Z"
+              "ts": "2026-09-09T22:03:28.084Z"
             }
           }
         }
@@ -3937,7 +3937,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         },
@@ -3978,7 +3978,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         },
@@ -4011,7 +4011,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         }
@@ -4019,7 +4019,7 @@
       "tools": [
         {
           "id": "1-12-dartboard:tl:1",
-          "name": "Compressed air blast",
+          "name": "Push",
           "gesture": "Puff air behind the dart.",
           "values": {
             "kind": "palette",
@@ -4056,13 +4056,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         },
         {
           "id": "1-12-dartboard:tl:2",
-          "name": "Aiming tilt",
+          "name": "Aim",
           "gesture": "Aim the dart upward or downward.",
           "values": {
             "kind": "range",
@@ -4095,13 +4095,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         },
         {
           "id": "1-12-dartboard:tl:3",
-          "name": "Dart mass bucket",
+          "name": "Mass",
           "gesture": "Pour weight onto the dart.",
           "values": {
             "kind": "palette",
@@ -4138,7 +4138,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         },
@@ -4178,7 +4178,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.342Z"
+              "ts": "2026-09-09T22:03:28.108Z"
             }
           }
         }
@@ -4230,7 +4230,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         },
@@ -4271,7 +4271,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         },
@@ -4304,7 +4304,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         }
@@ -4312,7 +4312,7 @@
       "tools": [
         {
           "id": "1-13-ski-jump:tl:1",
-          "name": "Start position",
+          "name": "Start spot",
           "gesture": "Drag to starting point.",
           "values": {
             "kind": "range",
@@ -4345,13 +4345,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         },
         {
           "id": "1-13-ski-jump:tl:2",
-          "name": "Top of the ramp",
+          "name": "Slope",
           "gesture": "Drag the ramp higher or lower.",
           "values": {
             "kind": "range",
@@ -4384,13 +4384,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         },
         {
           "id": "1-13-ski-jump:tl:3",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -4427,7 +4427,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         },
@@ -4467,7 +4467,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.368Z"
+              "ts": "2026-09-09T22:03:28.131Z"
             }
           }
         }
@@ -4513,7 +4513,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.380Z"
+              "ts": "2026-09-09T22:03:28.144Z"
             }
           }
         },
@@ -4549,7 +4549,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.380Z"
+              "ts": "2026-09-09T22:03:28.144Z"
             }
           }
         },
@@ -4582,7 +4582,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.380Z"
+              "ts": "2026-09-09T22:03:28.144Z"
             }
           }
         }
@@ -4590,7 +4590,7 @@
       "tools": [
         {
           "id": "1-14-ball-off-table:tl:1",
-          "name": "Starting position",
+          "name": "Start spot",
           "gesture": "Drag the block to set its start position.",
           "values": {
             "kind": "range",
@@ -4623,13 +4623,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.380Z"
+              "ts": "2026-09-09T22:03:28.144Z"
             }
           }
         },
         {
           "id": "1-14-ball-off-table:tl:2",
-          "name": "Planet gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planet gravity over the scene.",
           "values": {
             "kind": "palette",
@@ -4667,7 +4667,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.380Z"
+              "ts": "2026-09-09T22:03:28.144Z"
             }
           }
         },
@@ -4707,7 +4707,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.380Z"
+              "ts": "2026-09-09T22:03:28.144Z"
             }
           }
         }
@@ -4759,7 +4759,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.169Z"
             }
           }
         },
@@ -4800,7 +4800,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.170Z"
             }
           }
         },
@@ -4833,7 +4833,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.170Z"
             }
           }
         }
@@ -4877,13 +4877,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.169Z"
             }
           }
         },
         {
           "id": "1-15-volleyball-serve:tl:2",
-          "name": "Aiming hand",
+          "name": "Aim",
           "gesture": "Tilt the trajectory.",
           "values": {
             "kind": "range",
@@ -4916,13 +4916,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.169Z"
             }
           }
         },
         {
           "id": "1-15-volleyball-serve:tl:3",
-          "name": "Material filler",
+          "name": "Mass",
           "gesture": "Fill the ball with material.",
           "values": {
             "kind": "palette",
@@ -4959,7 +4959,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.169Z"
             }
           }
         },
@@ -5002,7 +5002,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.169Z"
             }
           }
         },
@@ -5042,7 +5042,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.406Z"
+              "ts": "2026-09-09T22:03:28.169Z"
             }
           }
         }
@@ -5082,7 +5082,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.416Z"
+              "ts": "2026-09-09T22:03:28.179Z"
             }
           }
         },
@@ -5123,7 +5123,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.416Z"
+              "ts": "2026-09-09T22:03:28.179Z"
             }
           }
         },
@@ -5156,7 +5156,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.416Z"
+              "ts": "2026-09-09T22:03:28.179Z"
             }
           }
         }
@@ -5164,7 +5164,7 @@
       "tools": [
         {
           "id": "2-01-trampoline:tl:1",
-          "name": "Mat push strength",
+          "name": "Push",
           "gesture": "Bounce harder off the mat.",
           "values": {
             "kind": "palette",
@@ -5203,7 +5203,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.416Z"
+              "ts": "2026-09-09T22:03:28.178Z"
             }
           }
         },
@@ -5243,7 +5243,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.416Z"
+              "ts": "2026-09-09T22:03:28.178Z"
             }
           }
         }
@@ -5295,7 +5295,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.480Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         },
@@ -5336,7 +5336,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.480Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         },
@@ -5369,7 +5369,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.480Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         }
@@ -5377,7 +5377,7 @@
       "tools": [
         {
           "id": "2-02-swing-set:tl:1",
-          "name": "Swing position",
+          "name": "Release spot",
           "gesture": "Pull the swing back higher.",
           "values": {
             "kind": "range",
@@ -5410,13 +5410,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.479Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         },
         {
           "id": "2-02-swing-set:tl:2",
-          "name": "Adjust swing rope length",
+          "name": "Rope length",
           "gesture": "Drag the pivot to lengthen or shorten the rope.",
           "values": {
             "kind": "range",
@@ -5449,13 +5449,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.479Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         },
         {
           "id": "2-02-swing-set:tl:3",
-          "name": "Rider load",
+          "name": "Mass",
           "gesture": "Pour onto the swing seat.",
           "values": {
             "kind": "palette",
@@ -5491,7 +5491,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.479Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         },
@@ -5531,7 +5531,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.479Z"
+              "ts": "2026-09-09T22:03:28.238Z"
             }
           }
         }
@@ -5577,7 +5577,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.527Z"
+              "ts": "2026-09-09T22:03:28.283Z"
             }
           }
         },
@@ -5618,7 +5618,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.527Z"
+              "ts": "2026-09-09T22:03:28.283Z"
             }
           }
         },
@@ -5651,7 +5651,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.527Z"
+              "ts": "2026-09-09T22:03:28.283Z"
             }
           }
         }
@@ -5659,7 +5659,7 @@
       "tools": [
         {
           "id": "2-03-horizontal-spring:tl:1",
-          "name": "Spring compression",
+          "name": "Pull-back",
           "gesture": "Pull back the spring.",
           "values": {
             "kind": "range",
@@ -5692,13 +5692,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.526Z"
+              "ts": "2026-09-09T22:03:28.283Z"
             }
           }
         },
         {
           "id": "2-03-horizontal-spring:tl:2",
-          "name": "Cargo bucket",
+          "name": "Mass",
           "gesture": "Pour weight into the suspended load.",
           "values": {
             "kind": "palette",
@@ -5735,7 +5735,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.527Z"
+              "ts": "2026-09-09T22:03:28.283Z"
             }
           }
         },
@@ -5775,7 +5775,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.527Z"
+              "ts": "2026-09-09T22:03:28.283Z"
             }
           }
         }
@@ -5821,7 +5821,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         },
@@ -5862,7 +5862,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         },
@@ -5895,7 +5895,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         }
@@ -5903,7 +5903,7 @@
       "tools": [
         {
           "id": "2-04-tire-swing:tl:1",
-          "name": "Tire swing position",
+          "name": "Release spot",
           "gesture": "Pull the tire swing higher.",
           "values": {
             "kind": "range",
@@ -5936,7 +5936,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         },
@@ -5972,13 +5972,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         },
         {
           "id": "2-04-tire-swing:tl:3",
-          "name": "Material bucket",
+          "name": "Mass",
           "gesture": "Pour onto the tire swing.",
           "values": {
             "kind": "palette",
@@ -6012,7 +6012,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         },
@@ -6052,7 +6052,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.580Z"
+              "ts": "2026-09-09T22:03:28.333Z"
             }
           }
         }
@@ -6092,7 +6092,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.608Z"
+              "ts": "2026-09-09T22:03:28.360Z"
             }
           }
         },
@@ -6133,7 +6133,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.608Z"
+              "ts": "2026-09-09T22:03:28.360Z"
             }
           }
         },
@@ -6166,7 +6166,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.608Z"
+              "ts": "2026-09-09T22:03:28.360Z"
             }
           }
         }
@@ -6174,7 +6174,7 @@
       "tools": [
         {
           "id": "2-05-rocking-chair:tl:1",
-          "name": "Hand tilt",
+          "name": "Tilt",
           "gesture": "Tip the rocking chair before release.",
           "values": {
             "kind": "range",
@@ -6207,7 +6207,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.608Z"
+              "ts": "2026-09-09T22:03:28.360Z"
             }
           }
         },
@@ -6243,7 +6243,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.608Z"
+              "ts": "2026-09-09T22:03:28.360Z"
             }
           }
         }
@@ -6283,7 +6283,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.640Z"
+              "ts": "2026-09-09T22:03:28.391Z"
             }
           }
         },
@@ -6319,7 +6319,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.640Z"
+              "ts": "2026-09-09T22:03:28.391Z"
             }
           }
         },
@@ -6352,7 +6352,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.640Z"
+              "ts": "2026-09-09T22:03:28.391Z"
             }
           }
         }
@@ -6360,7 +6360,7 @@
       "tools": [
         {
           "id": "2-06-grandfather-clock:tl:1",
-          "name": "Release height positioner",
+          "name": "Release spot",
           "gesture": "Pull the pendulum bob higher up the arc.",
           "values": {
             "kind": "range",
@@ -6393,13 +6393,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.640Z"
+              "ts": "2026-09-09T22:03:28.391Z"
             }
           }
         },
         {
           "id": "2-06-grandfather-clock:tl:2",
-          "name": "Weight load",
+          "name": "Mass",
           "gesture": "Pour material into the swinging rod.",
           "values": {
             "kind": "palette",
@@ -6434,7 +6434,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.640Z"
+              "ts": "2026-09-09T22:03:28.391Z"
             }
           }
         },
@@ -6474,7 +6474,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.640Z"
+              "ts": "2026-09-09T22:03:28.391Z"
             }
           }
         }
@@ -6514,7 +6514,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.684Z"
+              "ts": "2026-09-09T22:03:28.432Z"
             }
           }
         },
@@ -6555,7 +6555,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.684Z"
+              "ts": "2026-09-09T22:03:28.432Z"
             }
           }
         },
@@ -6588,7 +6588,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.684Z"
+              "ts": "2026-09-09T22:03:28.432Z"
             }
           }
         }
@@ -6596,7 +6596,7 @@
       "tools": [
         {
           "id": "2-07-yoyo:tl:1",
-          "name": "String length handle",
+          "name": "Rope length",
           "gesture": "Drag to adjust string length.",
           "values": {
             "kind": "range",
@@ -6626,13 +6626,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.684Z"
+              "ts": "2026-09-09T22:03:28.432Z"
             }
           }
         },
         {
           "id": "2-07-yoyo:tl:2",
-          "name": "Sphere weight bucket",
+          "name": "Mass",
           "gesture": "Pour weight into the hanging sphere.",
           "values": {
             "kind": "palette",
@@ -6667,7 +6667,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.684Z"
+              "ts": "2026-09-09T22:03:28.432Z"
             }
           }
         },
@@ -6707,7 +6707,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.684Z"
+              "ts": "2026-09-09T22:03:28.432Z"
             }
           }
         }
@@ -6753,7 +6753,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         },
@@ -6794,7 +6794,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         },
@@ -6827,7 +6827,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         }
@@ -6835,7 +6835,7 @@
       "tools": [
         {
           "id": "2-08-basketball-dribble:tl:1",
-          "name": "Bounce coating",
+          "name": "Bounciness (bouncer)",
           "gesture": "Coat the ball.",
           "values": {
             "kind": "palette",
@@ -6873,13 +6873,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         },
         {
           "id": "2-08-basketball-dribble:tl:2",
-          "name": "Ground coating brush",
+          "name": "Bounciness (ground)",
           "gesture": "Paint material onto the landing surface.",
           "values": {
             "kind": "palette",
@@ -6917,13 +6917,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         },
         {
           "id": "2-08-basketball-dribble:tl:3",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour gravity over the world.",
           "values": {
             "kind": "palette",
@@ -6959,7 +6959,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         },
@@ -6999,7 +6999,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.702Z"
+              "ts": "2026-09-09T22:03:28.443Z"
             }
           }
         }
@@ -7039,7 +7039,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.728Z"
+              "ts": "2026-09-09T22:03:28.456Z"
             }
           }
         },
@@ -7080,7 +7080,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.728Z"
+              "ts": "2026-09-09T22:03:28.456Z"
             }
           }
         },
@@ -7113,7 +7113,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.728Z"
+              "ts": "2026-09-09T22:03:28.456Z"
             }
           }
         }
@@ -7121,7 +7121,7 @@
       "tools": [
         {
           "id": "2-09-bungee-jump:tl:1",
-          "name": "Hand",
+          "name": "Start spot",
           "gesture": "Drag the start position.",
           "values": {
             "kind": "range",
@@ -7154,7 +7154,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.727Z"
+              "ts": "2026-09-09T22:03:28.456Z"
             }
           }
         },
@@ -7190,7 +7190,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.727Z"
+              "ts": "2026-09-09T22:03:28.456Z"
             }
           }
         }
@@ -7242,7 +7242,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
@@ -7278,7 +7278,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
@@ -7311,7 +7311,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         }
@@ -7319,7 +7319,7 @@
       "tools": [
         {
           "id": "2-10-bouncing-ball:tl:1",
-          "name": "Surface bounce roller",
+          "name": "Bounciness (ground)",
           "gesture": "Coat the floor with bounciness.",
           "values": {
             "kind": "palette",
@@ -7357,13 +7357,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
         {
           "id": "2-10-bouncing-ball:tl:2",
-          "name": "Start position hand",
+          "name": "Start spot",
           "gesture": "Drag the red ball to a new start point.",
           "values": {
             "kind": "range",
@@ -7396,13 +7396,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
         {
           "id": "2-10-bouncing-ball:tl:3",
-          "name": "Bounciness coat",
+          "name": "Bounciness (bouncer)",
           "gesture": "Pour onto the red ball.",
           "values": {
             "kind": "palette",
@@ -7440,13 +7440,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
         {
           "id": "2-10-bouncing-ball:tl:4",
-          "name": "Coating bucket",
+          "name": "Air drag",
           "gesture": "Dip the red ball in liquid.",
           "values": {
             "kind": "palette",
@@ -7484,13 +7484,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
         {
           "id": "2-10-bouncing-ball:tl:5",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planetary gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -7526,7 +7526,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         },
@@ -7566,7 +7566,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.760Z"
+              "ts": "2026-09-09T22:03:28.481Z"
             }
           }
         }
@@ -7606,7 +7606,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.785Z"
+              "ts": "2026-09-09T22:03:28.505Z"
             }
           }
         },
@@ -7647,7 +7647,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.785Z"
+              "ts": "2026-09-09T22:03:28.505Z"
             }
           }
         },
@@ -7680,7 +7680,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.785Z"
+              "ts": "2026-09-09T22:03:28.505Z"
             }
           }
         }
@@ -7688,7 +7688,7 @@
       "tools": [
         {
           "id": "2-11-metronome:tl:1",
-          "name": "Sliding weight",
+          "name": "Start spot",
           "gesture": "Slide the weight along the arm.",
           "values": {
             "kind": "range",
@@ -7721,7 +7721,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.785Z"
+              "ts": "2026-09-09T22:03:28.504Z"
             }
           }
         },
@@ -7757,7 +7757,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.785Z"
+              "ts": "2026-09-09T22:03:28.504Z"
             }
           }
         }
@@ -7809,7 +7809,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.918Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
@@ -7850,7 +7850,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.918Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
@@ -7883,7 +7883,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.918Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         }
@@ -7891,7 +7891,7 @@
       "tools": [
         {
           "id": "2-12-wrecking-ball:tl:1",
-          "name": "Release grip",
+          "name": "Release spot",
           "gesture": "Drag the wrecking ball higher along its arc.",
           "values": {
             "kind": "range",
@@ -7924,13 +7924,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
         {
           "id": "2-12-wrecking-ball:tl:2",
-          "name": "Masonry mix",
+          "name": "Mass (targets)",
           "gesture": "Pour heavy masonry into the wall.",
           "values": {
             "kind": "palette",
@@ -7966,13 +7966,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
         {
           "id": "2-12-wrecking-ball:tl:3",
-          "name": "Cable length",
+          "name": "Rope length",
           "gesture": "Adjust length of the cable.",
           "values": {
             "kind": "range",
@@ -8002,13 +8002,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
         {
           "id": "2-12-wrecking-ball:tl:4",
-          "name": "Mass",
+          "name": "Mass (striker)",
           "gesture": "How heavy the wrecking ball is.",
           "values": {
             "kind": "palette",
@@ -8045,13 +8045,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
         {
           "id": "2-12-wrecking-ball:tl:5",
-          "name": "Rubber coating",
+          "name": "Bounciness",
           "gesture": "Coat the wrecking ball.",
           "values": {
             "kind": "palette",
@@ -8087,13 +8087,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
         {
           "id": "2-12-wrecking-ball:tl:6",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour onto the sky.",
           "values": {
             "kind": "palette",
@@ -8129,13 +8129,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
         {
           "id": "2-12-wrecking-ball:tl:7",
-          "name": "A load of weight",
+          "name": "Mass (bob)",
           "gesture": "Pour weight into the wrecking ball.",
           "values": {
             "kind": "palette",
@@ -8170,7 +8170,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         },
@@ -8210,7 +8210,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.917Z"
+              "ts": "2026-09-09T22:03:28.634Z"
             }
           }
         }
@@ -8256,7 +8256,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.953Z"
+              "ts": "2026-09-09T22:03:28.655Z"
             }
           }
         },
@@ -8297,7 +8297,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.953Z"
+              "ts": "2026-09-09T22:03:28.655Z"
             }
           }
         },
@@ -8330,7 +8330,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.953Z"
+              "ts": "2026-09-09T22:03:28.655Z"
             }
           }
         }
@@ -8375,13 +8375,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.953Z"
+              "ts": "2026-09-09T22:03:28.655Z"
             }
           }
         },
         {
           "id": "2-13-pogo-stick:tl:2",
-          "name": "Rider weight",
+          "name": "Mass",
           "gesture": "Pour weight onto the rider.",
           "values": {
             "kind": "palette",
@@ -8417,7 +8417,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.953Z"
+              "ts": "2026-09-09T22:03:28.655Z"
             }
           }
         },
@@ -8457,7 +8457,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:58.953Z"
+              "ts": "2026-09-09T22:03:28.655Z"
             }
           }
         }
@@ -8503,7 +8503,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.713Z"
             }
           }
         },
@@ -8544,7 +8544,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.713Z"
             }
           }
         },
@@ -8577,7 +8577,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.713Z"
             }
           }
         }
@@ -8585,7 +8585,7 @@
       "tools": [
         {
           "id": "2-14-pirate-ship-ride:tl:1",
-          "name": "Suspension rope length",
+          "name": "Rope length",
           "gesture": "Drag the pivot to lengthen or shorten the cables.",
           "values": {
             "kind": "range",
@@ -8618,13 +8618,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.712Z"
             }
           }
         },
         {
           "id": "2-14-pirate-ship-ride:tl:2",
-          "name": "Release grip",
+          "name": "Release spot",
           "gesture": "Pull the ship higher along its arc.",
           "values": {
             "kind": "range",
@@ -8654,7 +8654,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.712Z"
             }
           }
         },
@@ -8694,7 +8694,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.712Z"
             }
           }
         },
@@ -8734,7 +8734,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.019Z"
+              "ts": "2026-09-09T22:03:28.712Z"
             }
           }
         }
@@ -8780,7 +8780,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.057Z"
+              "ts": "2026-09-09T22:03:28.745Z"
             }
           }
         },
@@ -8821,7 +8821,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.057Z"
+              "ts": "2026-09-09T22:03:28.745Z"
             }
           }
         },
@@ -8854,7 +8854,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.057Z"
+              "ts": "2026-09-09T22:03:28.745Z"
             }
           }
         }
@@ -8862,7 +8862,7 @@
       "tools": [
         {
           "id": "2-15-mass-on-spring:tl:1",
-          "name": "Hand drag",
+          "name": "Start spot",
           "gesture": "Drag the spring to a new starting point.",
           "values": {
             "kind": "range",
@@ -8895,7 +8895,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.057Z"
+              "ts": "2026-09-09T22:03:28.745Z"
             }
           }
         },
@@ -8939,7 +8939,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.057Z"
+              "ts": "2026-09-09T22:03:28.745Z"
             }
           }
         },
@@ -8979,7 +8979,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.057Z"
+              "ts": "2026-09-09T22:03:28.745Z"
             }
           }
         }
@@ -9025,7 +9025,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.134Z"
+              "ts": "2026-09-09T22:03:28.822Z"
             }
           }
         },
@@ -9061,7 +9061,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.134Z"
+              "ts": "2026-09-09T22:03:28.822Z"
             }
           }
         },
@@ -9094,7 +9094,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.134Z"
+              "ts": "2026-09-09T22:03:28.822Z"
             }
           }
         }
@@ -9102,7 +9102,7 @@
       "tools": [
         {
           "id": "3-01-seesaw:tl:1",
-          "name": "Support fulcrum",
+          "name": "Pivot",
           "gesture": "Slide the support along the seesaw board.",
           "values": {
             "kind": "range",
@@ -9135,13 +9135,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.134Z"
+              "ts": "2026-09-09T22:03:28.821Z"
             }
           }
         },
         {
           "id": "3-01-seesaw:tl:2",
-          "name": "Hand",
+          "name": "Load spot",
           "gesture": "Slide the weight along the board.",
           "values": {
             "kind": "range",
@@ -9171,7 +9171,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.134Z"
+              "ts": "2026-09-09T22:03:28.821Z"
             }
           }
         },
@@ -9207,7 +9207,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.134Z"
+              "ts": "2026-09-09T22:03:28.821Z"
             }
           }
         }
@@ -9253,7 +9253,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.161Z"
+              "ts": "2026-09-09T22:03:28.849Z"
             }
           }
         },
@@ -9294,7 +9294,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.161Z"
+              "ts": "2026-09-09T22:03:28.849Z"
             }
           }
         },
@@ -9327,7 +9327,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.161Z"
+              "ts": "2026-09-09T22:03:28.849Z"
             }
           }
         }
@@ -9335,7 +9335,7 @@
       "tools": [
         {
           "id": "3-02-balance-scale:tl:1",
-          "name": "Fulcrum handle",
+          "name": "Pivot",
           "gesture": "Shift the fulcrum along the beam.",
           "values": {
             "kind": "range",
@@ -9368,13 +9368,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.161Z"
+              "ts": "2026-09-09T22:03:28.849Z"
             }
           }
         },
         {
           "id": "3-02-balance-scale:tl:2",
-          "name": "Cargo bucket",
+          "name": "Mass",
           "gesture": "Pour heavy weight into the left box.",
           "values": {
             "kind": "palette",
@@ -9412,7 +9412,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.161Z"
+              "ts": "2026-09-09T22:03:28.849Z"
             }
           }
         },
@@ -9452,7 +9452,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.161Z"
+              "ts": "2026-09-09T22:03:28.849Z"
             }
           }
         }
@@ -9492,7 +9492,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.188Z"
+              "ts": "2026-09-09T22:03:28.876Z"
             }
           }
         },
@@ -9533,7 +9533,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.188Z"
+              "ts": "2026-09-09T22:03:28.876Z"
             }
           }
         },
@@ -9566,7 +9566,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.188Z"
+              "ts": "2026-09-09T22:03:28.876Z"
             }
           }
         }
@@ -9574,7 +9574,7 @@
       "tools": [
         {
           "id": "3-03-stone-stack:tl:1",
-          "name": "Bare hands",
+          "name": "Stack",
           "gesture": "Slide the top stone sideways.",
           "values": {
             "kind": "range",
@@ -9607,7 +9607,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.188Z"
+              "ts": "2026-09-09T22:03:28.876Z"
             }
           }
         },
@@ -9643,7 +9643,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.188Z"
+              "ts": "2026-09-09T22:03:28.876Z"
             }
           }
         }
@@ -9683,7 +9683,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.198Z"
+              "ts": "2026-09-09T22:03:28.885Z"
             }
           }
         },
@@ -9724,7 +9724,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.198Z"
+              "ts": "2026-09-09T22:03:28.885Z"
             }
           }
         },
@@ -9757,7 +9757,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.198Z"
+              "ts": "2026-09-09T22:03:28.885Z"
             }
           }
         }
@@ -9798,7 +9798,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.197Z"
+              "ts": "2026-09-09T22:03:28.884Z"
             }
           }
         },
@@ -9834,7 +9834,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.197Z"
+              "ts": "2026-09-09T22:03:28.884Z"
             }
           }
         }
@@ -9880,7 +9880,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.214Z"
+              "ts": "2026-09-09T22:03:28.897Z"
             }
           }
         },
@@ -9921,7 +9921,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.214Z"
+              "ts": "2026-09-09T22:03:28.897Z"
             }
           }
         },
@@ -9954,7 +9954,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.214Z"
+              "ts": "2026-09-09T22:03:28.897Z"
             }
           }
         }
@@ -9962,7 +9962,7 @@
       "tools": [
         {
           "id": "3-05-waiter-tray:tl:1",
-          "name": "Center of balance",
+          "name": "Lean",
           "gesture": "Shift the tray's balance point.",
           "values": {
             "kind": "range",
@@ -9995,13 +9995,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.214Z"
+              "ts": "2026-09-09T22:03:28.897Z"
             }
           }
         },
         {
           "id": "3-05-waiter-tray:tl:2",
-          "name": "The balance support",
+          "name": "Pivot",
           "gesture": "Slide the support along the tray.",
           "values": {
             "kind": "range",
@@ -10034,7 +10034,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.214Z"
+              "ts": "2026-09-09T22:03:28.897Z"
             }
           }
         },
@@ -10070,7 +10070,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.214Z"
+              "ts": "2026-09-09T22:03:28.897Z"
             }
           }
         }
@@ -10110,7 +10110,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.225Z"
+              "ts": "2026-09-09T22:03:28.908Z"
             }
           }
         },
@@ -10151,7 +10151,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.225Z"
+              "ts": "2026-09-09T22:03:28.908Z"
             }
           }
         },
@@ -10184,7 +10184,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.225Z"
+              "ts": "2026-09-09T22:03:28.908Z"
             }
           }
         }
@@ -10192,7 +10192,7 @@
       "tools": [
         {
           "id": "3-06-tilting-chair:tl:1",
-          "name": "Sitter's balance point",
+          "name": "Lean",
           "gesture": "Shift where the sitter leans on the chair.",
           "values": {
             "kind": "range",
@@ -10225,7 +10225,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.225Z"
+              "ts": "2026-09-09T22:03:28.908Z"
             }
           }
         },
@@ -10261,7 +10261,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.225Z"
+              "ts": "2026-09-09T22:03:28.908Z"
             }
           }
         }
@@ -10307,7 +10307,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.236Z"
+              "ts": "2026-09-09T22:03:28.919Z"
             }
           }
         },
@@ -10348,7 +10348,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.236Z"
+              "ts": "2026-09-09T22:03:28.919Z"
             }
           }
         },
@@ -10381,7 +10381,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.236Z"
+              "ts": "2026-09-09T22:03:28.919Z"
             }
           }
         }
@@ -10389,7 +10389,7 @@
       "tools": [
         {
           "id": "3-07-overhang-plank:tl:1",
-          "name": "Hand",
+          "name": "Start spot",
           "gesture": "Drag the plank to a new starting position.",
           "values": {
             "kind": "range",
@@ -10422,13 +10422,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.236Z"
+              "ts": "2026-09-09T22:03:28.919Z"
             }
           }
         },
         {
           "id": "3-07-overhang-plank:tl:2",
-          "name": "Shift balance point",
+          "name": "Lean",
           "gesture": "Drag the weight along the plank.",
           "values": {
             "kind": "range",
@@ -10461,7 +10461,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.236Z"
+              "ts": "2026-09-09T22:03:28.919Z"
             }
           }
         },
@@ -10497,7 +10497,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.236Z"
+              "ts": "2026-09-09T22:03:28.919Z"
             }
           }
         }
@@ -10549,7 +10549,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         },
@@ -10590,7 +10590,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         },
@@ -10623,7 +10623,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         }
@@ -10631,7 +10631,7 @@
       "tools": [
         {
           "id": "3-08-tower-crane:tl:1",
-          "name": "Support placement",
+          "name": "Pivot",
           "gesture": "Slide the support along the jib.",
           "values": {
             "kind": "range",
@@ -10664,13 +10664,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         },
         {
           "id": "3-08-tower-crane:tl:2",
-          "name": "Crane positioning hand",
+          "name": "Start spot",
           "gesture": "Slide the crane jib along.",
           "values": {
             "kind": "range",
@@ -10703,7 +10703,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         },
@@ -10742,7 +10742,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         },
@@ -10782,7 +10782,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.268Z"
+              "ts": "2026-09-09T22:03:28.948Z"
             }
           }
         }
@@ -10834,7 +10834,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         },
@@ -10875,7 +10875,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         },
@@ -10908,7 +10908,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         }
@@ -10916,7 +10916,7 @@
       "tools": [
         {
           "id": "3-09-crowbar:tl:1",
-          "name": "Grip handle",
+          "name": "Load spot",
           "gesture": "Slide your grip along the lever.",
           "values": {
             "kind": "range",
@@ -10949,13 +10949,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         },
         {
           "id": "3-09-crowbar:tl:2",
-          "name": "Air push blower",
+          "name": "Push",
           "gesture": "Blow air onto the bar.",
           "values": {
             "kind": "palette",
@@ -10994,13 +10994,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         },
         {
           "id": "3-09-crowbar:tl:3",
-          "name": "Fulcrum position",
+          "name": "Pivot",
           "gesture": "Drag the fulcrum along the beam.",
           "values": {
             "kind": "range",
@@ -11033,13 +11033,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         },
         {
           "id": "3-09-crowbar:tl:4",
-          "name": "A heavy material load",
+          "name": "Mass",
           "gesture": "Pour heavy material onto the load.",
           "values": {
             "kind": "palette",
@@ -11072,7 +11072,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         },
@@ -11112,7 +11112,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.333Z"
+              "ts": "2026-09-09T22:03:29.009Z"
             }
           }
         }
@@ -11152,7 +11152,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.341Z"
+              "ts": "2026-09-09T22:03:29.016Z"
             }
           }
         },
@@ -11193,7 +11193,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.341Z"
+              "ts": "2026-09-09T22:03:29.016Z"
             }
           }
         },
@@ -11226,7 +11226,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.341Z"
+              "ts": "2026-09-09T22:03:29.016Z"
             }
           }
         }
@@ -11234,7 +11234,7 @@
       "tools": [
         {
           "id": "3-10-nutcracker:tl:1",
-          "name": "Pivot pin",
+          "name": "Pivot",
           "gesture": "Slide the pivot along the beam.",
           "values": {
             "kind": "range",
@@ -11267,7 +11267,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.341Z"
+              "ts": "2026-09-09T22:03:29.016Z"
             }
           }
         },
@@ -11303,7 +11303,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.341Z"
+              "ts": "2026-09-09T22:03:29.016Z"
             }
           }
         }
@@ -11355,7 +11355,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.353Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         },
@@ -11396,7 +11396,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.353Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         },
@@ -11429,7 +11429,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.353Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         }
@@ -11437,7 +11437,7 @@
       "tools": [
         {
           "id": "3-11-shovel:tl:1",
-          "name": "Air booster",
+          "name": "Push",
           "gesture": "Blow a steady gust onto the handle.",
           "values": {
             "kind": "palette",
@@ -11475,13 +11475,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.352Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         },
         {
           "id": "3-11-shovel:tl:2",
-          "name": "A gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour different world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -11518,13 +11518,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.353Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         },
         {
           "id": "3-11-shovel:tl:3",
-          "name": "Hand grip",
+          "name": "Load spot",
           "gesture": "Slide your hand along the handle.",
           "values": {
             "kind": "range",
@@ -11557,7 +11557,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.353Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         },
@@ -11597,7 +11597,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.353Z"
+              "ts": "2026-09-09T22:03:29.026Z"
             }
           }
         }
@@ -11643,7 +11643,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.367Z"
+              "ts": "2026-09-09T22:03:29.038Z"
             }
           }
         },
@@ -11684,7 +11684,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.367Z"
+              "ts": "2026-09-09T22:03:29.038Z"
             }
           }
         },
@@ -11717,7 +11717,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.367Z"
+              "ts": "2026-09-09T22:03:29.038Z"
             }
           }
         }
@@ -11725,7 +11725,7 @@
       "tools": [
         {
           "id": "3-12-wheelbarrow:tl:1",
-          "name": "Air blower",
+          "name": "Push",
           "gesture": "Push against the handles.",
           "values": {
             "kind": "palette",
@@ -11764,13 +11764,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.367Z"
+              "ts": "2026-09-09T22:03:29.038Z"
             }
           }
         },
         {
           "id": "3-12-wheelbarrow:tl:2",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity.",
           "values": {
             "kind": "palette",
@@ -11806,7 +11806,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.367Z"
+              "ts": "2026-09-09T22:03:29.038Z"
             }
           }
         },
@@ -11846,7 +11846,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.367Z"
+              "ts": "2026-09-09T22:03:29.038Z"
             }
           }
         }
@@ -11886,7 +11886,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.566Z"
+              "ts": "2026-09-09T22:03:29.204Z"
             }
           }
         },
@@ -11927,7 +11927,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.566Z"
+              "ts": "2026-09-09T22:03:29.204Z"
             }
           }
         },
@@ -11960,7 +11960,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.566Z"
+              "ts": "2026-09-09T22:03:29.204Z"
             }
           }
         }
@@ -11968,7 +11968,7 @@
       "tools": [
         {
           "id": "3-13-hammock:tl:1",
-          "name": "Hammock sag",
+          "name": "Sag",
           "gesture": "Pull the hammock lower or tighter.",
           "values": {
             "kind": "range",
@@ -12001,7 +12001,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.565Z"
+              "ts": "2026-09-09T22:03:29.204Z"
             }
           }
         },
@@ -12037,7 +12037,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.565Z"
+              "ts": "2026-09-09T22:03:29.204Z"
             }
           }
         }
@@ -12083,7 +12083,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.646Z"
+              "ts": "2026-09-09T22:03:29.287Z"
             }
           }
         },
@@ -12124,7 +12124,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.646Z"
+              "ts": "2026-09-09T22:03:29.287Z"
             }
           }
         },
@@ -12157,7 +12157,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.646Z"
+              "ts": "2026-09-09T22:03:29.287Z"
             }
           }
         }
@@ -12165,7 +12165,7 @@
       "tools": [
         {
           "id": "3-14-rope-bridge:tl:1",
-          "name": "Bridge cable sag",
+          "name": "Sag",
           "gesture": "Drag the center of the bridge lower or higher.",
           "values": {
             "kind": "range",
@@ -12198,13 +12198,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.646Z"
+              "ts": "2026-09-09T22:03:29.285Z"
             }
           }
         },
         {
           "id": "3-14-rope-bridge:tl:2",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planetary gravity over the scene.",
           "values": {
             "kind": "palette",
@@ -12241,7 +12241,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.646Z"
+              "ts": "2026-09-09T22:03:29.285Z"
             }
           }
         },
@@ -12281,7 +12281,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.646Z"
+              "ts": "2026-09-09T22:03:29.285Z"
             }
           }
         }
@@ -12327,7 +12327,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.663Z"
+              "ts": "2026-09-09T22:03:29.304Z"
             }
           }
         },
@@ -12368,7 +12368,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.663Z"
+              "ts": "2026-09-09T22:03:29.304Z"
             }
           }
         },
@@ -12401,7 +12401,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.663Z"
+              "ts": "2026-09-09T22:03:29.304Z"
             }
           }
         }
@@ -12409,7 +12409,7 @@
       "tools": [
         {
           "id": "3-15-tightrope-walker:tl:1",
-          "name": "Wire grip",
+          "name": "Sag",
           "gesture": "Pull the wire down to set the sag.",
           "values": {
             "kind": "range",
@@ -12442,13 +12442,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.663Z"
+              "ts": "2026-09-09T22:03:29.303Z"
             }
           }
         },
         {
           "id": "3-15-tightrope-walker:tl:2",
-          "name": "Walker balance point",
+          "name": "Lean",
           "gesture": "Shift the walker's lean.",
           "values": {
             "kind": "range",
@@ -12481,7 +12481,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.663Z"
+              "ts": "2026-09-09T22:03:29.303Z"
             }
           }
         },
@@ -12517,7 +12517,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.663Z"
+              "ts": "2026-09-09T22:03:29.303Z"
             }
           }
         }
@@ -12563,7 +12563,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.683Z"
+              "ts": "2026-09-09T22:03:29.321Z"
             }
           }
         },
@@ -12604,7 +12604,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.683Z"
+              "ts": "2026-09-09T22:03:29.321Z"
             }
           }
         },
@@ -12637,7 +12637,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.683Z"
+              "ts": "2026-09-09T22:03:29.321Z"
             }
           }
         }
@@ -12645,7 +12645,7 @@
       "tools": [
         {
           "id": "4-01-skateboarder:tl:1",
-          "name": "Ramp height adjustment",
+          "name": "Slope",
           "gesture": "Raise or lower the ramp top.",
           "values": {
             "kind": "range",
@@ -12678,13 +12678,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.683Z"
+              "ts": "2026-09-09T22:03:29.321Z"
             }
           }
         },
         {
           "id": "4-01-skateboarder:tl:2",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -12721,7 +12721,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.683Z"
+              "ts": "2026-09-09T22:03:29.321Z"
             }
           }
         },
@@ -12761,7 +12761,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.683Z"
+              "ts": "2026-09-09T22:03:29.321Z"
             }
           }
         }
@@ -12801,7 +12801,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.698Z"
+              "ts": "2026-09-09T22:03:29.335Z"
             }
           }
         },
@@ -12837,7 +12837,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.698Z"
+              "ts": "2026-09-09T22:03:29.335Z"
             }
           }
         },
@@ -12870,7 +12870,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.698Z"
+              "ts": "2026-09-09T22:03:29.335Z"
             }
           }
         }
@@ -12878,7 +12878,7 @@
       "tools": [
         {
           "id": "4-02-racing-car:tl:1",
-          "name": "Road texture brush",
+          "name": "Slipperiness",
           "gesture": "Coat the road surface.",
           "values": {
             "kind": "palette",
@@ -12914,7 +12914,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.698Z"
+              "ts": "2026-09-09T22:03:29.335Z"
             }
           }
         },
@@ -12954,7 +12954,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.698Z"
+              "ts": "2026-09-09T22:03:29.335Z"
             }
           }
         }
@@ -12994,7 +12994,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.712Z"
+              "ts": "2026-09-09T22:03:29.348Z"
             }
           }
         },
@@ -13035,7 +13035,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.712Z"
+              "ts": "2026-09-09T22:03:29.348Z"
             }
           }
         },
@@ -13068,7 +13068,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.712Z"
+              "ts": "2026-09-09T22:03:29.348Z"
             }
           }
         }
@@ -13076,7 +13076,7 @@
       "tools": [
         {
           "id": "4-03-pull-wagon:tl:1",
-          "name": "Pulling power",
+          "name": "Push",
           "gesture": "Push harder.",
           "values": {
             "kind": "palette",
@@ -13114,7 +13114,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.712Z"
+              "ts": "2026-09-09T22:03:29.348Z"
             }
           }
         },
@@ -13154,7 +13154,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.712Z"
+              "ts": "2026-09-09T22:03:29.348Z"
             }
           }
         }
@@ -13206,7 +13206,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.363Z"
             }
           }
         },
@@ -13247,7 +13247,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.363Z"
             }
           }
         },
@@ -13280,7 +13280,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.363Z"
             }
           }
         }
@@ -13288,7 +13288,7 @@
       "tools": [
         {
           "id": "4-04-sprint-start:tl:1",
-          "name": "Launch burst",
+          "name": "Push",
           "gesture": "Push the person at launch.",
           "values": {
             "kind": "palette",
@@ -13325,13 +13325,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.362Z"
             }
           }
         },
         {
           "id": "4-04-sprint-start:tl:2",
-          "name": "World gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour new gravity over the sky.",
           "values": {
             "kind": "palette",
@@ -13369,13 +13369,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.362Z"
             }
           }
         },
         {
           "id": "4-04-sprint-start:tl:3",
-          "name": "Aiming hand",
+          "name": "Aim",
           "gesture": "Tilt to aim the jump.",
           "values": {
             "kind": "range",
@@ -13408,13 +13408,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.362Z"
             }
           }
         },
         {
           "id": "4-04-sprint-start:tl:4",
-          "name": "Surface coating brush",
+          "name": "Slipperiness (ground)",
           "gesture": "Coat the surface along the path.",
           "values": {
             "kind": "palette",
@@ -13452,13 +13452,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.362Z"
             }
           }
         },
         {
           "id": "4-04-sprint-start:tl:5",
-          "name": "Material coating",
+          "name": "Slipperiness (object)",
           "gesture": "Pour coating onto the person.",
           "values": {
             "kind": "palette",
@@ -13495,7 +13495,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.362Z"
             }
           }
         },
@@ -13535,7 +13535,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.727Z"
+              "ts": "2026-09-09T22:03:29.362Z"
             }
           }
         }
@@ -13581,7 +13581,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.826Z"
+              "ts": "2026-09-09T22:03:29.460Z"
             }
           }
         },
@@ -13622,7 +13622,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.826Z"
+              "ts": "2026-09-09T22:03:29.460Z"
             }
           }
         },
@@ -13655,7 +13655,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.826Z"
+              "ts": "2026-09-09T22:03:29.460Z"
             }
           }
         }
@@ -13663,7 +13663,7 @@
       "tools": [
         {
           "id": "4-05-bowling-lane:tl:1",
-          "name": "Push booster",
+          "name": "Push",
           "gesture": "Spray a stronger shove behind the ball.",
           "values": {
             "kind": "palette",
@@ -13701,13 +13701,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.826Z"
+              "ts": "2026-09-09T22:03:29.458Z"
             }
           }
         },
         {
           "id": "4-05-bowling-lane:tl:2",
-          "name": "Lane finish brush",
+          "name": "Slipperiness",
           "gesture": "Coat the lane surface.",
           "values": {
             "kind": "palette",
@@ -13743,7 +13743,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.826Z"
+              "ts": "2026-09-09T22:03:29.458Z"
             }
           }
         },
@@ -13783,7 +13783,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.826Z"
+              "ts": "2026-09-09T22:03:29.458Z"
             }
           }
         }
@@ -13829,7 +13829,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.842Z"
+              "ts": "2026-09-09T22:03:29.474Z"
             }
           }
         },
@@ -13870,7 +13870,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.842Z"
+              "ts": "2026-09-09T22:03:29.474Z"
             }
           }
         },
@@ -13903,7 +13903,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.842Z"
+              "ts": "2026-09-09T22:03:29.474Z"
             }
           }
         }
@@ -13911,7 +13911,7 @@
       "tools": [
         {
           "id": "4-06-wheeled-suitcase:tl:1",
-          "name": "A leaf blower",
+          "name": "Push",
           "gesture": "Blow air onto the suitcase.",
           "values": {
             "kind": "palette",
@@ -13948,13 +13948,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.842Z"
+              "ts": "2026-09-09T22:03:29.474Z"
             }
           }
         },
         {
           "id": "4-06-wheeled-suitcase:tl:2",
-          "name": "Surface coating brush",
+          "name": "Slipperiness",
           "gesture": "Coat the floor along the path.",
           "values": {
             "kind": "palette",
@@ -13991,7 +13991,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.842Z"
+              "ts": "2026-09-09T22:03:29.474Z"
             }
           }
         },
@@ -14031,7 +14031,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.842Z"
+              "ts": "2026-09-09T22:03:29.474Z"
             }
           }
         }
@@ -14083,7 +14083,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         },
@@ -14124,7 +14124,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         },
@@ -14157,7 +14157,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         }
@@ -14165,7 +14165,7 @@
       "tools": [
         {
           "id": "4-07-zipline:tl:1",
-          "name": "Start point handle",
+          "name": "Start spot",
           "gesture": "Drag the starting point along the cable.",
           "values": {
             "kind": "range",
@@ -14198,13 +14198,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         },
         {
           "id": "4-07-zipline:tl:2",
-          "name": "World atmosphere bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -14241,7 +14241,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         },
@@ -14277,13 +14277,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         },
         {
           "id": "4-07-zipline:tl:4",
-          "name": "Weight load",
+          "name": "Mass",
           "gesture": "Pour weight onto the carrier.",
           "values": {
             "kind": "palette",
@@ -14317,7 +14317,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         },
@@ -14357,7 +14357,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.898Z"
+              "ts": "2026-09-09T22:03:29.526Z"
             }
           }
         }
@@ -14409,7 +14409,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         },
@@ -14450,7 +14450,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         },
@@ -14483,7 +14483,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         }
@@ -14491,7 +14491,7 @@
       "tools": [
         {
           "id": "4-08-cyclist-uphill:tl:1",
-          "name": "Top of the ramp",
+          "name": "Slope",
           "gesture": "Drag the high end of the slope.",
           "values": {
             "kind": "range",
@@ -14524,13 +14524,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         },
         {
           "id": "4-08-cyclist-uphill:tl:2",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity.",
           "values": {
             "kind": "palette",
@@ -14567,13 +14567,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         },
         {
           "id": "4-08-cyclist-uphill:tl:3",
-          "name": "Load of weight",
+          "name": "Mass",
           "gesture": "Pour weight onto the slider.",
           "values": {
             "kind": "palette",
@@ -14609,7 +14609,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         },
@@ -14649,7 +14649,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.926Z"
+              "ts": "2026-09-09T22:03:29.547Z"
             }
           }
         }
@@ -14695,7 +14695,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         },
@@ -14736,7 +14736,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         },
@@ -14769,7 +14769,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         }
@@ -14777,7 +14777,7 @@
       "tools": [
         {
           "id": "4-09-sled-slope:tl:1",
-          "name": "Surface coating brush",
+          "name": "Slipperiness (ground)",
           "gesture": "Paint ice or grass onto the track.",
           "values": {
             "kind": "palette",
@@ -14813,13 +14813,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.580Z"
             }
           }
         },
         {
           "id": "4-09-sled-slope:tl:2",
-          "name": "Ski wax coating",
+          "name": "Slipperiness (object)",
           "gesture": "Pour wax onto the slider base.",
           "values": {
             "kind": "palette",
@@ -14855,13 +14855,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         },
         {
           "id": "4-09-sled-slope:tl:3",
-          "name": "Slope height drag",
+          "name": "Slope",
           "gesture": "Drag the top of the slope to adjust steepness.",
           "values": {
             "kind": "range",
@@ -14894,13 +14894,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         },
         {
           "id": "4-09-sled-slope:tl:4",
-          "name": "A heavy material fill",
+          "name": "Mass",
           "gesture": "Pour a heavier material into the block.",
           "values": {
             "kind": "palette",
@@ -14934,7 +14934,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         },
@@ -14974,7 +14974,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:49:59.990Z"
+              "ts": "2026-09-09T22:03:29.581Z"
             }
           }
         }
@@ -15026,7 +15026,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
@@ -15067,7 +15067,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
@@ -15100,7 +15100,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         }
@@ -15108,7 +15108,7 @@
       "tools": [
         {
           "id": "4-10-puck-ramp:tl:1",
-          "name": "Coating bucket",
+          "name": "Slipperiness (object)",
           "gesture": "Pour coat onto the sliding body.",
           "values": {
             "kind": "palette",
@@ -15145,13 +15145,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
         {
           "id": "4-10-puck-ramp:tl:2",
-          "name": "Surface coating brush",
+          "name": "Slipperiness (ground)",
           "gesture": "Coat the surface along the path.",
           "values": {
             "kind": "palette",
@@ -15189,13 +15189,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
         {
           "id": "4-10-puck-ramp:tl:3",
-          "name": "Launch blower",
+          "name": "Push",
           "gesture": "Blast it forward.",
           "values": {
             "kind": "palette",
@@ -15232,13 +15232,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
         {
           "id": "4-10-puck-ramp:tl:4",
-          "name": "Planetary environment bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -15276,13 +15276,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
         {
           "id": "4-10-puck-ramp:tl:5",
-          "name": "Ramp height handle",
+          "name": "Slope",
           "gesture": "Drag the top of the ramp up or down.",
           "values": {
             "kind": "range",
@@ -15315,7 +15315,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         },
@@ -15355,7 +15355,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.037Z"
+              "ts": "2026-09-09T22:03:29.602Z"
             }
           }
         }
@@ -15401,7 +15401,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         },
@@ -15442,7 +15442,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         },
@@ -15475,7 +15475,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         }
@@ -15483,7 +15483,7 @@
       "tools": [
         {
           "id": "4-11-slip-on-ice:tl:1",
-          "name": "Surface roller",
+          "name": "Slipperiness (ground)",
           "gesture": "Coat the ground path.",
           "values": {
             "kind": "palette",
@@ -15520,13 +15520,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         },
         {
           "id": "4-11-slip-on-ice:tl:2",
-          "name": "Grip coating",
+          "name": "Slipperiness (object)",
           "gesture": "Pour onto the base.",
           "values": {
             "kind": "palette",
@@ -15562,13 +15562,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         },
         {
           "id": "4-11-slip-on-ice:tl:3",
-          "name": "Gravity flask",
+          "name": "Gravity",
           "gesture": "Pour gravity over the scene.",
           "values": {
             "kind": "palette",
@@ -15604,13 +15604,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         },
         {
           "id": "4-11-slip-on-ice:tl:4",
-          "name": "Load bucket",
+          "name": "Mass",
           "gesture": "Pour weight onto the object.",
           "values": {
             "kind": "palette",
@@ -15644,7 +15644,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         },
@@ -15684,7 +15684,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.052Z"
+              "ts": "2026-09-09T22:03:29.612Z"
             }
           }
         }
@@ -15736,7 +15736,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.625Z"
             }
           }
         },
@@ -15777,7 +15777,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.625Z"
             }
           }
         },
@@ -15810,7 +15810,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.625Z"
             }
           }
         }
@@ -15818,7 +15818,7 @@
       "tools": [
         {
           "id": "4-12-push-box:tl:1",
-          "name": "Texture brush",
+          "name": "Slipperiness (ground)",
           "gesture": "Paint along the ground.",
           "values": {
             "kind": "palette",
@@ -15857,13 +15857,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.624Z"
             }
           }
         },
         {
           "id": "4-12-push-box:tl:2",
-          "name": "Bottom coating",
+          "name": "Slipperiness (object)",
           "gesture": "Pour coating onto the box.",
           "values": {
             "kind": "palette",
@@ -15900,7 +15900,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.624Z"
             }
           }
         },
@@ -15943,13 +15943,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.624Z"
             }
           }
         },
         {
           "id": "4-12-push-box:tl:4",
-          "name": "World gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planet gravity over the scene.",
           "values": {
             "kind": "palette",
@@ -15986,13 +15986,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.624Z"
             }
           }
         },
         {
           "id": "4-12-push-box:tl:5",
-          "name": "A heavy fill",
+          "name": "Mass",
           "gesture": "Pour weight into the sliding block.",
           "values": {
             "kind": "palette",
@@ -16026,7 +16026,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.624Z"
             }
           }
         },
@@ -16066,7 +16066,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.069Z"
+              "ts": "2026-09-09T22:03:29.624Z"
             }
           }
         }
@@ -16112,7 +16112,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         },
@@ -16153,7 +16153,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         },
@@ -16186,7 +16186,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         }
@@ -16194,7 +16194,7 @@
       "tools": [
         {
           "id": "4-13-curling-stone:tl:1",
-          "name": "Surface coating brush",
+          "name": "Slipperiness (ground)",
           "gesture": "Coat the sliding path.",
           "values": {
             "kind": "palette",
@@ -16230,13 +16230,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         },
         {
           "id": "4-13-curling-stone:tl:2",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -16273,13 +16273,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         },
         {
           "id": "4-13-curling-stone:tl:3",
-          "name": "Grip coating bucket",
+          "name": "Slipperiness (object)",
           "gesture": "Coat the bottom of the block.",
           "values": {
             "kind": "palette",
@@ -16315,13 +16315,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         },
         {
           "id": "4-13-curling-stone:tl:4",
-          "name": "Weight loader",
+          "name": "Mass",
           "gesture": "Pour weight into the slider.",
           "values": {
             "kind": "palette",
@@ -16355,7 +16355,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         },
@@ -16395,7 +16395,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.081Z"
+              "ts": "2026-09-09T22:03:29.634Z"
             }
           }
         }
@@ -16435,7 +16435,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.087Z"
+              "ts": "2026-09-09T22:03:29.639Z"
             }
           }
         },
@@ -16476,7 +16476,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.087Z"
+              "ts": "2026-09-09T22:03:29.639Z"
             }
           }
         },
@@ -16509,7 +16509,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.087Z"
+              "ts": "2026-09-09T22:03:29.639Z"
             }
           }
         }
@@ -16517,7 +16517,7 @@
       "tools": [
         {
           "id": "4-14-fireman-pole:tl:1",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -16555,13 +16555,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.087Z"
+              "ts": "2026-09-09T22:03:29.639Z"
             }
           }
         },
         {
           "id": "4-14-fireman-pole:tl:2",
-          "name": "Load of weight",
+          "name": "Mass",
           "gesture": "Pour weight onto the pole.",
           "values": {
             "kind": "palette",
@@ -16595,7 +16595,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.087Z"
+              "ts": "2026-09-09T22:03:29.639Z"
             }
           }
         },
@@ -16635,7 +16635,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.087Z"
+              "ts": "2026-09-09T22:03:29.639Z"
             }
           }
         }
@@ -16681,7 +16681,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.099Z"
+              "ts": "2026-09-09T22:03:29.648Z"
             }
           }
         },
@@ -16717,7 +16717,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.099Z"
+              "ts": "2026-09-09T22:03:29.648Z"
             }
           }
         },
@@ -16750,7 +16750,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.099Z"
+              "ts": "2026-09-09T22:03:29.648Z"
             }
           }
         }
@@ -16795,13 +16795,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.099Z"
+              "ts": "2026-09-09T22:03:29.648Z"
             }
           }
         },
         {
           "id": "4-15-parachute:tl:2",
-          "name": "Air density bucket",
+          "name": "Air drag",
           "gesture": "Fill the air.",
           "values": {
             "kind": "palette",
@@ -16838,7 +16838,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.099Z"
+              "ts": "2026-09-09T22:03:29.648Z"
             }
           }
         },
@@ -16878,7 +16878,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.099Z"
+              "ts": "2026-09-09T22:03:29.648Z"
             }
           }
         }
@@ -16930,7 +16930,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.758Z"
             }
           }
         },
@@ -16971,7 +16971,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.758Z"
             }
           }
         },
@@ -17004,7 +17004,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.758Z"
             }
           }
         }
@@ -17012,7 +17012,7 @@
       "tools": [
         {
           "id": "5-01-bowling-strike:tl:1",
-          "name": "Ball material bucket",
+          "name": "Mass (striker)",
           "gesture": "Pour material into the purple ball.",
           "values": {
             "kind": "palette",
@@ -17049,13 +17049,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:2",
-          "name": "Launch push",
+          "name": "Push",
           "gesture": "Push the bowling ball harder.",
           "values": {
             "kind": "palette",
@@ -17093,13 +17093,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:3",
-          "name": "Bounce material bucket",
+          "name": "Bounciness (striker)",
           "gesture": "Pour coat onto the ball.",
           "values": {
             "kind": "palette",
@@ -17135,13 +17135,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:4",
-          "name": "Material bucket",
+          "name": "Mass (targets)",
           "gesture": "Pour onto the target blocks.",
           "values": {
             "kind": "palette",
@@ -17177,13 +17177,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:5",
-          "name": "Bounciness coat",
+          "name": "Bounciness (targets)",
           "gesture": "Pour onto the target blocks.",
           "values": {
             "kind": "palette",
@@ -17219,13 +17219,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:6",
-          "name": "Slipperiness",
+          "name": "Slipperiness (ground, sliding)",
           "gesture": "How slippery the lane is.",
           "values": {
             "kind": "palette",
@@ -17262,13 +17262,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:7",
-          "name": "Ball coating",
+          "name": "Slipperiness (object)",
           "gesture": "Coat the bowling ball.",
           "values": {
             "kind": "palette",
@@ -17304,13 +17304,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
         {
           "id": "5-01-bowling-strike:tl:8",
-          "name": "Lane wax brush",
+          "name": "Slipperiness (ground, rolling)",
           "gesture": "Wax the lane surface.",
           "values": {
             "kind": "palette",
@@ -17347,7 +17347,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         },
@@ -17387,7 +17387,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.216Z"
+              "ts": "2026-09-09T22:03:29.756Z"
             }
           }
         }
@@ -17439,7 +17439,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
@@ -17480,7 +17480,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
@@ -17513,7 +17513,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         }
@@ -17521,7 +17521,7 @@
       "tools": [
         {
           "id": "5-02-billiards:tl:1",
-          "name": "Cue strike strength",
+          "name": "Push",
           "gesture": "Strike the ball with more force.",
           "values": {
             "kind": "palette",
@@ -17559,13 +17559,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
         {
           "id": "5-02-billiards:tl:2",
-          "name": "Ball material bucket",
+          "name": "Mass (targets)",
           "gesture": "Pour onto the target balls.",
           "values": {
             "kind": "palette",
@@ -17603,13 +17603,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
         {
           "id": "5-02-billiards:tl:3",
-          "name": "Surface wax",
+          "name": "Slipperiness (ground)",
           "gesture": "Coat the surface with wax.",
           "values": {
             "kind": "palette",
@@ -17646,13 +17646,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
         {
           "id": "5-02-billiards:tl:4",
-          "name": "Ball weight bucket",
+          "name": "Mass (striker)",
           "gesture": "Pour weight into the cue ball.",
           "values": {
             "kind": "palette",
@@ -17690,13 +17690,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
         {
           "id": "5-02-billiards:tl:5",
-          "name": "Lane surface brush",
+          "name": "Slipperiness (surface)",
           "gesture": "Coat the surface texture.",
           "values": {
             "kind": "palette",
@@ -17730,13 +17730,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
         {
           "id": "5-02-billiards:tl:6",
-          "name": "Coating bucket",
+          "name": "Bounciness",
           "gesture": "Coat the cue ball.",
           "values": {
             "kind": "palette",
@@ -17772,7 +17772,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         },
@@ -17812,7 +17812,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.358Z"
+              "ts": "2026-09-09T22:03:29.896Z"
             }
           }
         }
@@ -17864,7 +17864,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
@@ -17905,7 +17905,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
@@ -17938,7 +17938,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         }
@@ -17946,7 +17946,7 @@
       "tools": [
         {
           "id": "5-03-bumper-cars:tl:1",
-          "name": "Track coating",
+          "name": "Slipperiness",
           "gesture": "Paint onto the lane.",
           "values": {
             "kind": "palette",
@@ -17983,13 +17983,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
         {
           "id": "5-03-bumper-cars:tl:2",
-          "name": "Cast iron weights",
+          "name": "Mass (striker)",
           "gesture": "Pour iron weights into the bumper car.",
           "values": {
             "kind": "palette",
@@ -18025,13 +18025,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
         {
           "id": "5-03-bumper-cars:tl:3",
-          "name": "Bumper coating bucket",
+          "name": "Bounciness (striker)",
           "gesture": "Pour onto the red bumper car.",
           "values": {
             "kind": "palette",
@@ -18070,13 +18070,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
         {
           "id": "5-03-bumper-cars:tl:4",
-          "name": "Bumper coating bucket",
+          "name": "Bounciness (targets)",
           "gesture": "Coat the target car.",
           "values": {
             "kind": "palette",
@@ -18114,13 +18114,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
         {
           "id": "5-03-bumper-cars:tl:5",
-          "name": "Weight bucket",
+          "name": "Mass (targets)",
           "gesture": "Pour more weight onto the target car.",
           "values": {
             "kind": "palette",
@@ -18157,7 +18157,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         },
@@ -18197,7 +18197,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.406Z"
+              "ts": "2026-09-09T22:03:29.941Z"
             }
           }
         }
@@ -18249,7 +18249,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         },
@@ -18290,7 +18290,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         },
@@ -18323,7 +18323,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         }
@@ -18331,7 +18331,7 @@
       "tools": [
         {
           "id": "5-04-kick-ball:tl:1",
-          "name": "Air blast cannon",
+          "name": "Push",
           "gesture": "Blast the ball with air.",
           "values": {
             "kind": "palette",
@@ -18369,13 +18369,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         },
         {
           "id": "5-04-kick-ball:tl:2",
-          "name": "Ball material bucket",
+          "name": "Mass",
           "gesture": "Pour onto the ball.",
           "values": {
             "kind": "palette",
@@ -18414,13 +18414,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         },
         {
           "id": "5-04-kick-ball:tl:3",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour new gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -18458,7 +18458,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         },
@@ -18498,7 +18498,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.415Z"
+              "ts": "2026-09-09T22:03:29.949Z"
             }
           }
         }
@@ -18538,7 +18538,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.659Z"
+              "ts": "2026-09-09T22:03:30.153Z"
             }
           }
         },
@@ -18579,7 +18579,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.659Z"
+              "ts": "2026-09-09T22:03:30.153Z"
             }
           }
         },
@@ -18612,7 +18612,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.659Z"
+              "ts": "2026-09-09T22:03:30.153Z"
             }
           }
         }
@@ -18620,7 +18620,7 @@
       "tools": [
         {
           "id": "5-05-newtons-cradle:tl:1",
-          "name": "Heavy ball paint bucket",
+          "name": "Mass",
           "gesture": "Pour material onto the swinging ball.",
           "values": {
             "kind": "palette",
@@ -18657,7 +18657,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.659Z"
+              "ts": "2026-09-09T22:03:30.153Z"
             }
           }
         },
@@ -18697,7 +18697,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.659Z"
+              "ts": "2026-09-09T22:03:30.153Z"
             }
           }
         }
@@ -18749,7 +18749,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.833Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         },
@@ -18785,7 +18785,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.833Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         },
@@ -18818,7 +18818,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.833Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         }
@@ -18826,7 +18826,7 @@
       "tools": [
         {
           "id": "5-06-dominoes:tl:1",
-          "name": "Strike hammer",
+          "name": "Push",
           "gesture": "Hit the first domino.",
           "values": {
             "kind": "palette",
@@ -18863,13 +18863,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.832Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         },
         {
           "id": "5-06-dominoes:tl:2",
-          "name": "Hand",
+          "name": "Gap",
           "gesture": "Slide the dominoes closer or further apart.",
           "values": {
             "kind": "range",
@@ -18902,13 +18902,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.832Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         },
         {
           "id": "5-06-dominoes:tl:3",
-          "name": "Material bucket",
+          "name": "Mass (targets)",
           "gesture": "Pour onto the target dominoes.",
           "values": {
             "kind": "palette",
@@ -18945,13 +18945,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.832Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         },
         {
           "id": "5-06-dominoes:tl:4",
-          "name": "Material bucket",
+          "name": "Mass (striker)",
           "gesture": "Pour weight into the block.",
           "values": {
             "kind": "palette",
@@ -18988,7 +18988,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.832Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         },
@@ -19028,7 +19028,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.832Z"
+              "ts": "2026-09-09T22:03:30.314Z"
             }
           }
         }
@@ -19080,7 +19080,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.912Z"
+              "ts": "2026-09-09T22:03:30.395Z"
             }
           }
         },
@@ -19121,7 +19121,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.912Z"
+              "ts": "2026-09-09T22:03:30.395Z"
             }
           }
         },
@@ -19154,7 +19154,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.912Z"
+              "ts": "2026-09-09T22:03:30.395Z"
             }
           }
         }
@@ -19162,7 +19162,7 @@
       "tools": [
         {
           "id": "5-07-train-collision:tl:1",
-          "name": "Surface coating brush",
+          "name": "Slipperiness",
           "gesture": "Coat the lane with friction.",
           "values": {
             "kind": "palette",
@@ -19199,13 +19199,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.911Z"
+              "ts": "2026-09-09T22:03:30.392Z"
             }
           }
         },
         {
           "id": "5-07-train-collision:tl:2",
-          "name": "Cargo load bucket",
+          "name": "Mass (striker)",
           "gesture": "Pour heavy load into the red engine.",
           "values": {
             "kind": "palette",
@@ -19242,13 +19242,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.911Z"
+              "ts": "2026-09-09T22:03:30.392Z"
             }
           }
         },
         {
           "id": "5-07-train-collision:tl:3",
-          "name": "Bounciness coating",
+          "name": "Bounciness (striker)",
           "gesture": "Pour over the red engine.",
           "values": {
             "kind": "palette",
@@ -19284,13 +19284,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.911Z"
+              "ts": "2026-09-09T22:03:30.392Z"
             }
           }
         },
         {
           "id": "5-07-train-collision:tl:4",
-          "name": "Bounciness",
+          "name": "Bounciness (targets)",
           "gesture": "How bouncy the target block is.",
           "values": {
             "kind": "palette",
@@ -19326,13 +19326,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.911Z"
+              "ts": "2026-09-09T22:03:30.392Z"
             }
           }
         },
         {
           "id": "5-07-train-collision:tl:5",
-          "name": "Wagon load",
+          "name": "Mass (targets)",
           "gesture": "Pour cargo into the target wagon.",
           "values": {
             "kind": "palette",
@@ -19369,7 +19369,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.911Z"
+              "ts": "2026-09-09T22:03:30.392Z"
             }
           }
         },
@@ -19409,7 +19409,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:00.911Z"
+              "ts": "2026-09-09T22:03:30.392Z"
             }
           }
         }
@@ -19461,7 +19461,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.499Z"
             }
           }
         },
@@ -19502,7 +19502,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.499Z"
             }
           }
         },
@@ -19535,7 +19535,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.499Z"
             }
           }
         }
@@ -19543,7 +19543,7 @@
       "tools": [
         {
           "id": "5-08-marbles:tl:1",
-          "name": "Lane texture brush",
+          "name": "Slipperiness (ground, sliding)",
           "gesture": "Paint the surface texture.",
           "values": {
             "kind": "palette",
@@ -19580,13 +19580,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:2",
-          "name": "Weight bucket",
+          "name": "Mass (striker)",
           "gesture": "Pour weight into the grey ball.",
           "values": {
             "kind": "palette",
@@ -19623,13 +19623,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:3",
-          "name": "Mass",
+          "name": "Mass (targets)",
           "gesture": "How heavy the target balls are.",
           "values": {
             "kind": "palette",
@@ -19666,13 +19666,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:4",
-          "name": "Target material coat",
+          "name": "Bounciness (targets)",
           "gesture": "Pour onto the target balls.",
           "values": {
             "kind": "palette",
@@ -19709,13 +19709,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:5",
-          "name": "Material coat",
+          "name": "Bounciness (striker)",
           "gesture": "Coat the grey ball.",
           "values": {
             "kind": "palette",
@@ -19752,13 +19752,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:6",
-          "name": "Grip coating",
+          "name": "Slipperiness (object)",
           "gesture": "Coat the bottom of the ball.",
           "values": {
             "kind": "palette",
@@ -19794,13 +19794,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:7",
-          "name": "Air launcher puff",
+          "name": "Push",
           "gesture": "Blow air against the grey ball.",
           "values": {
             "kind": "palette",
@@ -19837,13 +19837,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
         {
           "id": "5-08-marbles:tl:8",
-          "name": "Surface roller",
+          "name": "Slipperiness (ground, rolling)",
           "gesture": "Coat the lane surface.",
           "values": {
             "kind": "palette",
@@ -19880,7 +19880,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         },
@@ -19920,7 +19920,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.013Z"
+              "ts": "2026-09-09T22:03:30.497Z"
             }
           }
         }
@@ -19960,7 +19960,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.117Z"
+              "ts": "2026-09-09T22:03:30.605Z"
             }
           }
         },
@@ -20001,7 +20001,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.117Z"
+              "ts": "2026-09-09T22:03:30.605Z"
             }
           }
         },
@@ -20034,7 +20034,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.117Z"
+              "ts": "2026-09-09T22:03:30.605Z"
             }
           }
         }
@@ -20080,7 +20080,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.117Z"
+              "ts": "2026-09-09T22:03:30.605Z"
             }
           }
         },
@@ -20120,7 +20120,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.117Z"
+              "ts": "2026-09-09T22:03:30.605Z"
             }
           }
         }
@@ -20172,7 +20172,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.620Z"
             }
           }
         },
@@ -20213,7 +20213,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.620Z"
             }
           }
         },
@@ -20246,7 +20246,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.620Z"
             }
           }
         }
@@ -20254,7 +20254,7 @@
       "tools": [
         {
           "id": "5-10-tennis-serve:tl:1",
-          "name": "Ball placement",
+          "name": "Start spot",
           "gesture": "Drag the ball along the line.",
           "values": {
             "kind": "range",
@@ -20287,13 +20287,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.619Z"
             }
           }
         },
         {
           "id": "5-10-tennis-serve:tl:2",
-          "name": "Tennis racket hit",
+          "name": "Push",
           "gesture": "Swing the racket harder.",
           "values": {
             "kind": "palette",
@@ -20330,13 +20330,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.619Z"
             }
           }
         },
         {
           "id": "5-10-tennis-serve:tl:3",
-          "name": "Planetary gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour planetary gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -20374,13 +20374,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.619Z"
             }
           }
         },
         {
           "id": "5-10-tennis-serve:tl:4",
-          "name": "Weight bucket",
+          "name": "Mass",
           "gesture": "Pour weight into the tennis ball.",
           "values": {
             "kind": "palette",
@@ -20416,13 +20416,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.619Z"
             }
           }
         },
         {
           "id": "5-10-tennis-serve:tl:5",
-          "name": "Air density bucket",
+          "name": "Air drag",
           "gesture": "Fill the court with thicker air.",
           "values": {
             "kind": "palette",
@@ -20458,7 +20458,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.619Z"
             }
           }
         },
@@ -20498,7 +20498,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.131Z"
+              "ts": "2026-09-09T22:03:30.619Z"
             }
           }
         }
@@ -20544,7 +20544,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         },
@@ -20585,7 +20585,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         },
@@ -20618,7 +20618,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         }
@@ -20626,7 +20626,7 @@
       "tools": [
         {
           "id": "5-11-hammer-nail:tl:1",
-          "name": "Hammer swing force",
+          "name": "Push",
           "gesture": "Swing the hammer harder.",
           "values": {
             "kind": "palette",
@@ -20664,13 +20664,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         },
         {
           "id": "5-11-hammer-nail:tl:2",
-          "name": "Hammer material",
+          "name": "Mass (striker)",
           "gesture": "Pour material into the hammer.",
           "values": {
             "kind": "palette",
@@ -20708,13 +20708,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         },
         {
           "id": "5-11-hammer-nail:tl:3",
-          "name": "Mass",
+          "name": "Mass (targets)",
           "gesture": "How heavy the target block is.",
           "values": {
             "kind": "palette",
@@ -20752,7 +20752,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         },
@@ -20792,7 +20792,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.164Z"
+              "ts": "2026-09-09T22:03:30.654Z"
             }
           }
         }
@@ -20844,7 +20844,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
@@ -20885,7 +20885,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
@@ -20918,7 +20918,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         }
@@ -20926,7 +20926,7 @@
       "tools": [
         {
           "id": "5-12-bat-baseball:tl:1",
-          "name": "Bat position",
+          "name": "Start spot",
           "gesture": "Drag the baseball bat to a new starting position.",
           "values": {
             "kind": "range",
@@ -20959,13 +20959,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
         {
           "id": "5-12-bat-baseball:tl:2",
-          "name": "Ball material coat",
+          "name": "Mass",
           "gesture": "Pour onto the ball.",
           "values": {
             "kind": "palette",
@@ -21002,13 +21002,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
         {
           "id": "5-12-bat-baseball:tl:3",
-          "name": "World gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour onto the scene.",
           "values": {
             "kind": "palette",
@@ -21046,13 +21046,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
         {
           "id": "5-12-bat-baseball:tl:4",
-          "name": "Swing force",
+          "name": "Push",
           "gesture": "Swing the bat harder.",
           "values": {
             "kind": "palette",
@@ -21091,13 +21091,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
         {
           "id": "5-12-bat-baseball:tl:5",
-          "name": "Bat coating",
+          "name": "Bounciness (striker)",
           "gesture": "Pour coating onto the baseball bat.",
           "values": {
             "kind": "palette",
@@ -21136,13 +21136,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
         {
           "id": "5-12-bat-baseball:tl:6",
-          "name": "Bounciness bucket",
+          "name": "Bounciness (targets)",
           "gesture": "Pour material onto the target block.",
           "values": {
             "kind": "palette",
@@ -21181,7 +21181,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         },
@@ -21221,7 +21221,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.192Z"
+              "ts": "2026-09-09T22:03:30.681Z"
             }
           }
         }
@@ -21273,7 +21273,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.215Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
@@ -21314,7 +21314,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.215Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
@@ -21347,7 +21347,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.215Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         }
@@ -21355,7 +21355,7 @@
       "tools": [
         {
           "id": "5-13-car-into-wall:tl:1",
-          "name": "Rocket booster spray",
+          "name": "Push",
           "gesture": "Blast the red car forward.",
           "values": {
             "kind": "palette",
@@ -21393,13 +21393,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
         {
           "id": "5-13-car-into-wall:tl:2",
-          "name": "Heavy cargo bucket",
+          "name": "Mass",
           "gesture": "Pour heavy cargo into the target car.",
           "values": {
             "kind": "palette",
@@ -21435,13 +21435,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
         {
           "id": "5-13-car-into-wall:tl:3",
-          "name": "Road texture brush",
+          "name": "Slipperiness (ground, sliding)",
           "gesture": "Paint onto the road.",
           "values": {
             "kind": "palette",
@@ -21478,13 +21478,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
         {
           "id": "5-13-car-into-wall:tl:4",
-          "name": "Bumper coating",
+          "name": "Bounciness",
           "gesture": "Pour bumper coating onto the red car.",
           "values": {
             "kind": "palette",
@@ -21520,13 +21520,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
         {
           "id": "5-13-car-into-wall:tl:5",
-          "name": "Tire tread coating",
+          "name": "Slipperiness (wheels)",
           "gesture": "Coat the wheels.",
           "values": {
             "kind": "palette",
@@ -21562,13 +21562,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
         {
           "id": "5-13-car-into-wall:tl:6",
-          "name": "Ice brush",
+          "name": "Slipperiness (ground, rolling)",
           "gesture": "Brush ice onto the track.",
           "values": {
             "kind": "palette",
@@ -21604,7 +21604,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         },
@@ -21644,7 +21644,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.214Z"
+              "ts": "2026-09-09T22:03:30.702Z"
             }
           }
         }
@@ -21696,7 +21696,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.223Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         },
@@ -21737,7 +21737,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.223Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         },
@@ -21770,7 +21770,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.223Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         }
@@ -21778,7 +21778,7 @@
       "tools": [
         {
           "id": "5-14-cannon-recoil:tl:1",
-          "name": "Powder charge",
+          "name": "Push",
           "gesture": "Blast the cannonball.",
           "values": {
             "kind": "palette",
@@ -21816,7 +21816,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.222Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         },
@@ -21861,13 +21861,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.222Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         },
         {
           "id": "5-14-cannon-recoil:tl:3",
-          "name": "Gravity bucket",
+          "name": "Gravity",
           "gesture": "Pour world gravity onto the scene.",
           "values": {
             "kind": "palette",
@@ -21905,7 +21905,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.222Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         },
@@ -21947,7 +21947,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.222Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         },
@@ -21987,7 +21987,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.222Z"
+              "ts": "2026-09-09T22:03:30.710Z"
             }
           }
         }
@@ -22033,7 +22033,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.231Z"
+              "ts": "2026-09-09T22:03:30.718Z"
             }
           }
         },
@@ -22074,7 +22074,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.231Z"
+              "ts": "2026-09-09T22:03:30.718Z"
             }
           }
         },
@@ -22107,7 +22107,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.231Z"
+              "ts": "2026-09-09T22:03:30.718Z"
             }
           }
         }
@@ -22151,13 +22151,13 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.230Z"
+              "ts": "2026-09-09T22:03:30.718Z"
             }
           }
         },
         {
           "id": "5-15-boat-jump:tl:2",
-          "name": "Starting spot",
+          "name": "Start spot",
           "gesture": "Drag the jumper to a new start point.",
           "values": {
             "kind": "range",
@@ -22187,7 +22187,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.230Z"
+              "ts": "2026-09-09T22:03:30.718Z"
             }
           }
         },
@@ -22227,7 +22227,7 @@
               "temperature": 0,
               "seed": 20260909,
               "attempts": 1,
-              "ts": "2026-09-09T21:50:01.230Z"
+              "ts": "2026-09-09T22:03:30.718Z"
             }
           }
         }
