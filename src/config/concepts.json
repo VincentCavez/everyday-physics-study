@@ -7,7 +7,13 @@
       "Options merge catalog concepts ONLY where the lay idea is genuinely identical (the four per-axis mass variants; launch_position+release_height). Everything else is 1:1, so the concept-overlap metric resolves at catalog granularity.",
       "Distractors are styled like the real options so they cannot be spotted by form."
     ],
-    "catalog_version": "2.3.4"
+    "catalog_version": "2.4.1",
+    "keysArePermanent": "Les `key` d'option ne changent JAMAIS : elles sont écrites telles quelles dans `concepts_json` du Sheet, et la vague du 04/09/2026 en dépend. Quand le catalogue renomme un concept, c'est le tableau `concepts` qui bouge, jamais la clé ni le libellé.",
+    "catalogDrift": [
+      "2.4.0 — `launch_speed` → `launch_push`, `impact_speed` → `striker_push` (la vitesse a cessé d'être une propriété variée). Les clés d'option gardent les anciens noms ; seuls les `concepts` suivent.",
+      "2.3.9 — `rocker_curvature` → `rocker_tilt`. Le libellé « How curved the runners are » décrit l'ANCIENNE mécanique (la courbure des patins) alors que le pipeline penche désormais la chaise. Mappé quand même, parce que le catalogue dit que rocker_tilt remplace rocker_curvature sur la même scène 2-05 et que l'option est le grain où les quasi-synonymes fusionnent. LIBELLÉ À TRANCHER avant lancement : soit on le réécrit, soit on assume qu'il nomme l'idée profane et pas la mécanique.",
+      "2.3.8 — `released_count` RETIRÉ du catalogue (le pendule de Newton se lit par collision_mass_ratio, restitution_in_collision et release_height). L'option reste dans la liste, sans concept : une coche y est non appariée PAR CONSTRUCTION, et c'est la lecture juste — le pipeline ne propose plus cette idée."
+    ]
   },
   "options": [
     {
@@ -15,7 +21,7 @@
       "kind": "catalog",
       "label": "How fast the object is thrown or launched",
       "concepts": [
-        "launch_speed"
+        "launch_push"
       ]
     },
     {
@@ -23,7 +29,7 @@
       "kind": "catalog",
       "label": "How fast the moving object is going when it hits",
       "concepts": [
-        "impact_speed"
+        "striker_push"
       ]
     },
     {
@@ -253,7 +259,7 @@
       "kind": "catalog",
       "label": "How curved the runners are",
       "concepts": [
-        "rocker_curvature"
+        "rocker_tilt"
       ]
     },
     {
@@ -266,11 +272,9 @@
     },
     {
       "key": "released_count",
-      "kind": "catalog",
+      "kind": "unmapped",
       "label": "How many balls are pulled back",
-      "concepts": [
-        "released_count"
-      ]
+      "concepts": []
     },
     {
       "key": "magnetism",
@@ -299,7 +303,7 @@
     {
       "key": "__other__",
       "kind": "other",
-      "label": "Something else (please specify)",
+      "label": "Something else:",
       "concepts": []
     }
   ]

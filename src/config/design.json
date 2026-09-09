@@ -34,7 +34,7 @@
         "projection": "1-01-baseball-pitch",
         "oscillation_elasticity": "2-04-tire-swing",
         "equilibrium_levers": "3-07-overhang-plank",
-        "friction": "4-10-car-skid",
+        "friction": "4-10-puck-ramp",
         "collision": "5-13-car-into-wall"
       },
       "scored_order": [
@@ -125,7 +125,7 @@
         "oscillation_elasticity": "2-14-pirate-ship-ride",
         "equilibrium_levers": "3-12-wheelbarrow",
         "friction": "4-15-parachute",
-        "collision": "5-08-pinball"
+        "collision": "5-08-marbles"
       },
       "scored_order": [
         "equilibrium_levers",
@@ -304,7 +304,7 @@
         "projection": "1-01-baseball-pitch",
         "oscillation_elasticity": "2-04-tire-swing",
         "equilibrium_levers": "3-07-overhang-plank",
-        "friction": "4-10-car-skid",
+        "friction": "4-10-puck-ramp",
         "collision": "5-13-car-into-wall"
       },
       "scored_order": [
@@ -395,7 +395,7 @@
         "oscillation_elasticity": "2-14-pirate-ship-ride",
         "equilibrium_levers": "3-12-wheelbarrow",
         "friction": "4-15-parachute",
-        "collision": "5-08-pinball"
+        "collision": "5-08-marbles"
       },
       "scored_order": [
         "projection",
@@ -574,7 +574,7 @@
         "projection": "1-01-baseball-pitch",
         "oscillation_elasticity": "2-04-tire-swing",
         "equilibrium_levers": "3-07-overhang-plank",
-        "friction": "4-10-car-skid",
+        "friction": "4-10-puck-ramp",
         "collision": "5-13-car-into-wall"
       },
       "scored_order": [
@@ -665,7 +665,7 @@
         "oscillation_elasticity": "2-14-pirate-ship-ride",
         "equilibrium_levers": "3-12-wheelbarrow",
         "friction": "4-15-parachute",
-        "collision": "5-08-pinball"
+        "collision": "5-08-marbles"
       },
       "scored_order": [
         "collision",
@@ -844,7 +844,7 @@
         "projection": "1-01-baseball-pitch",
         "oscillation_elasticity": "2-04-tire-swing",
         "equilibrium_levers": "3-07-overhang-plank",
-        "friction": "4-10-car-skid",
+        "friction": "4-10-puck-ramp",
         "collision": "5-13-car-into-wall"
       },
       "scored_order": [
@@ -935,7 +935,7 @@
         "oscillation_elasticity": "2-14-pirate-ship-ride",
         "equilibrium_levers": "3-12-wheelbarrow",
         "friction": "4-15-parachute",
-        "collision": "5-08-pinball"
+        "collision": "5-08-marbles"
       },
       "scored_order": [
         "collision",
@@ -944,7 +944,7 @@
         "equilibrium_levers",
         "friction"
       ],
-      "trial": "4-10-car-skid"
+      "trial": "4-10-puck-ramp"
     },
     {
       "row_id": 52,
@@ -962,7 +962,7 @@
         "equilibrium_levers",
         "projection"
       ],
-      "trial": "5-08-pinball"
+      "trial": "5-08-marbles"
     },
     {
       "row_id": 53,
@@ -1114,7 +1114,7 @@
         "projection": "1-01-baseball-pitch",
         "oscillation_elasticity": "2-04-tire-swing",
         "equilibrium_levers": "3-07-overhang-plank",
-        "friction": "4-10-car-skid",
+        "friction": "4-10-puck-ramp",
         "collision": "5-13-car-into-wall"
       },
       "scored_order": [
@@ -1205,7 +1205,7 @@
         "oscillation_elasticity": "2-14-pirate-ship-ride",
         "equilibrium_levers": "3-12-wheelbarrow",
         "friction": "4-15-parachute",
-        "collision": "5-08-pinball"
+        "collision": "5-08-marbles"
       },
       "scored_order": [
         "equilibrium_levers",

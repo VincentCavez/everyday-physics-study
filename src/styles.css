@@ -104,7 +104,7 @@ select {
   background: #fff;
 }
 
-/* --- échelles 1-5 --- */
+/* --- échelles --- */
 .scale {
   display: flex;
   gap: 8px;
@@ -149,6 +149,57 @@ select {
 
 .scale-item input:disabled {
   cursor: not-allowed;
+}
+
+/* --- échelle 0-10 ancrée (protocole v2) ---
+   GRILLE, pas flex : onze colonnes égales qui ne reviennent JAMAIS à la ligne.
+   Au minimum du portique (1000 px) la colonne de contenu fait ~952 px, donc
+   (952 − 10×6)/11 ≈ 81 px par bouton ; à 1440 px, ~94 px. Un nombre à deux
+   chiffres y tient largement. */
+.scale--points {
+  display: grid;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.scale--points .scale-item {
+  min-width: 0; /* annule le min-width des puces 1-5 */
+  justify-content: center;
+  padding: 8px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Le libellé EST le bouton : la radio reste dans le DOM (clavier, lecteur
+   d'écran) mais sort de la vue. */
+.scale--points .scale-item input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scale--points .scale-item:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.scale--points .scale-label {
+  align-items: center;
+}
+
+/* Verrouillée mais LISIBLE : la première note du stage 3 reste à l'écran après
+   la révélation des valeurs, elle ne doit pas devenir illisible pour autant. */
+.scale--points .scale-item.is-on input:disabled + .scale-label {
+  color: var(--ink);
+}
+
+.scale-anchors {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 13.5px;
+  margin-top: 4px;
 }
 
 /* --- cases à cocher --- */
@@ -359,12 +410,15 @@ a.primary {
 }
 
 .recall {
-  margin: 0;
+  margin: 0 0 10px;
   border-left: 3px solid var(--line);
   padding: 2px 0 2px 12px;
   color: var(--muted);
   font-size: 15px;
-  max-height: 5.5em;
+  /* Une réponse longue est TRONQUÉE plutôt que déroulée : ce bloc est un
+     rappel, et le laisser grandir reprendrait la place qu'il est là pour
+     économiser. Il défile sur lui-même si besoin. */
+  max-height: 4.4em;
   overflow-y: auto;
 }
 
@@ -390,6 +444,18 @@ a.primary {
 
 .confidence .scale {
   flex: 1 1 320px;
+  margin-top: 0;
+}
+
+/* L'échelle 0-10 vient avec ses ancres, donc dans un `.scale-wrap` : c'est LUI
+   qui doit prendre la largeur restante, sinon les onze boutons se tassent dans
+   ce qu'a laissé l'intitulé. */
+.confidence .scale-wrap {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.confidence .scale-wrap .scale {
   margin-top: 0;
 }
 
@@ -457,3 +523,148 @@ a.primary {
 .choice { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.8rem; border: 1px solid #c9c9c9; border-radius: 8px; cursor: pointer; }
 .choice.is-on { border-color: #2f6fdb; background: #eef4ff; }
 .choice input { margin: 0; }
+
+/* --- classement partiel des options cochées --- */
+/* `list-style: none` : la numérotation vient de `.rank-n`, qui doit refléter le
+   rang COURANT après un déplacement — le marqueur natif du <ol> ferait double
+   emploi et se désynchroniserait du glisser. */
+.ranklist {
+  list-style: none;
+  margin: 10px 0 16px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  max-width: 720px;
+}
+
+.rankrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.rankrow[draggable="true"] {
+  cursor: grab;
+}
+
+.rankrow.is-dragging {
+  opacity: 0.45;
+}
+
+/* La tête élue est la réponse OBLIGATOIRE de cette page : elle se voit. */
+.rankrow.is-head {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.rank-n {
+  flex: 0 0 1.6em;
+  text-align: center;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.rankrow.is-head .rank-n {
+  color: var(--accent);
+}
+
+.rank-label {
+  flex: 1 1 auto;
+}
+
+/* Les flèches DOUBLENT le glisser à dessein : un glisser raté ne doit pas
+   pouvoir empêcher quelqu'un de répondre, et le clavier reste praticable. */
+.rank-moves {
+  display: flex;
+  gap: 4px;
+}
+
+.rank-moves button,
+.rank-elect {
+  font: inherit;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  border-radius: 6px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.rank-moves button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.rank-elect {
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+
+.rank-elect:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- stages 2 et 3 --- */
+/* Une théorie tient dans un bloc citable : c'est un TEXTE à juger, pas une
+   consigne. */
+.card {
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  max-width: 760px;
+  line-height: 1.5;
+}
+
+.toolcard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  max-width: 760px;
+}
+
+.tool-name {
+  font-size: 17px;
+}
+
+.tool-gesture {
+  color: var(--muted);
+}
+
+/* Le second temps du stage 3 : la première note reste au-dessus, verrouillée,
+   et les valeurs apparaissent séparées par un filet. */
+.values {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.tool-values {
+  margin: 0 0 10px;
+}
+
+.rating .scale-wrap {
+  max-width: 760px;
+}
+
+/* Aux petites hauteurs, le rappel se resserre encore : c'est lui qui doit
+   céder, pas le croquis ni la zone de saisie active. */
+@media (max-height: 700px) {
+  .recall {
+    font-size: 14px;
+    max-height: 3.2em;
+    margin-bottom: 6px;
+  }
+}

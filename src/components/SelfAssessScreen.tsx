@@ -73,7 +73,7 @@ export function SelfAssessScreen() {
           <legend>{AXIS_LABELS[a]}</legend>
           <Scale
             name={`familiarity_${a}`}
-            labels={selfAssessment.familiarityScale}
+            spec={{ kind: "labelled", labels: selfAssessment.familiarityScale }}
             value={familiarity[a] ?? null}
             onChange={(v) => setFamiliarity((f) => ({ ...f, [a]: v }))}
           />
@@ -84,7 +84,7 @@ export function SelfAssessScreen() {
         <legend>{ac.label}</legend>
         <Scale
           name={ac.itemKey}
-          labels={selfAssessment.familiarityScale}
+          spec={{ kind: "labelled", labels: selfAssessment.familiarityScale }}
           value={check}
           onChange={setCheck}
         />
@@ -94,7 +94,7 @@ export function SelfAssessScreen() {
         <legend>{selfAssessment.confidenceItem}</legend>
         <Scale
           name="physics_confidence"
-          labels={selfAssessment.confidenceScale}
+          spec={{ kind: "labelled", labels: selfAssessment.confidenceScale }}
           value={confidence}
           onChange={setConfidence}
         />

@@ -197,9 +197,9 @@
       "bytes": 129242
     },
     "3-09-crowbar": {
-      "sha256": "a635cb6eed4abf9a",
-      "strokes": 97,
-      "bytes": 112890
+      "sha256": "75743ecb3246e34d",
+      "strokes": 105,
+      "bytes": 124257
     },
     "3-10-nutcracker": {
       "sha256": "7d20c367a9116bb0",
@@ -276,10 +276,10 @@
       "strokes": 86,
       "bytes": 118052
     },
-    "4-10-car-skid": {
-      "sha256": "f42a8c958bbda934",
-      "strokes": 39,
-      "bytes": 60320
+    "4-10-puck-ramp": {
+      "sha256": "f57a2a664b291643",
+      "strokes": 37,
+      "bytes": 67068
     },
     "4-11-slip-on-ice": {
       "sha256": "68cc56e386686c9b",
@@ -341,10 +341,10 @@
       "strokes": 72,
       "bytes": 89784
     },
-    "5-08-pinball": {
-      "sha256": "53bb645a1067b657",
-      "strokes": 16,
-      "bytes": 76538
+    "5-08-marbles": {
+      "sha256": "a1188d46485a9bed",
+      "strokes": 26,
+      "bytes": 48243
     },
     "5-09-gong": {
       "sha256": "fd72cc74ef85e127",

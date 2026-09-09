@@ -4,8 +4,22 @@
  * le serveur — il ne doit jamais apparaître dans le bundle.
  */
 export const studyConfig = {
-  /** URL /exec du déploiement Apps Script (voir study/README.md). */
-  appsScriptUrl: "https://script.google.com/macros/s/AKfycby4Gyov8s2XAzizbWvi4svTDyNWs0f-zTOxCAWqTUtEGAQt6WcoxEEz9xy1VvFR-3YoBg/exec",
+  /**
+   * URL /exec du déploiement Apps Script (voir study/README.md).
+   *
+   * VIDE SUR LA BRANCHE v2, ET C'EST VOLONTAIRE. La v2 écrit 32 colonnes, des
+   * `item_key` nouveaux et une colonne `stage` là où la v1 avait `block` : la
+   * laisser pointer vers le déploiement de la vague du 04/09/2026
+   * (AKfycby4Gyov8s2X…) ferait entrer des lignes v2 dans le Sheet v1, et un
+   * simple aperçu local y écrivait déjà une ligne `preview`.
+   *
+   * À remplir à l'étape « nouveau Sheet, nouveau déploiement » : classeur
+   * neuf, `setup()` (qui écrit lui-même les 32 colonnes puisque l'onglet est
+   * vide), code de complétion recopié dans l'onglet `meta`, puis l'URL ici.
+   * Tant qu'elle est vide, l'app tourne en aperçu PUREMENT LOCAL : elle
+   * n'atteint aucun réseau, n'enregistre rien et ne délivre aucun code.
+   */
+  appsScriptUrl: "",
 
   /** Retour Prolific après complétion (https://app.prolific.com/submissions/complete?cc=...). */
   prolificCompleteUrl: "https://app.prolific.com/submissions/complete",
@@ -34,9 +48,10 @@ export const studyConfig = {
     concept: {
       itemKey: "ac_concept",
       label: "Please tick this option to show you are reading carefully",
-      /** index de la scène scorée (1..5) et bloc où l'injecter */
+      /** Index de la scène scorée (1..5) où l'injecter. La v2 n'a plus qu'UNE
+          liste de concepts par scène, donc plus de champ `block` : il n'y a
+          plus de choix à faire une fois la scène désignée. */
       scenarioIndex: 3,
-      block: 2 as const,
     },
   },
 

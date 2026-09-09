@@ -2,3 +2,6 @@ node_modules/
 dist/
 *.local
 .DS_Store
+
+# Config locale de l'agent (serveur de dev), pas du dépôt public.
+.claude/

@@ -23,11 +23,47 @@ var DEFAULT_STALE_MINUTES = 120;
 
 var ROWS_HEADER = ['row_id', 'status', 'pid', 'session_id', 'assigned_ts', 'completed_ts', 'assign_count'];
 var SESSIONS_HEADER = ['ts', 'session_id', 'pid', 'row_id', 'is_test', 'event', 'user_agent'];
+/**
+ * PROTOCOLE v2 (2026-09-09) — 32 colonnes.
+ *
+ * DEUX RÈGLES À NE PAS ENFREINDRE :
+ *  1. `appendEvents_` écrit POSITIONNELLEMENT. Une colonne s'ajoute à la FIN,
+ *     jamais au milieu, sinon toutes les lignes déjà écrites se décalent.
+ *  2. `setup()` n'écrit l'en-tête que si l'onglet est VIDE. Sur un classeur qui
+ *     tourne déjà, il ne corrigera rien : il faudrait élargir la grille à la
+ *     main (un Sheet fait 26 colonnes par défaut, `appendRow` échoue au-delà)
+ *     puis retaper les en-têtes. D'où la décision : la v2 va sur un SHEET NEUF
+ *     et un NOUVEAU déploiement. Les lignes v1 portent un `block` et pas de
+ *     `rating` ; les mélanger dans un même onglet serait une source d'erreur
+ *     permanente à l'analyse.
+ *
+ * Colonne 11 : `block` (1|2|3) devient `stage` (1|2|3). Même position, sens
+ * nouveau — d'où, là encore, le classeur neuf.
+ */
 var RESPONSES_HEADER = [
   'ts_server', 'ts_client', 'pid', 'session_id', 'row_id', 'is_test',
-  'scene_id', 'axis', 'phase', 'scenario_index', 'block', 'item_key',
+  'scene_id', 'axis', 'phase', 'scenario_index', 'stage', 'item_key',
   'response_text', 'confidence', 'concepts_json', 'concept_order_json',
   'other_text', 'rt_ms', 'resumed', 'event_id', 'seq',
+  // ── v2 ────────────────────────────────────────────────────────────────────
+  // `item_id`  : l'objet noté (théorie, outil, ou clé d'option pour un rang).
+  // `origin`   : pipeline | baseline | lure | lure_tool. JAMAIS dans le DOM.
+  // `orig_rank`: le rang du pipeline, celui que la note doit valider.
+  // `rating`   : TOUTE note 0-10. `confidence` reste la 1-5 du questionnaire,
+  //              et elle seule : une colonne à deux échelles rend chaque
+  //              moyenne fausse sans prévenir.
+  // `ts_shown` : l'instant d'AFFICHAGE. Avec `ts_client` (la validation), il
+  //              donne le verrouillage de chaque zone de prose, l'ouverture de
+  //              la checklist et la latence affichage → clic, lisible même
+  //              quand `rt_ms` est douteux (`resumed` = 1).
+  // `rank`     : le rang donné par le participant, VIDE s'il n'a rien eu à
+  //              classer (moins de deux options cochées classables).
+  // `tick_order` / `rank_touched` : sans eux, un classement jamais touché
+  //              (donc l'ordre de coche, donc l'ordre d'affichage mélangé)
+  //              serait indiscernable d'un jugement.
+  'item_id', 'origin', 'orig_rank', 'display_position', 'rating',
+  'options_json', 'ts_shown', 'protocol_version',
+  'rank', 'tick_order', 'rank_touched',
 ];
 
 // ---------------------------------------------------------------- routage ---
@@ -154,9 +190,15 @@ function appendEvents_(body) {
   var rows = events.map(function (ev) {
     return [
       ts, ev.ts_client, body.pid, body.session_id, body.row_id, body.is_test ? 1 : 0,
-      ev.scene_id, ev.axis, ev.phase, ev.scenario_index, ev.block, ev.item_key,
+      ev.scene_id, ev.axis, ev.phase, ev.scenario_index, ev.stage, ev.item_key,
       ev.response_text, ev.confidence, ev.concepts_json, ev.concept_order_json,
       ev.other_text, ev.rt_ms, ev.resumed ? 1 : 0, ev.event_id, ev.seq,
+      ev.item_id, ev.origin, ev.orig_rank, ev.display_position, ev.rating,
+      ev.options_json, ev.ts_shown, ev.protocol_version,
+      ev.rank, ev.tick_order,
+      // Booléen → 1/0, comme `resumed` et `is_test` : un `false` brut sort en
+      // FALSE dans le Sheet et se lit mal à côté d'une cellule vide.
+      ev.rank_touched === null || ev.rank_touched === undefined ? '' : (ev.rank_touched ? 1 : 0),
     ];
   });
 

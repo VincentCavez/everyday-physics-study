@@ -1,14 +1,15 @@
 import designData from "../config/design.json";
 import scenesData from "../config/scenes.json";
 import { studyConfig } from "../config/studyConfig";
-import { BLOCKS, BLOCK_ORDER, type ProseItem } from "../config/protocol";
+import { scenePlan, type Page } from "../config/protocol";
+import { VERSION } from "./persistence";
 import type {
   AxisId,
-  BlockNo,
   CommittedConcepts,
   DesignRow,
   SceneMeta,
   SessionState,
+  StageNo,
   StudyEvent,
 } from "../types";
 
@@ -37,16 +38,32 @@ export function currentScene(state: SessionState): SceneMeta | null {
   return axis ? sceneById(row.scenes[axis]) : null;
 }
 
-/** Le bloc 2 peut être restreint à une seule scène (§ Optional variants). */
-export function blocksFor(scenarioIndex: number): BlockNo[] {
-  const only = studyConfig.variants.freeCounterfactualOnScenario;
-  if (only == null || scenarioIndex === 0 || scenarioIndex === only) return BLOCK_ORDER;
-  return BLOCK_ORDER.filter((b) => b !== 2);
+/** Clé de scène, préfixe des brouillons, horodatages et réponses figées. */
+export function sceneKey(scenarioIndex: number): string {
+  return `s${scenarioIndex}`;
 }
 
-export function initialState(seed: Partial<SessionState> & Pick<SessionState, "session_id" | "pid">): SessionState {
+/** Le plan de la scène courante. Mémoïsé dans `scenePlan`. */
+export function currentPlan(state: SessionState): Page[] {
+  const scene = currentScene(state);
+  return scene ? scenePlan(scene, state.session_id) : [];
+}
+
+export function currentPage(state: SessionState): Page | null {
+  return currentPlan(state)[state.page_index] ?? null;
+}
+
+/** Le stage courant. Il n'est JAMAIS persisté : il se lit sur le plan, donc il
+    ne peut pas diverger du curseur. */
+export function currentStage(state: SessionState): StageNo | null {
+  return currentPage(state)?.stage ?? null;
+}
+
+export function initialState(
+  seed: Partial<SessionState> & Pick<SessionState, "session_id" | "pid">,
+): SessionState {
   return {
-    version: 2,
+    version: VERSION,
     prolific_study_id: "",
     prolific_session_id: "",
     is_preview: false,
@@ -54,8 +71,8 @@ export function initialState(seed: Partial<SessionState> & Pick<SessionState, "s
     completion_code: null,
     step: "boot",
     scenario_index: 0,
-    block: 1,
-    item_index: 0,
+    page_index: 0,
+    reveal: 0,
     committed: {},
     concepts: {},
     drafts: {},
@@ -75,18 +92,30 @@ export type Action =
   | { type: "MARK_SHOWN"; key: string }
   | { type: "ENQUEUE"; events: StudyEvent[] }
   | { type: "DEQUEUE"; upToSeq: number }
-  | { type: "COMMIT_ITEM"; itemKey: string; text: string; confidence: number | null }
-  | { type: "COMMIT_CONCEPTS"; selection: CommittedConcepts }
+  /**
+   * Fige une réponse et avance d'un cran. `advance` dit lequel : la révélation
+   * suivante DANS la page, ou la page suivante. C'est le composant qui tranche,
+   * parce que le nombre de révélations d'une page de checklist dépend du
+   * nombre d'options cochées, connu seulement à l'exécution.
+   */
+  | { type: "COMMIT_ANSWER"; key: string; text: string; rating: number | null; advance: "reveal" | "page" }
+  | { type: "COMMIT_CONCEPTS"; selection: CommittedConcepts; advance: "reveal" | "page" }
   | { type: "COMPLETED"; code: string | null }
   | { type: "CLEAR_RESUMED" };
 
 /**
  * Réducteur pur. Deux propriétés y sont structurelles, pas cosmétiques :
- *  - aucune action ne fait reculer le curseur (item_index, block,
- *    scenario_index n'augmentent jamais que d'un cran). Une réponse quittée est
- *    donc figée, et la liste de concepts ne peut pas contaminer la prose.
- *  - le curseur fait partie de l'état persisté, donc l'invariant survit à un
- *    rafraîchissement de page.
+ *
+ *  - le triplet `(scenario_index, page_index, reveal)` est LEXICOGRAPHIQUEMENT
+ *    STRICTEMENT CROISSANT à chaque validation. Aucune action ne le fait
+ *    reculer, et il fait partie de l'état persisté : une réponse quittée est
+ *    donc figée, y compris après un rafraîchissement de page, et aucune liste
+ *    d'options ne peut être montée avant que la prose qui la précède soit
+ *    verrouillée.
+ *  - `committed` est APPEND-ONLY : réécrire une clé déjà posée est un no-op.
+ *    En v1 le gel reposait entièrement sur l'avancée du curseur ; avec des
+ *    révélations à l'intérieur d'une page, il vaut mieux qu'il soit une
+ *    propriété du dictionnaire lui-même. Ça protège aussi du double-clic.
  */
 export function reduce(state: SessionState, action: Action): SessionState {
   switch (action.type) {
@@ -115,46 +144,15 @@ export function reduce(state: SessionState, action: Action): SessionState {
     case "DEQUEUE":
       return { ...state, queue: state.queue.filter((e) => e.seq > action.upToSeq) };
 
-    case "COMMIT_ITEM":
-      return {
-        ...state,
-        item_index: state.item_index + 1,
-        committed: {
-          ...state.committed,
-          [`${blockKey(state.scenario_index, state.block)}.${action.itemKey}`]: {
-            text: action.text,
-            confidence: action.confidence,
-          },
-        },
-      };
+    case "COMMIT_ANSWER": {
+      if (state.committed[action.key] !== undefined) return state; // append-only
+      const committed = { ...state.committed, [action.key]: { text: action.text, rating: action.rating } };
+      return advance({ ...state, committed }, action.advance);
+    }
 
     case "COMMIT_CONCEPTS": {
-      // La sélection est figée sous la clé du bloc : c'est elle qui pré-remplit
-      // la liste du bloc suivant du même croquis (voir `conceptPrefill`).
-      const concepts = {
-        ...state.concepts,
-        [blockKey(state.scenario_index, state.block)]: action.selection,
-      };
-      const blocks = blocksFor(state.scenario_index);
-      const nextBlock = blocks[blocks.indexOf(state.block) + 1];
-      if (nextBlock) {
-        return { ...state, concepts, block: nextBlock, item_index: 0, drafts: {} };
-      }
-      // Dernier bloc de la scène : scène suivante, ou fin du parcours. Le
-      // questionnaire clôt la session (§ Pre-task self-assessment, variante de
-      // fin retenue pour ne pas amorcer les participants).
-      if (state.scenario_index >= studyConfig.scoredCount) {
-        return { ...state, concepts, drafts: {}, block: 1, item_index: 0, step: "self_assess" };
-      }
-      const next = state.scenario_index + 1;
-      return {
-        ...state,
-        concepts,
-        scenario_index: next,
-        block: blocksFor(next)[0],
-        item_index: 0,
-        drafts: {},
-      };
+      const concepts = { ...state.concepts, [sceneKey(state.scenario_index)]: action.selection };
+      return advance({ ...state, concepts }, action.advance);
     }
 
     case "COMPLETED":
@@ -168,24 +166,26 @@ export function reduce(state: SessionState, action: Action): SessionState {
   }
 }
 
-/** Clé de bloc, préfixe des brouillons, horodatages et prose figée. */
-export function blockKey(scenarioIndex: number, block: BlockNo): string {
-  return `s${scenarioIndex}b${block}`;
-}
-
-/** Item en prose de la page courante, ou null sur la page de concepts. */
-export function currentItem(state: SessionState): ProseItem | null {
-  return BLOCKS[state.block].items[state.item_index] ?? null;
-}
-
 /**
- * Pré-remplissage de la liste de concepts du bloc courant : la sélection
- * validée au bloc PRÉCÉDENT du même croquis, ou null au premier bloc. Jamais
- * de report d'un croquis à l'autre — chaque scène repart d'une liste vide.
+ * Le seul endroit qui fait bouger le curseur. `reveal` avance dans la page ;
+ * `page` passe à la page suivante, puis à la scène suivante, puis au
+ * questionnaire. Les brouillons sont vidés à chaque changement de page : ils
+ * sont clés par page, un reliquat n'irait nulle part mais encombrerait l'état
+ * persisté d'une session à rallonge.
  */
-export function conceptPrefill(state: SessionState): CommittedConcepts | null {
-  const blocks = blocksFor(state.scenario_index);
-  const prev = blocks[blocks.indexOf(state.block) - 1];
-  if (prev == null) return null;
-  return state.concepts[blockKey(state.scenario_index, prev)] ?? null;
+function advance(state: SessionState, how: "reveal" | "page"): SessionState {
+  if (how === "reveal") return { ...state, reveal: state.reveal + 1 };
+
+  const next = state.page_index + 1;
+  if (next < currentPlan(state).length) {
+    return { ...state, page_index: next, reveal: 0, drafts: {} };
+  }
+  // Dernière page de la scène : scène suivante, ou fin du parcours. Le
+  // questionnaire clôt la session (il est à la FIN, pas au début : demander son
+  // expertise à quelqu'un avant la tâche le met en mode examen, l'inverse de
+  // l'intuition de première réaction que l'étude cherche).
+  if (state.scenario_index >= studyConfig.scoredCount) {
+    return { ...state, drafts: {}, page_index: 0, reveal: 0, step: "self_assess" };
+  }
+  return { ...state, scenario_index: state.scenario_index + 1, page_index: 0, reveal: 0, drafts: {} };
 }
