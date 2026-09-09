@@ -25,18 +25,18 @@ interface Props {
  * mais verrouillée.
  *
  * Cas `range` (30 % des outils mesurés : les hôtes `position`, dont le
- * `value_mapping` est continu) : il n'y a aucune palette à révéler, donc
- * l'item « ces options ont-elles du sens » N'EST PAS POSÉ. La valeur est
- * manquante par construction, pas par oubli, et l'analyse appariée
- * outil/valeurs tourne sur les seuls outils à palette, avec son n annoncé.
+ * `value_mapping` est continu) : il n'y a RIEN à révéler et rien à noter, donc
+ * la page s'arrête au premier temps (décision de Vincent, 09/09). La phrase
+ * « il n'y a pas de liste de choix ici, vous faites glisser le point où vous
+ * voulez » n'apprenait rien au participant et lui coûtait un écran mort et un
+ * clic sans réponse, sur un protocole qui en compte déjà une soixantaine.
+ * L'analyse appariée outil/valeurs tourne donc sur les seuls outils à palette,
+ * avec son n annoncé, et ces outils-là n'ont simplement aucune ligne de
+ * valeurs.
  */
 export function ToolRatePage({ tool, withIntro, reveal, fit, draftRating, onRating, onSubmit }: Props) {
-  const isRange = tool.values.kind === "range";
-  const showValues = reveal >= 1;
-  // Une note est attendue à chaque temps, SAUF au second temps d'un outil
-  // `range` : il n'y a alors littéralement rien à noter.
-  const needsRating = !showValues || !isRange;
-  const complete = !needsRating || draftRating != null;
+  const showValues = reveal >= 1; // jamais atteint par un outil `range`
+  const complete = draftRating != null;
 
   return (
     <section className="itempage rating">
@@ -56,29 +56,18 @@ export function ToolRatePage({ tool, withIntro, reveal, fit, draftRating, onRati
         disabled={showValues}
       />
 
-      {showValues && (
+      {showValues && tool.values.kind === "palette" && (
         <div className="values">
           <p className="tool-values">
-            <strong>{scenario.valuesLabel}</strong>{" "}
-            {tool.values.kind === "palette" ? `${tool.values.items.join(", ")}.` : tool.values.sentence}
+            <strong>{scenario.valuesLabel}</strong> {tool.values.items.join(", ")}.
           </p>
-          {!isRange && (
-            <>
-              <p className="question">{scenario.toolValuesPrompt}</p>
-              <Scale
-                name={`values_${tool.id}`}
-                spec={{
-                  kind: "anchored",
-                  from: 0,
-                  to: 10,
-                  low: scenario.toolValuesLow,
-                  high: scenario.toolValuesHigh,
-                }}
-                value={draftRating}
-                onChange={onRating}
-              />
-            </>
-          )}
+          <p className="question">{scenario.toolValuesPrompt}</p>
+          <Scale
+            name={`values_${tool.id}`}
+            spec={{ kind: "anchored", from: 0, to: 10, low: scenario.toolValuesLow, high: scenario.toolValuesHigh }}
+            value={draftRating}
+            onChange={onRating}
+          />
         </div>
       )}
 

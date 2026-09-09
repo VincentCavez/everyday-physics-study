@@ -7,154 +7,154 @@
   },
   "scenes": {
     "1-01-baseball-pitch": {
-      "sha256": "dcba05c962713be3",
-      "strokes": 72,
-      "bytes": 84234
+      "sha256": "694fb074c7cd2078",
+      "strokes": 87,
+      "bytes": 85592
     },
     "1-02-basketball-freethrow": {
-      "sha256": "e382372849d53710",
-      "strokes": 90,
-      "bytes": 117773
+      "sha256": "4987bce432b5ad80",
+      "strokes": 105,
+      "bytes": 116808
     },
     "1-03-bow-and-arrow": {
-      "sha256": "7c269b331c2549b9",
-      "strokes": 122,
-      "bytes": 129923
+      "sha256": "d432caf2b08798a7",
+      "strokes": 137,
+      "bytes": 132608
     },
     "1-04-catapult": {
-      "sha256": "787b7ad9bb5486d2",
-      "strokes": 108,
-      "bytes": 163633
+      "sha256": "366cac7a3f35f7d4",
+      "strokes": 113,
+      "bytes": 160335
     },
     "1-05-diving-board-jump": {
-      "sha256": "81f68caf07500e7a",
-      "strokes": 103,
-      "bytes": 127176
+      "sha256": "cce5a441141ded05",
+      "strokes": 118,
+      "bytes": 128539
     },
     "1-06-three-pointer": {
-      "sha256": "9ef6695de5ddef3c",
-      "strokes": 114,
-      "bytes": 136042
+      "sha256": "8b2ebe250b4816c6",
+      "strokes": 121,
+      "bytes": 132992
     },
     "1-07-slingshot": {
-      "sha256": "33b7787d683b507e",
-      "strokes": 90,
-      "bytes": 100704
+      "sha256": "3720d2015951ff26",
+      "strokes": 110,
+      "bytes": 104721
     },
     "1-08-playground-slide": {
-      "sha256": "b6ab331ae8b1b423",
-      "strokes": 82,
-      "bytes": 114669
+      "sha256": "6ae5665185c894fa",
+      "strokes": 103,
+      "bytes": 119927
     },
     "1-09-petanque-throw": {
-      "sha256": "c7fb932ec1eb08ef",
-      "strokes": 77,
-      "bytes": 87269
+      "sha256": "a0882c1335d9251f",
+      "strokes": 96,
+      "bytes": 91212
     },
     "1-10-long-jump": {
-      "sha256": "97c429170d2462d5",
-      "strokes": 90,
-      "bytes": 92759
+      "sha256": "b7837d53c6f83f18",
+      "strokes": 105,
+      "bytes": 95763
     },
     "1-11-cannon": {
-      "sha256": "bb2816420877689d",
-      "strokes": 57,
-      "bytes": 88299
+      "sha256": "d30d725af0f391a8",
+      "strokes": 78,
+      "bytes": 90597
     },
     "1-12-dartboard": {
-      "sha256": "6139f91bb94e6999",
-      "strokes": 103,
-      "bytes": 141941
+      "sha256": "a36a296df20a2bc4",
+      "strokes": 124,
+      "bytes": 145518
     },
     "1-13-ski-jump": {
-      "sha256": "e054ed49578f21d7",
-      "strokes": 66,
-      "bytes": 112618
+      "sha256": "0ad51dbf21b4bd9f",
+      "strokes": 81,
+      "bytes": 116774
     },
     "1-14-ball-off-table": {
-      "sha256": "e0a2ec9c88c4c769",
-      "strokes": 76,
-      "bytes": 82254
+      "sha256": "823e5df5d9bcadff",
+      "strokes": 91,
+      "bytes": 86111
     },
     "1-15-volleyball-serve": {
-      "sha256": "cab9ff164631fc78",
-      "strokes": 109,
-      "bytes": 145302
+      "sha256": "ccac03ca5a6c7092",
+      "strokes": 128,
+      "bytes": 146292
     },
     "2-01-trampoline": {
-      "sha256": "efda217d707c4aef",
-      "strokes": 95,
-      "bytes": 115366
+      "sha256": "5a1d5224eeebbcdb",
+      "strokes": 115,
+      "bytes": 117239
     },
     "2-02-swing-set": {
-      "sha256": "11ad23111d84821b",
-      "strokes": 101,
-      "bytes": 140889
+      "sha256": "91915de83d9455b8",
+      "strokes": 115,
+      "bytes": 138103
     },
     "2-03-horizontal-spring": {
-      "sha256": "d589f163090009c3",
-      "strokes": 76,
-      "bytes": 100591
+      "sha256": "821c64b157aba970",
+      "strokes": 91,
+      "bytes": 103110
     },
     "2-04-tire-swing": {
-      "sha256": "c9f3d95143697273",
-      "strokes": 87,
-      "bytes": 141896
+      "sha256": "9fc75e4bfffeba5a",
+      "strokes": 99,
+      "bytes": 143283
     },
     "2-05-rocking-chair": {
-      "sha256": "a7521ffcaa08834f",
-      "strokes": 38,
-      "bytes": 81844
+      "sha256": "413f741431d12563",
+      "strokes": 53,
+      "bytes": 84055
     },
     "2-06-grandfather-clock": {
-      "sha256": "4e75eb9f0478dca4",
-      "strokes": 79,
-      "bytes": 146497
+      "sha256": "cb90f5fc17a566ee",
+      "strokes": 103,
+      "bytes": 149694
     },
     "2-07-yoyo": {
-      "sha256": "558611db7311abce",
-      "strokes": 38,
-      "bytes": 69165
+      "sha256": "f14131c8d9adbe35",
+      "strokes": 50,
+      "bytes": 70463
     },
     "2-08-diving-board-flex": {
-      "sha256": "7caea06d6c3bf1ff",
-      "strokes": 84,
-      "bytes": 126651
+      "sha256": "c18ac28813f0f38f",
+      "strokes": 99,
+      "bytes": 126968
     },
     "2-09-bungee-jump": {
-      "sha256": "0d4b4b15b6535996",
-      "strokes": 109,
-      "bytes": 139384
+      "sha256": "ee76f0a7ff2fc3aa",
+      "strokes": 124,
+      "bytes": 138022
     },
     "2-10-bouncing-ball": {
-      "sha256": "d223f4a8966b7486",
-      "strokes": 32,
-      "bytes": 56370
+      "sha256": "43a32442aef9bfc9",
+      "strokes": 42,
+      "bytes": 57478
     },
     "2-11-metronome": {
-      "sha256": "e42935a5efd03a4c",
-      "strokes": 86,
-      "bytes": 142490
+      "sha256": "2ae80e7ea18ec5ff",
+      "strokes": 107,
+      "bytes": 145946
     },
     "2-12-wrecking-ball": {
-      "sha256": "aae4121f74cb0ab2",
-      "strokes": 103,
-      "bytes": 138493
+      "sha256": "e8c56e782b69a765",
+      "strokes": 115,
+      "bytes": 138925
     },
     "2-13-pogo-stick": {
-      "sha256": "133149f6c7a7d78d",
-      "strokes": 87,
-      "bytes": 102451
+      "sha256": "88bf2d19d3772f47",
+      "strokes": 108,
+      "bytes": 103334
     },
     "2-14-pirate-ship-ride": {
-      "sha256": "5c13a9b15b06ddbf",
-      "strokes": 73,
-      "bytes": 159591
+      "sha256": "da8c519c4429259b",
+      "strokes": 87,
+      "bytes": 162419
     },
     "2-15-mass-on-spring": {
-      "sha256": "8a9f20df7c6a9edb",
-      "strokes": 90,
-      "bytes": 120915
+      "sha256": "27655d0593efa0fa",
+      "strokes": 89,
+      "bytes": 113951
     },
     "3-01-seesaw": {
       "sha256": "ec7ebc1b6a74e39d",
@@ -197,24 +197,24 @@
       "bytes": 129242
     },
     "3-09-crowbar": {
-      "sha256": "75743ecb3246e34d",
-      "strokes": 105,
-      "bytes": 124257
+      "sha256": "67f58540daf167b6",
+      "strokes": 121,
+      "bytes": 122090
     },
     "3-10-nutcracker": {
-      "sha256": "7d20c367a9116bb0",
-      "strokes": 64,
-      "bytes": 96298
+      "sha256": "35d9326a171818ff",
+      "strokes": 79,
+      "bytes": 94737
     },
     "3-11-shovel": {
-      "sha256": "ba721943cdfbd5c2",
-      "strokes": 65,
-      "bytes": 85732
+      "sha256": "becd313439252d9a",
+      "strokes": 75,
+      "bytes": 84096
     },
     "3-12-wheelbarrow": {
-      "sha256": "de54aa22339b1c1e",
-      "strokes": 117,
-      "bytes": 139867
+      "sha256": "0773eb041aa613dd",
+      "strokes": 138,
+      "bytes": 141170
     },
     "3-13-hammock": {
       "sha256": "345bf6b9b1d9b27c",
@@ -232,154 +232,154 @@
       "bytes": 107417
     },
     "4-01-skateboarder": {
-      "sha256": "935847fbcbbb602b",
-      "strokes": 51,
-      "bytes": 82345
+      "sha256": "325d53324c97d723",
+      "strokes": 66,
+      "bytes": 85468
     },
     "4-02-racing-car": {
-      "sha256": "f7f7f5c1c4f39963",
-      "strokes": 91,
-      "bytes": 87566
+      "sha256": "7675bcf7941137a9",
+      "strokes": 105,
+      "bytes": 91094
     },
     "4-03-pull-wagon": {
-      "sha256": "a1dec47bf972a764",
-      "strokes": 123,
-      "bytes": 119124
+      "sha256": "04ed2a19fa39078c",
+      "strokes": 138,
+      "bytes": 121686
     },
     "4-04-sprint-start": {
-      "sha256": "152e2e1c94b034fd",
-      "strokes": 76,
-      "bytes": 89134
+      "sha256": "47934e1ee8c3eb9a",
+      "strokes": 91,
+      "bytes": 89537
     },
     "4-05-bowling-lane": {
-      "sha256": "e4635c1c1d9c2ade",
-      "strokes": 43,
-      "bytes": 47652
+      "sha256": "a0d86e5d6853dc6a",
+      "strokes": 58,
+      "bytes": 50275
     },
     "4-06-wheeled-suitcase": {
-      "sha256": "5df1ab9382e8172d",
-      "strokes": 43,
-      "bytes": 68894
+      "sha256": "69a21d77a012f92c",
+      "strokes": 58,
+      "bytes": 72472
     },
     "4-07-zipline": {
-      "sha256": "f2e846a5c4d4c12c",
-      "strokes": 73,
-      "bytes": 107081
+      "sha256": "3136bdd1d9b9b84b",
+      "strokes": 84,
+      "bytes": 110173
     },
     "4-08-cyclist-uphill": {
-      "sha256": "bbca837252aa93ca",
-      "strokes": 81,
-      "bytes": 96434
+      "sha256": "e9e4116557162eee",
+      "strokes": 96,
+      "bytes": 98396
     },
     "4-09-sled-slope": {
-      "sha256": "249ef08539aad646",
-      "strokes": 86,
-      "bytes": 118052
+      "sha256": "5b9d88b171595c25",
+      "strokes": 101,
+      "bytes": 119118
     },
     "4-10-puck-ramp": {
-      "sha256": "f57a2a664b291643",
-      "strokes": 37,
-      "bytes": 67068
+      "sha256": "9a9dc1774e13788c",
+      "strokes": 52,
+      "bytes": 68642
     },
     "4-11-slip-on-ice": {
-      "sha256": "68cc56e386686c9b",
-      "strokes": 89,
-      "bytes": 87233
+      "sha256": "c8258e670477ee93",
+      "strokes": 98,
+      "bytes": 87772
     },
     "4-12-push-box": {
-      "sha256": "cad4ad4ce16ed2d5",
-      "strokes": 83,
-      "bytes": 101320
+      "sha256": "8896d2c69e1c15ea",
+      "strokes": 93,
+      "bytes": 103535
     },
     "4-13-curling-stone": {
-      "sha256": "b51cef1795d54649",
-      "strokes": 34,
-      "bytes": 65407
+      "sha256": "88e16868646448fa",
+      "strokes": 49,
+      "bytes": 70910
     },
     "4-14-fireman-pole": {
-      "sha256": "7cb01380fffa5bdb",
-      "strokes": 100,
-      "bytes": 82719
+      "sha256": "bd940c6fc09606c1",
+      "strokes": 110,
+      "bytes": 84709
     },
     "4-15-parachute": {
-      "sha256": "452611b90f465060",
-      "strokes": 95,
-      "bytes": 120089
+      "sha256": "373c4ac840f974d4",
+      "strokes": 113,
+      "bytes": 119479
     },
     "5-01-bowling-strike": {
-      "sha256": "026d06900114e3b8",
-      "strokes": 75,
-      "bytes": 80004
+      "sha256": "5ab7676b946145a0",
+      "strokes": 90,
+      "bytes": 82427
     },
     "5-02-billiards": {
-      "sha256": "6c4b9cbaedea3204",
-      "strokes": 22,
-      "bytes": 62676
+      "sha256": "88dc0efacaa802a1",
+      "strokes": 35,
+      "bytes": 64149
     },
     "5-03-bumper-cars": {
-      "sha256": "5edae7d5827ac80d",
-      "strokes": 133,
-      "bytes": 103198
+      "sha256": "427a1532967b8557",
+      "strokes": 140,
+      "bytes": 103221
     },
     "5-04-kick-ball": {
-      "sha256": "1b6ea2bbcee9f89f",
-      "strokes": 78,
-      "bytes": 93193
+      "sha256": "8d993f3615fd2df8",
+      "strokes": 94,
+      "bytes": 95040
     },
     "5-05-newtons-cradle": {
-      "sha256": "5be272cd1fd5b053",
-      "strokes": 90,
-      "bytes": 113435
+      "sha256": "236fce4fc67efba4",
+      "strokes": 71,
+      "bytes": 106239
     },
     "5-06-dominoes": {
-      "sha256": "ac6ab69594278b6f",
-      "strokes": 94,
-      "bytes": 105117
+      "sha256": "bc4c92828ef2cc9c",
+      "strokes": 125,
+      "bytes": 115161
     },
     "5-07-train-collision": {
-      "sha256": "c2d2b33ace308d28",
-      "strokes": 72,
-      "bytes": 89784
+      "sha256": "b0fc040b9817980b",
+      "strokes": 94,
+      "bytes": 92776
     },
     "5-08-marbles": {
-      "sha256": "a1188d46485a9bed",
-      "strokes": 26,
-      "bytes": 48243
+      "sha256": "b2ff896dd0dc8a88",
+      "strokes": 41,
+      "bytes": 51641
     },
     "5-09-gong": {
-      "sha256": "fd72cc74ef85e127",
-      "strokes": 84,
-      "bytes": 134137
+      "sha256": "e0eca33254700e80",
+      "strokes": 106,
+      "bytes": 138469
     },
     "5-10-tennis-serve": {
-      "sha256": "299d28853101f3e6",
-      "strokes": 104,
-      "bytes": 120016
+      "sha256": "043fbd18e4e8f10c",
+      "strokes": 126,
+      "bytes": 124173
     },
     "5-11-hammer-nail": {
-      "sha256": "3550043328b78727",
-      "strokes": 37,
-      "bytes": 97207
+      "sha256": "a4b7b84cb7a084f2",
+      "strokes": 41,
+      "bytes": 97907
     },
     "5-12-bat-baseball": {
-      "sha256": "8a3708d640c40b90",
-      "strokes": 92,
-      "bytes": 98408
+      "sha256": "69679e4bf62e8f61",
+      "strokes": 95,
+      "bytes": 93752
     },
     "5-13-car-into-wall": {
-      "sha256": "09708aede18f5cb4",
-      "strokes": 86,
-      "bytes": 90984
+      "sha256": "b211e47a1badc019",
+      "strokes": 107,
+      "bytes": 98343
     },
     "5-14-cannon-recoil": {
-      "sha256": "ab5cba72873c0463",
-      "strokes": 71,
-      "bytes": 83645
+      "sha256": "b7df00eb423f1cdf",
+      "strokes": 78,
+      "bytes": 82281
     },
     "5-15-boat-jump": {
-      "sha256": "5da8053cb06492b9",
-      "strokes": 48,
-      "bytes": 85453
+      "sha256": "ac9912aa328dbf62",
+      "strokes": 63,
+      "bytes": 87143
     }
   }
 }

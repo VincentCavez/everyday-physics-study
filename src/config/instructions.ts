@@ -75,13 +75,13 @@ export const instructions = {
   title: "How this works",
   body: [
     `You will see ${N_SKETCHES} sketches, one at a time, each with a short description of what it shows. The first sketch is a practice round so you can get used to the questions.`,
-    "For each sketch you go through three parts. First you say in your own words what you think happens, what decides it, and what you would change. Then you read some descriptions of what might happen and rate each one. Then you look at some tools that would let you change the drawing, and rate those too.",
+    "For each sketch you go through three parts. First you say in your own words what you think happens, what has an effect on it, and what you would change. Then you read some descriptions of what might happen and rate each one. Then you look at some tools that would let you change the drawing, and rate those too.",
     "Please answer in your own words — a sentence or two is plenty. We want your first reaction, not a carefully worked-out calculation. When you rate something, there are no right answers: we want to know how well it matches what YOU had in mind.",
     "You cannot go back to a question once you have moved on.",
   ],
   /** Donné mot pour mot au modèle. */
   drawingConvention:
-    "The sketches use one drawing convention: a thick yellow arrow — the motion arrow — shows movement, or the direction something is being sent off in. Everything else in the drawing is just the scene itself.",
+    "The sketches use one drawing convention: a dashed yellow arrow — the motion arrow — shows movement, or the direction something is being sent off in. Everything else in the drawing is just the scene itself.",
   conventionCaption: "Here the motion arrow means the ball has been thrown up and to the right.",
   conventionSceneId: "1-01-baseball-pitch",
   button: "I understand — begin",
@@ -131,7 +131,10 @@ export const scenario = {
      *
      * Formulation VISÉE SUR LES PROPRIÉTÉS plutôt que le « Why do you think
      * that will happen? » de la v1 (décision de Vincent) : elle demande ce qui
-     * DÉCIDE, ce que produit aussi le pipeline, donc les deux côtés parlent
+     * A UN EFFET (« decide » a été écarté le 09/09 : trop tranchant, il
+     * appelait UNE cause souveraine là où la scène en a plusieurs, et c'est
+     * l'inverse de ce que le stage 3 fait noter), ce que produit aussi le
+     * pipeline, donc les deux côtés parlent
      * enfin de la même chose. Cet item n'est pas
      * la même question que l'`explanation` de la v1, d'où une clé NOUVELLE
      * (`what_decides`) : deux questions différentes ne doivent jamais se
@@ -150,7 +153,7 @@ export const scenario = {
      * dit que « ce n'est pas celui que j'avais choisi ». La forme « (s) »
      * autorise une réponse unique sans jamais l'imposer.
      */
-    whatDecides: (outcome: string) => `What thing(s) in the scene decide ${outcome}?`,
+    whatDecides: (outcome: string) => `What thing(s) in the scene have an effect on ${outcome}?`,
     freeCounterfactual: (outcome: string) =>
       `What thing(s) in the scene could you change to make a difference to ${outcome}?`,
   },

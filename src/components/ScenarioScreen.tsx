@@ -276,51 +276,61 @@ export function ScenarioScreen() {
 
     const onSubmit = () => {
       if (s.reveal === 0) {
-        // DEUX events : la note, et la RÉVÉLATION des valeurs, distincte, dont
-        // l'horodatage démarre la latence du second temps.
-        record([
-          {
-            ...common,
-            item_key: "tool_fit",
-            item_id: tool.id,
-            ...logMetaFor(scene.id, tool.id),
-            display_position: position,
-            rating: draftRating,
-            ...timing,
-          },
-          {
-            ...common,
-            item_key: "tool_values_shown",
-            item_id: tool.id,
-            ...logMetaFor(scene.id, tool.id),
-            display_position: position,
-            options: valueLabels,
-          },
-        ]);
+        // Un outil `range` n'a pas de second temps : rien à révéler, rien à
+        // noter. La page se valide donc ici, comme n'importe quelle page à une
+        // seule révélation, et aucune ligne `tool_values` n'existera pour lui.
+        // C'est cette ABSENCE qui le désigne à l'analyse, `proposals.json`
+        // donnant le `mapping_kind` de chaque outil.
+        record(
+          [
+            {
+              ...common,
+              item_key: "tool_fit",
+              item_id: tool.id,
+              ...logMetaFor(scene.id, tool.id),
+              display_position: position,
+              rating: draftRating,
+              ...timing,
+            },
+            // La RÉVÉLATION des valeurs, event distinct, dont l'horodatage
+            // démarre la latence du second temps. Seulement s'il y en a un.
+            ...(isRange
+              ? []
+              : [
+                  {
+                    ...common,
+                    item_key: "tool_values_shown",
+                    item_id: tool.id,
+                    ...logMetaFor(scene.id, tool.id),
+                    display_position: position,
+                    options: valueLabels,
+                  },
+                ]),
+          ],
+          { send: isRange && endsStage },
+        );
         dispatch({
           type: "COMMIT_ANSWER",
           key: `${key}.${pk}.fit`,
           text: "",
           rating: draftRating,
-          advance: "reveal",
+          advance: isRange ? "page" : "reveal",
         });
         return;
       }
-      // Second temps. Pour un outil `range`, il n'y a rien à noter : la ligne
-      // part quand même, `rating` vide, pour que l'absence soit LISIBLE dans le
-      // Sheet (manquante par construction) et comptable à l'analyse.
+      // Second temps : la note de la palette.
       commit(
         "tool_values",
         {
           item_id: tool.id,
           ...logMetaFor(scene.id, tool.id),
           display_position: position,
-          rating: isRange ? null : draftRating,
+          rating: draftRating,
           options: valueLabels,
         },
         `${pk}.values`,
         "",
-        isRange ? null : draftRating,
+        draftRating,
         "page",
         endsStage,
       );

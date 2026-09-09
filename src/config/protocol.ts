@@ -33,26 +33,15 @@ export type Page =
   /** Stage 2 : une théorie à la fois, sans le moindre compteur à l'écran. */
   | { kind: "theory_rate"; stage: 2; key: string; card: TheoryCard; position: number }
   | { kind: "theory_choice"; stage: 2; key: "t2.choice"; cards: TheoryCard[] }
-  /** Stage 3 : un outil par page. 2 révélations (note, puis valeurs), sauf
-      pour un outil `range`, qui n'a pas de palette à faire noter. */
+  /** Stage 3 : un outil par page. Deux révélations, la note puis les valeurs.
+      UNE SEULE pour un outil `range` (décision de Vincent, 09/09) : il n'a pas
+      de palette, et sa « valeur » n'est qu'une phrase disant qu'on fait glisser
+      le point où l'on veut. L'afficher sans rien demander faisait un écran mort
+      au milieu du stage. Le participant note donc l'outil et passe. Conséquence
+      à l'analyse : ces outils n'ont AUCUNE ligne `tool_values`, et c'est cette
+      absence qui les désigne, `proposals.json` donnant le `mapping_kind`. */
   | { kind: "tool_rate"; stage: 3; key: string; tool: ToolCard; position: number }
   | { kind: "tool_wish"; stage: 3; key: "t3.wish" };
-
-/** Le nombre de révélations d'une page, quand il est connu d'avance.
- *  `own_concepts` fait exception : il dépend du nombre d'options cochées, donc
- *  de l'exécution. C'est le COMPOSANT qui tranche, via le champ `advance` de
- *  l'action ; le réducteur, lui, ne fait jamais qu'avancer. */
-export function revealsFor(page: Page): number {
-  if (page.kind === "own") return 4;
-  if (page.kind === "own_concepts") return 2; // maximum, voir ci-dessus
-  // TOUJOURS deux temps, même pour un outil `range` : le second révèle ce que
-  // l'outil offre (« pas de liste, tu le fais glisser où tu veux ») sans rien
-  // faire noter. Fondre les deux en une page pour ces outils-là montrerait les
-  // valeurs AVANT la note d'ajustement, et la première note ne porterait plus
-  // sur la même chose d'un outil à l'autre.
-  if (page.kind === "tool_rate") return 2;
-  return 1;
-}
 
 /** Les trois énoncés en prose du stage 1, ancrés sur la scène. Dans cet ordre :
     ce qui va se passer, ce qui le décide, ce qu'on changerait. */
