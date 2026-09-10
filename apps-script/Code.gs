@@ -410,12 +410,25 @@ function freeRow(rowId) {
  * `meta` n'est PAS touché : le code de complétion vient de Prolific et change
  * à chaque étude, c'est au chercheur de le recopier.
  *
- * Usage : un wrapper, comme freeRow — `function reset1() { resetWave('2026-09-10'); }`
+ * USAGE : fermer l'étude (`closeStudy()`), puis choisir `resetWave` dans le
+ * menu et Exécuter. Aucun argument à passer — le bouton Run de l'éditeur
+ * appelle toujours la fonction sans argument, donc l'étiquette prend la DATE DU
+ * JOUR par défaut. Pour en nommer une autre, passer par un wrapper comme pour
+ * `freeRow` : `function reset1() { resetWave('pilote-A'); }`
+ *
+ * GARDE-FOU : la fonction refuse tant que l'étude est OUVERTE. Archiver et
+ * libérer 75 rows pendant que des gens répondent perdrait leur session en
+ * cours ; `closeStudy()` d'abord, toujours.
  */
 function resetWave(label) {
-  var tag = String(label || '').trim();
+  if (meta_('study_open') !== 'FALSE') {
+    throw new Error(
+      "resetWave : l'étude est encore OUVERTE. Lancer closeStudy() d'abord — sinon les participants en cours perdent leur row.",
+    );
+  }
+  var tag = String(label || Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyy-MM-dd')).trim();
   if (!/^[0-9A-Za-z_.-]{3,40}$/.test(tag)) {
-    throw new Error("resetWave('<étiquette>') : une étiquette est obligatoire, elle nomme l'archive (ex. '2026-09-10').");
+    throw new Error("resetWave : étiquette invalide « " + tag + " » (lettres, chiffres, . _ - seulement).");
   }
   var ss = SpreadsheetApp.getActive();
 
@@ -445,7 +458,8 @@ function resetWave(label) {
   SpreadsheetApp.flush();
   var msg =
     'resetWave : ' + SHEETS.RESPONSES + ' et ' + SHEETS.SESSIONS + ' archivés en « -' + tag +
-    ' », onglets neufs créés, ' + N_ROWS + ' rows libérées. `meta` inchangé — recopier le NOUVEAU code de complétion Prolific.';
+    ' », onglets neufs créés, ' + N_ROWS + ' rows libérées. `meta` inchangé — recopier le NOUVEAU code de ' +
+    'complétion Prolific, puis openStudy() pour rouvrir.';
   Logger.log(msg);
   return msg;
 }
