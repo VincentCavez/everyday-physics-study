@@ -181,7 +181,9 @@ every study, so copy the new one in by hand, then `openStudy()`. Nothing is dele
 `progress()` counts row statuses, and splits `ASSIGNED` into *in progress* and *stale* ·
 `freeRow(id)` releases a row after a rejection so a replacement gets the same design row
 (this is what preserves the balance) · `closeStudy()` / `openStudy()` stop and resume
-recruitment without unpublishing · `migrate()` is a **one-off** for a workbook that was
+recruitment without unpublishing — they now write the words `closed` / `open` and read back
+to confirm, because writing `FALSE` let Sheets coerce the cell to a boolean whose string
+form is lowercase, so the old check never matched and `closeStudy()` closed nothing · `migrate()` is a **one-off** for a workbook that was
 already running before 2026-09-10: it writes the `last_seen` header and pre-sizes the
 `responses` grid.
 

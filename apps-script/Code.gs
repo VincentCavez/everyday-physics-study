@@ -135,7 +135,7 @@ function assign_(pid, sessionId, isTest, userAgent) {
   }
 
   try {
-    if (meta_('study_open') === 'FALSE') return { error: 'closed' };
+    if (!studyOpen_()) return { error: 'closed' };
 
     var sheet = sh_(SHEETS.ROWS);
     var values = sheet.getRange(2, 1, N_ROWS, ROWS_HEADER.length).getValues();
@@ -311,6 +311,22 @@ function logSession_(sessionId, pid, rowId, isTest, event, userAgent) {
   s.appendRow([new Date(), sessionId, pid, rowId, isTest ? 1 : 0, event, userAgent || '']);
 }
 
+/**
+ * L'ÉTUDE EST-ELLE OUVERTE ? (2026-09-11, défaut mesuré.)
+ *
+ * `setMeta_('study_open', 'FALSE')` écrit la CHAÎNE « FALSE », que Sheets
+ * convertit aussitôt en BOOLÉEN faux. À la relecture, `String(false)` vaut
+ * « false » en minuscules, jamais « FALSE » : le test `=== 'FALSE'` échouait,
+ * et `closeStudy()` n'a donc JAMAIS rien fermé — ni pour `resetWave`, ni pour
+ * `assign_`, qui laissait entrer des participants sur une étude qu'on croyait
+ * close. On lit désormais la valeur telle qu'elle est, booléenne ou texte, et
+ * dans les deux casses.
+ */
+function studyOpen_() {
+  var v = String(meta_('study_open')).trim().toUpperCase();
+  return !(v === 'FALSE' || v === '0' || v === 'NO' || v === 'NON');
+}
+
 function meta_(key) {
   var values = sh_(SHEETS.META).getDataRange().getValues();
   for (var i = 0; i < values.length; i++) {
@@ -370,7 +386,7 @@ function setup() {
     meta.getRange(2, 1, 3, 2).setValues([
       ['completion_code', 'PASTE_PROLIFIC_COMPLETION_CODE'],
       ['stale_minutes', DEFAULT_STALE_MINUTES],
-      ['study_open', 'TRUE'],
+      ['study_open', 'open'],
     ]);
   }
   SpreadsheetApp.flush();
@@ -421,7 +437,7 @@ function freeRow(rowId) {
  * cours ; `closeStudy()` d'abord, toujours.
  */
 function resetWave(label) {
-  if (meta_('study_open') !== 'FALSE') {
+  if (studyOpen_()) {
     throw new Error(
       "resetWave : l'étude est encore OUVERTE. Lancer closeStudy() d'abord — sinon les participants en cours perdent leur row.",
     );
@@ -465,8 +481,21 @@ function resetWave(label) {
 }
 
 /** Admin : coupe l'arrivée de nouveaux participants sans dépublier le site. */
-function closeStudy() { setMeta_('study_open', 'FALSE'); }
-function openStudy() { setMeta_('study_open', 'TRUE'); }
+// Les deux écrivent un TEXTE explicite (`setValue` d'une chaîne que Sheets ne
+// peut pas prendre pour un booléen), et relisent pour confirmer : un « fermé »
+// silencieusement inopérant est le pire des deux mondes.
+function closeStudy() {
+  setMeta_('study_open', 'closed');
+  var ok = !studyOpen_();
+  Logger.log('closeStudy : étude ' + (ok ? 'FERMÉE' : 'ENCORE OUVERTE (anomalie)'));
+  return ok;
+}
+function openStudy() {
+  setMeta_('study_open', 'open');
+  var ok = studyOpen_();
+  Logger.log('openStudy : étude ' + (ok ? 'OUVERTE' : 'ENCORE FERMÉE (anomalie)'));
+  return ok;
+}
 
 function setMeta_(key, value) {
   var s = sh_(SHEETS.META);
