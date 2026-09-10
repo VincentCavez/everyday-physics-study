@@ -71,10 +71,15 @@ export function ScenarioScreen() {
   };
   const timing = { rt_ms: rtFor(stepKey), ts_shown: shownAt(stepKey) };
 
-  /** Dernière page de son stage : c'est là qu'on pousse le lot au serveur.
-      Trois envois par scène, comme en v1 — le budget calibré après la
-      saturation d'Apps Script du 04/09 tient. */
-  const endsStage = plan[s.page_index + 1]?.stage !== page.stage;
+  /** Dernière page de la SCÈNE : c'est là qu'on pousse le lot au serveur.
+      UN envoi par scène depuis le 2026-09-10 (trois auparavant, un par stage).
+      Mesuré sur les cinq premiers participants : 26 requêtes chacun, dont 10 %
+      au-delà du délai de 45 s du client, qui réessayait — un quart des lots
+      sont partis deux fois. Le gros du défaut était côté serveur (une écriture
+      Sheets par LIGNE) et il est corrigé ; diviser les requêtes par trois est
+      la marge, pas le correctif. Rien n'est risqué entre deux envois : la file
+      vit dans localStorage, et `maxHoldMs` (4 min) la vide de toute façon. */
+  const endsScene = s.page_index + 1 >= plan.length;
 
   const draftKey = `${stepKey}.text`;
   const ratingKey = `${stepKey}.rating`;
@@ -140,7 +145,7 @@ export function ScenarioScreen() {
             ...timing,
           },
         ],
-        { send: !canRank && endsStage },
+        { send: !canRank && endsScene },
       );
       // Moins de deux options classables : il n'y a rien à ordonner, la page se
       // valide directement et `rank` reste vide côté Sheet. C'est le « vide si
@@ -166,7 +171,7 @@ export function ScenarioScreen() {
           display_position: shuffledOrder.indexOf(r.key) + 1 || null,
           ...timing,
         })),
-        { send: endsStage },
+        { send: endsScene },
       );
       dispatch({
         type: "COMMIT_ANSWER",
@@ -229,7 +234,7 @@ export function ScenarioScreen() {
           onChange={setRating}
           onSubmit={() =>
             isExcess
-              ? commit("theory_excess", { ...meta, rating: draftRating }, `${page.key}.excess`, "", draftRating, "page", endsStage)
+              ? commit("theory_excess", { ...meta, rating: draftRating }, `${page.key}.excess`, "", draftRating, "page", endsScene)
               : commit("theory_rate", { ...meta, rating: draftRating }, `${page.key}.fit`, "", draftRating, "reveal")
           }
         />
@@ -257,7 +262,7 @@ export function ScenarioScreen() {
               id,
               null,
               "page",
-              endsStage,
+              endsScene,
             )
           }
         />
@@ -305,7 +310,7 @@ export function ScenarioScreen() {
                   },
                 ]),
           ],
-          { send: isRange && endsStage },
+          { send: isRange && endsScene },
         );
         dispatch({
           type: "COMMIT_ANSWER",
@@ -330,7 +335,7 @@ export function ScenarioScreen() {
         "",
         draftRating,
         "page",
-        endsStage,
+        endsScene,
       );
     };
 
@@ -358,7 +363,7 @@ export function ScenarioScreen() {
         <div className="actions">
           <button
             className="primary"
-            onClick={() => commit("wish", { response_text: draftText }, page.key, draftText, null, "page", endsStage)}
+            onClick={() => commit("wish", { response_text: draftText }, page.key, draftText, null, "page", endsScene)}
           >
             {texts.submitProse}
           </button>

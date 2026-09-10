@@ -170,9 +170,29 @@ stays stable.
 
 ### Admin functions
 
-`progress()` counts row statuses · `freeRow(id)` releases a row after a rejection so a
-replacement gets the same design row (this is what preserves the balance) ·
-`closeStudy()` / `openStudy()` stop and resume recruitment without unpublishing.
+`progress()` counts row statuses, and splits `ASSIGNED` into *in progress* and *stale* ·
+`freeRow(id)` releases a row after a rejection so a replacement gets the same design row
+(this is what preserves the balance) · `closeStudy()` / `openStudy()` stop and resume
+recruitment without unpublishing · `migrate()` is a **one-off** for a workbook that was
+already running before 2026-09-10: it writes the `last_seen` header and pre-sizes the
+`responses` grid.
+
+### Abandonment, and why `stale_minutes` is not a timeout on the task
+
+A row is assigned when the browser passes the width gate, before consent, so a
+participant who opens the link and leaves holds a row. It returns to the pool after
+`stale_minutes` (`meta` tab, 120 by default), and the session that lost it is logged as
+`reclaimed-stale`.
+
+Staleness is measured from the **last batch of answers received**, not from the moment of
+assignment: on 2026-09-09 a session ran 1 h 04 with `stale_minutes` at 60, which under the
+old rule would have handed that participant's row to someone else while they were still
+answering. Set `stale_minutes` to roughly twice the time a participant needs to reach the
+first send (end of scene 1, a few minutes), never to the length of the task.
+
+Nothing is lost when a row is reclaimed: answers carry the participant's `pid`, and the
+analysis keys on `pid`, never on `row_id`. `assign_count` on the row counts how many
+participants went through it.
 
 ## Deployment — GitHub Pages
 

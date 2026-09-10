@@ -20,8 +20,20 @@
 var SHEETS = { ROWS: 'rows', SESSIONS: 'sessions', RESPONSES: 'responses', META: 'meta' };
 var N_ROWS = 75;
 var DEFAULT_STALE_MINUTES = 120;
+/** Marge de grille pré-allouée dans `responses`. `appendRow` au-delà de la
+ *  dernière ligne de la GRILLE force Sheets à l'agrandir ligne par ligne, ce qui
+ *  fait passer une écriture de ~200 ms à plusieurs secondes. C'est ce qui a
+ *  saturé le service le 09/09, quand l'onglet a dépassé ses 1000 lignes par
+ *  défaut. On écrit désormais par lot, et on agrandit par blocs. */
+var GRID_CHUNK = 2000;
 
-var ROWS_HEADER = ['row_id', 'status', 'pid', 'session_id', 'assigned_ts', 'completed_ts', 'assign_count'];
+// `last_seen` (colonne 8, ajoutée le 2026-09-10) : l'instant du dernier lot de
+// réponses reçu pour cette row. Sans elle, la péremption comparait `stale_minutes`
+// au seul instant d'ATTRIBUTION, et une row pouvait être reprise à un
+// participant encore en train de répondre — mesuré le 09/09 : une session a duré
+// 1 h 04 alors que `stale_minutes` valait 60. Sur un classeur qui tourne déjà,
+// lancer `migrate()` une fois pour écrire l'en-tête.
+var ROWS_HEADER = ['row_id', 'status', 'pid', 'session_id', 'assigned_ts', 'completed_ts', 'assign_count', 'last_seen'];
 var SESSIONS_HEADER = ['ts', 'session_id', 'pid', 'row_id', 'is_test', 'event', 'user_agent'];
 /**
  * PROTOCOLE v2 (2026-09-09) — 32 colonnes.
@@ -152,7 +164,14 @@ function assign_(pid, sessionId, isTest, userAgent) {
       if (st === 'FREE') {
         candidates.push(j);
       } else if (st === 'ASSIGNED') {
-        var ts = values[j][4] ? new Date(values[j][4]).getTime() : 0;
+        // PÉREMPTION SUR LA DERNIÈRE ACTIVITÉ, pas sur l'attribution : un
+        // participant lent est encore là, un participant qui a fermé l'onglet
+        // au consentement n'a jamais rien écrit. Reprendre la row du premier
+        // casse l'équilibrage du plan ET lui vole sa place.
+        var ts = Math.max(
+          values[j][4] ? new Date(values[j][4]).getTime() : 0,
+          values[j][7] ? new Date(values[j][7]).getTime() : 0
+        );
         if (now.getTime() - ts > staleMs) candidates.push(j);
       }
     }
@@ -160,8 +179,14 @@ function assign_(pid, sessionId, isTest, userAgent) {
 
     var pick = candidates[Math.floor(Math.random() * candidates.length)];
     var rowId = values[pick][0];
-    sheet.getRange(pick + 2, 2, 1, 6).setValues([[
-      'ASSIGNED', pid, sessionId, now, '', Number(values[pick][6] || 0) + 1,
+    // Une row reprise à un abandon laisse une trace : `assign_count` compte les
+    // passages, et la session le dit en clair. Les réponses de l'abandon restent
+    // dans `responses` sous SON pid — l'analyse se fait par pid, jamais par row.
+    if (String(values[pick][1]) === 'ASSIGNED' && values[pick][2]) {
+      logSession_(sessionId, String(values[pick][2]), rowId, false, 'reclaimed-stale', '');
+    }
+    sheet.getRange(pick + 2, 2, 1, 7).setValues([[
+      'ASSIGNED', pid, sessionId, now, '', Number(values[pick][6] || 0) + 1, '',
     ]]);
     SpreadsheetApp.flush();
     logSession_(sessionId, pid, rowId, false, 'assigned', userAgent);
@@ -174,13 +199,24 @@ function assign_(pid, sessionId, isTest, userAgent) {
 // --------------------------------------------------------------- réponses ---
 
 /**
- * Ajout ligne par ligne avec appendRow, atomique côté Google : deux appels
- * simultanés ne peuvent pas s'écraser, et aucun verrou n'est partagé avec
- * l'attribution des rows. Le 04/09/2026, la version getLastRow()+setValues sans
- * verrou avait perdu six réponses sous dix participants simultanés (deux appels
- * lisaient la même dernière ligne). Les doublons possibles (réessai client
- * après une réponse perdue) portent le même event_id et sont dédupliqués à
- * l'analyse.
+ * UNE SEULE ÉCRITURE PAR LOT, sous verrou (2026-09-10).
+ *
+ * Historique, parce que ce point s'est déjà trompé deux fois :
+ *  - 04/09 : `getLastRow()` + `setValues` SANS verrou → deux appels simultanés
+ *    lisaient la même dernière ligne et six réponses ont été écrasées ;
+ *  - 09/09 : `appendRow` en BOUCLE, atomique mais payé par ligne. Un lot de 34
+ *    réponses coûtait 34 allers-retours Sheets, et au-delà des 1000 lignes de
+ *    grille par défaut chacun forçait un agrandissement. Mesuré sur les cinq
+ *    premiers participants : latence médiane 1,4 s mais 10 % des requêtes
+ *    au-delà de 45 s, donc au-delà du délai du client, qui réessayait. 25 lots
+ *    sur 105 ont été écrits deux fois (206 lignes en double, dédupliquées par
+ *    `event_id`). Aucune réponse perdue, mais le participant attendait.
+ *
+ * La bonne forme est la troisième : `setValues` d'un bloc, sous le verrou de
+ * script, sur une grille pré-allouée. Le verrou est le MÊME que celui de
+ * l'attribution, exprès : le battement de cœur ci-dessous écrit dans `rows`.
+ * Les doublons restent possibles (un réessai après une réponse perdue en
+ * chemin) et portent le même `event_id`.
  */
 function appendEvents_(body) {
   var events = body.events || [];
@@ -202,9 +238,32 @@ function appendEvents_(body) {
     ];
   });
 
-  var sheet = sh_(SHEETS.RESPONSES);
-  for (var i = 0; i < rows.length; i++) sheet.appendRow(rows[i]);
-  return { ok: true, written: rows.length };
+  var lock = LockService.getScriptLock();
+  try {
+    lock.waitLock(30000);
+  } catch (err) {
+    return { error: 'busy', retry: true };
+  }
+
+  try {
+    var sheet = sh_(SHEETS.RESPONSES);
+    var first = sheet.getLastRow() + 1;
+    var need = first + rows.length - 1;
+    var max = sheet.getMaxRows();
+    if (max < need) sheet.insertRowsAfter(max, Math.max(need - max, GRID_CHUNK));
+    sheet.getRange(first, 1, rows.length, RESPONSES_HEADER.length).setValues(rows);
+    // BATTEMENT DE CŒUR : le client donne son `row_id`, donc la ligne s'écrit
+    // sans relire l'onglet. C'est lui qui empêche `assign_` de reprendre la row
+    // d'un participant encore actif.
+    var rowId = Number(body.row_id);
+    if (!body.is_test && rowId >= 1 && rowId <= N_ROWS) {
+      sh_(SHEETS.ROWS).getRange(rowId + 1, 8).setValue(ts);
+    }
+    SpreadsheetApp.flush();
+    return { ok: true, written: rows.length };
+  } finally {
+    lock.releaseLock();
+  }
 }
 
 function complete_(body) {
@@ -262,6 +321,26 @@ function meta_(key) {
 
 // ------------------------------------------------------------ maintenance ---
 
+/**
+ * À exécuter UNE FOIS sur un classeur qui tournait déjà en v2 avant le
+ * 2026-09-10 : écrit l'en-tête `last_seen` et pré-alloue la grille de
+ * `responses`. Sans appel, tout continue de fonctionner (la colonne 8 s'écrit
+ * quand même, sans titre) — mais l'onglet s'agrandira toujours ligne par ligne.
+ */
+function migrate() {
+  var rows = sh_(SHEETS.ROWS);
+  rows.getRange(1, 8).setValue('last_seen').setFontWeight('bold');
+  growGrid_(sh_(SHEETS.RESPONSES));
+  SpreadsheetApp.flush();
+  Logger.log('migrate: last_seen posé, grille responses à ' + sh_(SHEETS.RESPONSES).getMaxRows() + ' lignes');
+}
+
+/** Marge de grille : une écriture ne doit jamais déclencher d'agrandissement. */
+function growGrid_(sheet) {
+  var need = sheet.getLastRow() + GRID_CHUNK;
+  if (sheet.getMaxRows() < need) sheet.insertRowsAfter(sheet.getMaxRows(), need - sheet.getMaxRows());
+}
+
 /** À exécuter une fois depuis l'éditeur : crée les onglets et les 75 rows. */
 function setup() {
   var ss = SpreadsheetApp.getActive();
@@ -278,12 +357,12 @@ function setup() {
 
   var rows = ensure(SHEETS.ROWS, ROWS_HEADER);
   ensure(SHEETS.SESSIONS, SESSIONS_HEADER);
-  ensure(SHEETS.RESPONSES, RESPONSES_HEADER);
+  growGrid_(ensure(SHEETS.RESPONSES, RESPONSES_HEADER));
   var meta = ensure(SHEETS.META, ['key', 'value']);
 
   if (rows.getLastRow() < 2) {
     var seed = [];
-    for (var i = 1; i <= N_ROWS; i++) seed.push([i, 'FREE', '', '', '', '', 0]);
+    for (var i = 1; i <= N_ROWS; i++) seed.push([i, 'FREE', '', '', '', '', 0, '']);
     rows.getRange(2, 1, N_ROWS, ROWS_HEADER.length).setValues(seed);
   }
 
@@ -307,6 +386,7 @@ function freeRow(rowId) {
   if (!(id >= 1 && id <= N_ROWS)) throw new Error('freeRow(rowId) : rowId manquant ou hors plan (1..' + N_ROWS + '). Utiliser un wrapper : function free14() { freeRow(14); }');
   var sheet = sh_(SHEETS.ROWS);
   sheet.getRange(id + 1, 2, 1, 5).setValues([['FREE', '', '', '', '']]);
+  sheet.getRange(id + 1, 8).setValue('');
   SpreadsheetApp.flush();
 }
 
@@ -326,8 +406,17 @@ function setMeta_(key, value) {
 /** Admin : état d'avancement du recrutement. */
 function progress() {
   var values = sh_(SHEETS.ROWS).getRange(2, 1, N_ROWS, ROWS_HEADER.length).getValues();
-  var counts = { FREE: 0, ASSIGNED: 0, COMPLETED: 0, EXCLUDED: 0 };
-  values.forEach(function (r) { counts[r[1]] = (counts[r[1]] || 0) + 1; });
+  var counts = { FREE: 0, ASSIGNED: 0, COMPLETED: 0, EXCLUDED: 0, in_progress: 0, stale: 0 };
+  var staleMs = Number(meta_('stale_minutes') || DEFAULT_STALE_MINUTES) * 60000;
+  var now = Date.now();
+  values.forEach(function (r) {
+    counts[r[1]] = (counts[r[1]] || 0) + 1;
+    if (String(r[1]) !== 'ASSIGNED') return;
+    // Un ASSIGNED n'est pas un abandon : il faut regarder la dernière activité.
+    var seen = Math.max(r[4] ? new Date(r[4]).getTime() : 0, r[7] ? new Date(r[7]).getTime() : 0);
+    if (now - seen > staleMs) counts.stale++;
+    else counts.in_progress++;
+  });
   Logger.log(JSON.stringify(counts));
   return counts;
 }
