@@ -230,7 +230,7 @@
       "row_id": 12,
       "scenes": {
         "projection": "1-12-dartboard",
-        "oscillation_elasticity": "2-11-metronome",
+        "oscillation_elasticity": "2-11-roof-bounce",
         "equilibrium_levers": "3-06-tilting-chair",
         "friction": "4-12-push-box",
         "collision": "5-14-cannon-recoil"
@@ -500,7 +500,7 @@
       "row_id": 27,
       "scenes": {
         "projection": "1-12-dartboard",
-        "oscillation_elasticity": "2-11-metronome",
+        "oscillation_elasticity": "2-11-roof-bounce",
         "equilibrium_levers": "3-06-tilting-chair",
         "friction": "4-12-push-box",
         "collision": "5-14-cannon-recoil"
@@ -770,7 +770,7 @@
       "row_id": 42,
       "scenes": {
         "projection": "1-12-dartboard",
-        "oscillation_elasticity": "2-11-metronome",
+        "oscillation_elasticity": "2-11-roof-bounce",
         "equilibrium_levers": "3-06-tilting-chair",
         "friction": "4-12-push-box",
         "collision": "5-14-cannon-recoil"
@@ -1040,7 +1040,7 @@
       "row_id": 57,
       "scenes": {
         "projection": "1-12-dartboard",
-        "oscillation_elasticity": "2-11-metronome",
+        "oscillation_elasticity": "2-11-roof-bounce",
         "equilibrium_levers": "3-06-tilting-chair",
         "friction": "4-12-push-box",
         "collision": "5-14-cannon-recoil"
@@ -1310,7 +1310,7 @@
       "row_id": 72,
       "scenes": {
         "projection": "1-12-dartboard",
-        "oscillation_elasticity": "2-11-metronome",
+        "oscillation_elasticity": "2-11-roof-bounce",
         "equilibrium_levers": "3-06-tilting-chair",
         "friction": "4-12-push-box",
         "collision": "5-14-cannon-recoil"
@@ -1358,7 +1358,7 @@
         "projection",
         "collision"
       ],
-      "trial": "2-11-metronome"
+      "trial": "2-11-roof-bounce"
     },
     {
       "row_id": 75,
