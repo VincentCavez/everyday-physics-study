@@ -7,6 +7,13 @@ export const studyConfig = {
   /**
    * URL /exec du déploiement Apps Script (voir study/README.md).
    *
+   * CLASSEUR NEUF (2026-09-11), pour la vague de 75 participants. Le précédent
+   * (AKfycbze8P3V…) garde les 5 passations du 10/09, qui ont vu d'AUTRES
+   * matériaux : briefs, outils et deux scènes ont changé depuis, et 2-11 a même
+   * changé d'identité (métronome → rebond sur toit). Les mêler dans un onglet
+   * donnerait des moyennes fausses sans prévenir — la raison qui avait déjà
+   * imposé un classeur neuf entre la v1 et la v2. Elles s'analysent à part.
+   *
    * DÉPLOIEMENT v2 (2026-09-09, classeur neuf, `setup()` lancé par Vincent).
    * Historique : la branche est restée VIDE jusque-là, exprès. La v2 écrit 32 colonnes, des
    * `item_key` nouveaux et une colonne `stage` là où la v1 avait `block` : la
@@ -20,7 +27,8 @@ export const studyConfig = {
    * Tant qu'elle est vide, l'app tourne en aperçu PUREMENT LOCAL : elle
    * n'atteint aucun réseau, n'enregistre rien et ne délivre aucun code.
    */
-  appsScriptUrl: "https://script.google.com/macros/s/AKfycbze8P3Vi5Sw1rvoxNrAsMMQMroyrB4MUsKC_UcxuxPbAZOUExWPxyzYRK7FhMKs3NRgiA/exec",
+  appsScriptUrl:
+    "https://script.google.com/macros/s/AKfycbyZPx56wra4flQ40uiARNmmT4_6clPMGfImMi3VrtPLlv1pQO3NW23XrCXiWhiA34h_kA/exec",
 
   /** Retour Prolific après complétion (https://app.prolific.com/submissions/complete?cc=...). */
   prolificCompleteUrl: "https://app.prolific.com/submissions/complete",
