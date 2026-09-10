@@ -170,6 +170,12 @@ stays stable.
 
 ### Admin functions
 
+`resetWave('<label>')` starts a **new wave on the same workbook**: it renames `responses`
+and `sessions` to `…-<label>`, creates fresh ones, and frees all 75 design rows. It leaves
+`meta` alone — the completion code comes from Prolific and changes with every study, so
+copy the new one in by hand. Nothing is deleted and the `/exec` URL does not change, so the
+site needs no rebuild. Run it from a wrapper, like `freeRow`.
+
 `progress()` counts row statuses, and splits `ASSIGNED` into *in progress* and *stale* ·
 `freeRow(id)` releases a row after a rejection so a replacement gets the same design row
 (this is what preserves the balance) · `closeStudy()` / `openStudy()` stop and resume

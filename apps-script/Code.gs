@@ -390,6 +390,66 @@ function freeRow(rowId) {
   SpreadsheetApp.flush();
 }
 
+/**
+ * Admin : NOUVELLE VAGUE sur le MÊME classeur (2026-09-10).
+ *
+ * Rejouer une étude sur un classeur déjà servi ne marche pas tel quel :
+ *  · les 75 design rows sont consommées (5 COMPLETED, 1 ASSIGNED après le
+ *    10/09) et `assign_` ne rendrait plus que « full » ;
+ *  · les réponses des deux vagues se mélangeraient dans le même onglet, avec
+ *    les mêmes `item_key` et presque les mêmes `scene_id` — mais des THÉORIES
+ *    différentes, et une scène qui a changé d'identité (2-11). Une moyenne
+ *    calculée dessus serait fausse sans prévenir, exactement le piège qui a
+ *    imposé un classeur neuf entre la v1 et la v2.
+ *
+ * Cette fonction ARCHIVE plutôt qu'elle n'efface : les onglets `responses` et
+ * `sessions` sont renommés avec l'étiquette de la vague, et des onglets neufs
+ * les remplacent. Rien n'est perdu, et l'URL /exec ne change pas — donc pas de
+ * reconstruction du site.
+ *
+ * `meta` n'est PAS touché : le code de complétion vient de Prolific et change
+ * à chaque étude, c'est au chercheur de le recopier.
+ *
+ * Usage : un wrapper, comme freeRow — `function reset1() { resetWave('2026-09-10'); }`
+ */
+function resetWave(label) {
+  var tag = String(label || '').trim();
+  if (!/^[0-9A-Za-z_.-]{3,40}$/.test(tag)) {
+    throw new Error("resetWave('<étiquette>') : une étiquette est obligatoire, elle nomme l'archive (ex. '2026-09-10').");
+  }
+  var ss = SpreadsheetApp.getActive();
+
+  [SHEETS.RESPONSES, SHEETS.SESSIONS].forEach(function (name) {
+    var live = ss.getSheetByName(name);
+    if (!live) return;
+    var archived = name + '-' + tag;
+    if (ss.getSheetByName(archived)) throw new Error('archive déjà présente : ' + archived);
+    live.setName(archived);
+  });
+
+  var responses = ss.insertSheet(SHEETS.RESPONSES);
+  responses.getRange(1, 1, 1, RESPONSES_HEADER.length).setValues([RESPONSES_HEADER]).setFontWeight('bold');
+  responses.setFrozenRows(1);
+  growGrid_(responses);
+
+  var sessions = ss.insertSheet(SHEETS.SESSIONS);
+  sessions.getRange(1, 1, 1, SESSIONS_HEADER.length).setValues([SESSIONS_HEADER]).setFontWeight('bold');
+  sessions.setFrozenRows(1);
+
+  // Les 75 rows repartent LIBRES, `assign_count` remis à zéro : sans ça le
+  // compteur mêlerait les passages des deux vagues.
+  var seed = [];
+  for (var i = 1; i <= N_ROWS; i++) seed.push([i, 'FREE', '', '', '', '', 0, '']);
+  sh_(SHEETS.ROWS).getRange(2, 1, N_ROWS, ROWS_HEADER.length).setValues(seed);
+
+  SpreadsheetApp.flush();
+  var msg =
+    'resetWave : ' + SHEETS.RESPONSES + ' et ' + SHEETS.SESSIONS + ' archivés en « -' + tag +
+    ' », onglets neufs créés, ' + N_ROWS + ' rows libérées. `meta` inchangé — recopier le NOUVEAU code de complétion Prolific.';
+  Logger.log(msg);
+  return msg;
+}
+
 /** Admin : coupe l'arrivée de nouveaux participants sans dépublier le site. */
 function closeStudy() { setMeta_('study_open', 'FALSE'); }
 function openStudy() { setMeta_('study_open', 'TRUE'); }
